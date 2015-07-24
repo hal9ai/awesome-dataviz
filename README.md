@@ -3,6 +3,23 @@
 A curated list of awesome data visualizations frameworks, libraries and software. Inspired by [awesome-python](https://github.com/vinta/awesome-python).
 
 
+## Table of contents
+- [Awesome dataviz](#awesome-dataviz)
+	- [Javascript tools](#javascript-tools)
+		- [Charting libraries](#charting-libraries)
+		- [Charting libraries for graphs](#charting-libraries-for-graphs)
+		- [Maps](#maps)
+		- [d3](#d3)
+		- [dc.js](#dcjs)
+		- [Misc](#Misc)
+	- [Python tools](#python-tools)
+	- [Golang tools](#golang-tools)
+	- [iOS tools](#ios-tools)
+	- [Android tools](#android-tools)
+	- [Ruby tools](#ruby-tools)
+	- [Data visualization books](#data-visualization-books)
+	- [Contributing](#contributing)
+
 ## Javascript tools
 
 ### Charting libraries
