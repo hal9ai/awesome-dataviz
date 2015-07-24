@@ -79,3 +79,12 @@
 ## Data visualization books
 - [The Visual Display of Quantitative Information](http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142) by Edward Tufte
 - [Design for Information](http://www.amazon.es/Design-Information-Introduction-Histories-Visualizations/dp/1592538061) by Isabel Meirelles
+
+## Contributing
+
+- Please check for duplicates first.
+- Keep descriptions short, simple and unbiased.
+- Please make an individual commit for each suggestion
+- Add a new category if needed.
+
+Thanks for your suggestions!
