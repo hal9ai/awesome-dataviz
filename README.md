@@ -99,7 +99,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [The Visual Display of Quantitative Information](http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142) by Edward Tufte
 - [Design for Information](http://www.amazon.es/Design-Information-Introduction-Histories-Visualizations/dp/1592538061) by Isabel Meirelles
 
-
 ## Contributing
 
 - Please check for duplicates first.
@@ -112,3 +111,5 @@ Thanks for your suggestions!
 ## License
 
 [![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+
+To the extent possible under law, [Fabio Souto](http://fabiosouto.me/) has waived all copyright and related or neighboring rights to this work.
