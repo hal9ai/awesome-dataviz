@@ -20,7 +20,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 	- [Data visualization books](#data-visualization-books)
 	- [Contributing](#contributing)
 
-## Javascript tools
+## JavaScript tools
 
 ### Charting libraries
 
