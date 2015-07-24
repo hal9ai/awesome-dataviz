@@ -5,7 +5,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 
 ## Table of contents
 - [Awesome dataviz](#awesome-dataviz)
-	- [Javascript tools](#javascript-tools)
+	- [JavaScript tools](#javascript-tools)
 		- [Charting libraries](#charting-libraries)
 		- [Charting libraries for graphs](#charting-libraries-for-graphs)
 		- [Maps](#maps)
@@ -68,7 +68,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Vega](http://vega.github.io/vega/) - Vega is a visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs.
 - [RAW](http://raw.densitydesign.org/) - The missing link between spreadsheets and vector graphics.
 - [Chroma.js](http://gka.github.io/chroma.js/) - A tiny JavaScript library (12kB) for all kinds of color conversions and color scales.
-- [Recline.js](http://okfnlabs.org/recline/) - Simple but powerful library for building data applications in pure Javascript and HTML.
+- [Recline.js](http://okfnlabs.org/recline/) - Simple but powerful library for building data applications in pure JavaScript and HTML.
 - [Piecon](https://github.com/lipka/piecon) - Pie charts in your favicon.
 
 
@@ -92,7 +92,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [HelloCharts](https://github.com/lecho/hellocharts-android) - Charting library for Android compatible with API 8+.
 
 ## Ruby tools
-- [Chartkick](https://github.com/ankane/chartkick) - Create beautiful Javascript charts with one line of Ruby.
+- [Chartkick](https://github.com/ankane/chartkick) - Create beautiful JavaScript charts with one line of Ruby.
 
 
 ## Data visualization books
