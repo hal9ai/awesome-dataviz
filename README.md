@@ -27,6 +27,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Chart.js](http://www.chartjs.org/) - Simple HTML5 Charts using the canvas element.
 - [Echarts](http://echarts.baidu.com/index-en.html) - Enterprise Charts by Baidu.
 - [Chartist.js](http://gionkunz.github.io/chartist-js/) - Simple responsive charts.
+- [Charted](https://github.com/mikesall/charted) - A charting tool that produces automatic, shareable charts from any data file.
 - [MetricsGraphics.js](http://metricsgraphicsjs.org/) - A library optimized for concise, principled data graphics and layouts.
 - [Epoch](http://fastly.github.io/epoch/) - A general purpose real-time charting library.
 - [Peity](https://github.com/benpickles/peity) - Progressive svg pie, donut, bar and line charts.
@@ -35,7 +36,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [C3](http://c3js.org/) - C3 is a D3-based reusable chart library.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
 - [Highcharts](https://github.com/highslide-software/highcharts.com) - Highcharts is a JavaScript charting library based on SVG and VML rendering.
-- [Charted](https://github.com/mikesall/charted) - A charting tool that produces automatic, shareable charts from any data file.
 - [morris.js](http://morrisjs.github.io/morris.js/) - Pretty time-series line graphs.
 
 
@@ -99,6 +99,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [The Visual Display of Quantitative Information](http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142) by Edward Tufte
 - [Design for Information](http://www.amazon.es/Design-Information-Introduction-Histories-Visualizations/dp/1592538061) by Isabel Meirelles
 
+
 ## Contributing
 
 - Please check for duplicates first.
@@ -107,3 +108,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - Add a new category if needed.
 
 Thanks for your suggestions!
+
+## License
+
+[![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
