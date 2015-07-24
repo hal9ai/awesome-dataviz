@@ -22,12 +22,15 @@
 
 ### Charting libraries for graphs
 - [Sigma.js](http://sigmajs.org/) JavaScript library dedicated to graph drawing
-- [arbor.js](http://arborjs.org/) a graph visualization library using web workers and jQuery
+- [Linkurious](https://github.com/Linkurious/linkurious.js/) A Javascript toolkit to speed up the development of graph visualization and interaction applications. Based on Sigma.js
+- [arbor.js](http://arborjs.org/) a graph visualization library using web workers  and jQuery
 - [VivaGraph](https://github.com/anvaka/VivaGraphJS) Graph drawing library for JavaScript
 
 ### Maps
 
-- [Leaflet](http://leafletjs.com) JavaScript library for mobile-friendly interactive maps 
+- [Leaflet](http://leafletjs.com) JavaScript library for mobile-friendly interactive maps. 
+- [Leaflet Data Visualization Framework](https://github.com/humangeo/leaflet-dvf)  a framework designed to simplify data visualization and thematic mapping using Leaflet.
+- [cartodb](https://github.com/CartoDB/cartodb) CartoDB is an open source tool that allows for the storage and visualization of geospatial data on the web.
 - [cesium](https://github.com/AnalyticalGraphicsInc/cesium) WebGL virtual globe and map engine
 - [Modest Maps](http://modestmaps.com/) BSD-licensed display and interaction library for tile-based maps in Javascript.
 
@@ -51,12 +54,15 @@
 
 
 ## Python
-- [matplotlib](http://matplotlib.org/) a python 2D plotting library 
+- [matplotlib](http://matplotlib.org/) a python 2D plotting library
+- [seaborn](http://stanford.edu/~mwaskom/software/seaborn/) a library for making attractive and informative statistical graphics.
+- [bokeh](http://bokeh.pydata.org/) interactive Web Plotting for Python
 - [pygal](http://pygal.org/) a dynamic SVG charting library
 
 
 ## Golang
 - [Charts for Go](https://github.com/vdobler/chart)
+- [svgo](https://github.com/ajstarks/svgo) Go Language Library for SVG generation
 
 ## iOS
 - [PNChart](https://github.com/kevinzhow/PNChart) A simple and beautiful chart lib used in Piner and CoinsMan
