@@ -62,7 +62,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 
 
 ### Misc
-- [Chroma.js](http://gka.github.io/chroma.js/) - A tiny JavaScript library (12kB) for all kinds of color conversions and color scales.
+- [Chroma.js](http://gka.github.io/chroma.js/) - A small library for color manipulation.
 - [Piecon](https://github.com/lipka/piecon) - Pie charts in your favicon.
 - [RAW](http://raw.densitydesign.org/) - The missing link between spreadsheets and vector graphics.
 - [Recline.js](http://okfnlabs.org/recline/) - Simple but powerful library for building data applications in pure JavaScript and HTML.
