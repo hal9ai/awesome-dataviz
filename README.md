@@ -28,7 +28,8 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Chart.js](http://www.chartjs.org/) - HTML5 Charts using the canvas tag.
 - [Charted](https://github.com/mikesall/charted) - A charting tool that produces automatic, shareable charts from any data file.
 - [Chartist.js](http://gionkunz.github.io/chartist-js/) - Simple responsive charts.
-- [dimple](http://dimplejs.org/) - An object-oriented API for business analytics.
+- [Dimple](http://dimplejs.org/) - An object-oriented API for business analytics.
+- [Dygraphs](http://dygraphs.com/) - Interactive line charts library that works with huge data sets.
 - [Echarts](http://echarts.baidu.com/index-en.html) - Enterprise Charts by Baidu.
 - [Epoch](http://fastly.github.io/epoch/) - Perfect to create real-time charts.
 - [Highcharts](https://github.com/highslide-software/highcharts.com) - Highcharts is a JavaScript charting library based on SVG and VML rendering. Free ([CC BY-NC](http://creativecommons.org/licenses/by-nc/3.0/)) for non-profit projects.
