@@ -67,6 +67,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Piecon](https://github.com/lipka/piecon) - Pie charts in your favicon.
 - [RAW](http://raw.densitydesign.org/) - The missing link between spreadsheets and vector graphics.
 - [Recline.js](http://okfnlabs.org/recline/) - Simple but powerful library for building data applications in pure JavaScript and HTML.
+- [Timeline.js](http://timeline.knightlab.com/) -  Create interactive timelines.
 - [Vega](http://vega.github.io/vega/) - Vega is a visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs.
 
 ## Python tools
