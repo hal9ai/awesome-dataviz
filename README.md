@@ -25,7 +25,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 ### Charting libraries
 
 - [C3](http://c3js.org/) - C3 is a D3-based reusable chart library.
-- [Chart.js](http://www.chartjs.org/) - Simple HTML5 Charts using the canvas element.
+- [Chart.js](http://www.chartjs.org/) - HTML5 Charts using the canvas tag.
 - [Charted](https://github.com/mikesall/charted) - A charting tool that produces automatic, shareable charts from any data file.
 - [Chartist.js](http://gionkunz.github.io/chartist-js/) - Simple responsive charts.
 - [dimple](http://dimplejs.org/) - An object-oriented API for business analytics.
