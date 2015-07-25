@@ -31,7 +31,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [MetricsGraphics.js](http://metricsgraphicsjs.org/) - A library optimized for concise, principled data graphics and layouts.
 - [Epoch](http://fastly.github.io/epoch/) - A general purpose real-time charting library.
 - [Peity](https://github.com/benpickles/peity) - Progressive svg pie, donut, bar and line charts.
-- [Envision.js](http://www.humblesoftware.com/envision) - A library for creating fast, dynamic and interactive HTML5 visualizations.
 - [dimple](http://dimplejs.org/) - An object-oriented API for business analytics.
 - [C3](http://c3js.org/) - C3 is a D3-based reusable chart library.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
