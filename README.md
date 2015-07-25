@@ -35,7 +35,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [dimple](http://dimplejs.org/) - An object-oriented API for business analytics.
 - [C3](http://c3js.org/) - C3 is a D3-based reusable chart library.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
-- [Highcharts](https://github.com/highslide-software/highcharts.com) - Highcharts is a JavaScript charting library based on SVG and VML rendering.
+- [Highcharts](https://github.com/highslide-software/highcharts.com) - Highcharts is a JavaScript charting library based on SVG and VML rendering. Free ([CC BY-NC](http://creativecommons.org/licenses/by-nc/3.0/)) for non-profit projects.
 - [morris.js](http://morrisjs.github.io/morris.js/) - Pretty time-series line graphs.
 
 
