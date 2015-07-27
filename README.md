@@ -97,7 +97,7 @@ Tools that are not tied to a particular programming language.
 
 - [Lightning](http://lightning-viz.org/) - A data-visualization server providing API-based access to reproducible, web-based, interactive visualizations.
 - [RAW](http://raw.densitydesign.org/) - Create web visualizations from CSV or Excel files.
-
+- [Spark](https://github.com/holman/spark) - Sparklines for the shell. It have several [implementations in different languages](https://github.com/holman/spark/wiki/Alternative-Implementations).
 
 ## Data visualization books
 - [Design for Information](http://www.amazon.es/Design-Information-Introduction-Histories-Visualizations/dp/1592538061) by Isabel Meirelles
