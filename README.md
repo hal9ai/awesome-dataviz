@@ -17,6 +17,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 	- [iOS tools](#ios-tools)
 	- [Android tools](#android-tools)
 	- [Ruby tools](#ruby-tools)
+	- [Other tools](#other-tools)
 	- [Data visualization books](#data-visualization-books)
 	- [Contributing](#contributing)
 
@@ -65,7 +66,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 ### Misc
 - [Chroma.js](http://gka.github.io/chroma.js/) - A small library for color manipulation.
 - [Piecon](https://github.com/lipka/piecon) - Pie charts in your favicon.
-- [RAW](http://raw.densitydesign.org/) - The missing link between spreadsheets and vector graphics.
 - [Recline.js](http://okfnlabs.org/recline/) - Simple but powerful library for building data applications in pure JavaScript and HTML.
 - [Timeline.js](http://timeline.knightlab.com/) -  Create interactive timelines.
 - [Vega](http://vega.github.io/vega/) - Vega is a visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs.
@@ -91,6 +91,12 @@ A curated list of awesome data visualizations frameworks, libraries and software
 
 ## Ruby tools
 - [Chartkick](https://github.com/ankane/chartkick) - Create beautiful JavaScript charts with one line of Ruby.
+
+## Other tools
+Tools that are not tied to a particular programming language.
+
+- [Lightning](http://lightning-viz.org/) - A data-visualization server providing API-based access to reproducible, web-based, interactive visualizations.
+- [RAW](http://raw.densitydesign.org/) - Create web visualizations from CSV or Excel files.
 
 
 ## Data visualization books
