@@ -51,6 +51,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Cesium](https://github.com/AnalyticalGraphicsInc/cesium) - WebGL virtual globe and map engine.
 - [Leaflet](http://leafletjs.com) - JavaScript library for mobile-friendly interactive maps. 
 - [Leaflet Data Visualization Framework](https://github.com/humangeo/leaflet-dvf)  - A framework designed to simplify data visualization and thematic mapping using Leaflet.
+- [Mapsense.js](https://developer.mapsense.co/documentation/) - Combines d3.js with tile maps.
 - [Modest Maps](http://modestmaps.com/) - BSD-licensed display and interaction library for tile-based maps in Javascript.
 
 ### d3
