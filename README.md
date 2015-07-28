@@ -41,7 +41,8 @@ A curated list of awesome data visualizations frameworks, libraries and software
 
 
 ### Charting libraries for graphs
-- [Linkurious](https://github.com/Linkurious/linkurious.js/) - A Javascript toolkit to speed up the development of graph visualization and interaction applications. Based on Sigma.js.
+- [Cola.js](http://marvl.infotech.monash.edu/webcola/) - A tool to create diagrams using constraint-based optimization techniques. Works with d3 and svg.js.
+- [Linkurious](https://github.com/Linkurious/linkurious.js/) - A toolkit to speed up the development of graph visualization and interaction applications. Based on Sigma.js.
 - [Sigma.js](http://sigmajs.org/) - JavaScript library dedicated to graph drawing.
 - [VivaGraph](https://github.com/anvaka/VivaGraphJS) - Graph drawing library for JavaScript.
 
