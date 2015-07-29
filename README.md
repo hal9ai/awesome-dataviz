@@ -38,7 +38,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Morris.js](http://morrisjs.github.io/morris.js/) - Pretty time-series line graphs.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
 - [Peity](https://github.com/benpickles/peity) - A library to create small inline svg charts.
-
+- [TechanJS](http://techanjs.org/) - Stock and financial charts.
 
 ### Charting libraries for graphs
 - [Cola.js](http://marvl.infotech.monash.edu/webcola/) - A tool to create diagrams using constraint-based optimization techniques. Works with d3 and svg.js.
