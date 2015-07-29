@@ -12,10 +12,10 @@ A curated list of awesome data visualizations frameworks, libraries and software
 		- [d3](#d3)
 		- [dc.js](#dcjs)
 		- [Misc](#Misc)
-	- [Python tools](#python-tools)
+	- [Android tools](#android-tools)
 	- [Golang tools](#golang-tools)
 	- [iOS tools](#ios-tools)
-	- [Android tools](#android-tools)
+	- [Python tools](#python-tools)
 	- [Ruby tools](#ruby-tools)
 	- [Other tools](#other-tools)
 	- [Data visualization books](#data-visualization-books)
@@ -73,12 +73,9 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Timeline.js](http://timeline.knightlab.com/) -  Create interactive timelines.
 - [Vega](http://vega.github.io/vega/) - Vega is a visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs.
 
-## Python tools
-- [bokeh](http://bokeh.pydata.org/) - Interactive Web Plotting for Python.
-- [matplotlib](http://matplotlib.org/) - A python 2D plotting library.
-- [pygal](http://pygal.org/) - A dynamic SVG charting library.
-- [seaborn](http://stanford.edu/~mwaskom/software/seaborn/) - A library for making attractive and informative statistical graphics.
-
+## Android tools
+- [HelloCharts](https://github.com/lecho/hellocharts-android) - Charting library for Android compatible with API 8+.
+- [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) - A powerful & easy to use chart library.
 
 ## Golang tools
 - [Charts for Go](https://github.com/vdobler/chart)
@@ -89,15 +86,17 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [PNChart](https://github.com/kevinzhow/PNChart) - A simple and beautiful chart lib used in Piner and CoinsMan.
 - [ios-charts](https://github.com/danielgindi/ios-charts) -  iOS port of MPAndroidChart. You can create charts for both platforms with very similar code.
 
-## Android tools
-- [HelloCharts](https://github.com/lecho/hellocharts-android) - Charting library for Android compatible with API 8+.
-- [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) - A powerful & easy to use chart library.
+## Python tools
+- [bokeh](http://bokeh.pydata.org/) - Interactive Web Plotting for Python.
+- [matplotlib](http://matplotlib.org/) - A python 2D plotting library.
+- [pygal](http://pygal.org/) - A dynamic SVG charting library.
+- [seaborn](http://stanford.edu/~mwaskom/software/seaborn/) - A library for making attractive and informative statistical graphics.
 
 ## Ruby tools
 - [Chartkick](https://github.com/ankane/chartkick) - Create beautiful JavaScript charts with one line of Ruby.
 
 ## Other tools
-Tools that are not tied to a particular programming language.
+Tools that are not tied to a particular platform or language.
 
 - [Lightning](http://lightning-viz.org/) - A data-visualization server providing API-based access to reproducible, web-based, interactive visualizations.
 - [RAW](http://raw.densitydesign.org/) - Create web visualizations from CSV or Excel files.
