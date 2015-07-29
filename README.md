@@ -78,7 +78,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) - A powerful & easy to use chart library.
 
 ## Golang tools
-- [Charts for Go](https://github.com/vdobler/chart)
+- [Charts for Go](https://github.com/vdobler/chart) - Basic charts in Go. Can render to ASCII, SVG and images.
 - [svgo](https://github.com/ajstarks/svgo) - Go Language Library for SVG generation.
 
 ## iOS tools
