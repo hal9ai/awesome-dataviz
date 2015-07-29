@@ -91,7 +91,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [matplotlib](http://matplotlib.org/) - A python 2D plotting library.
 - [pygal](http://pygal.org/) - A dynamic SVG charting library.
 - [seaborn](http://stanford.edu/~mwaskom/software/seaborn/) - A library for making attractive and informative statistical graphics.
-- [toyplot](http://toyplot.readthedocs.org/) The kid-sized plotting toolkit for Python with grownup-sized goals.
+- [toyplot](http://toyplot.readthedocs.org/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
 
 ## Ruby tools
 - [Chartkick](https://github.com/ankane/chartkick) - Create beautiful JavaScript charts with one line of Ruby.
