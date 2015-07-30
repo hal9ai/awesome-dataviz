@@ -19,8 +19,12 @@ A curated list of awesome data visualizations frameworks, libraries and software
 	- [R tools](#r-tools)
 	- [Ruby tools](#ruby-tools)
 	- [Other tools](#other-tools)
-	- [Data visualization books](#data-visualization-books)
-	- [Contributing](#contributing)
+- [Resources](#resources)
+	- [Books](#books)
+	- [Twitter accounts](#twitter-accounts)
+ 	- [Websites](#websites)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## JavaScript tools
 
@@ -99,7 +103,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [rbokeh](http://hafen.github.io/rbokeh/) - R Interface to Bokeh.
 - [rgl](https://cran.r-project.org/web/packages/rgl/index.html) - 3D Visualization Using OpenGL
 
-
 ## Ruby tools
 - [Chartkick](https://github.com/ankane/chartkick) - Create beautiful JavaScript charts with one line of Ruby.
 
@@ -111,11 +114,29 @@ Tools that are not tied to a particular platform or language.
 - [Spark](https://github.com/holman/spark) - Sparklines for the shell. It have several [implementations in different languages](https://github.com/holman/spark/wiki/Alternative-Implementations).
 - [Periscope](https://www.periscope.io/) - Create charts directly from SQL queries.
 
-## Data visualization books
-- [Design for Information](http://www.amazon.es/Design-Information-Introduction-Histories-Visualizations/dp/1592538061) by Isabel Meirelles
-- [The Visual Display of Quantitative Information](http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142) by Edward Tufte
 
-## Contributing
+# Resources
+
+## Books
+- [Design for Information](http://www.amazon.es/Design-Information-Introduction-Histories-Visualizations/dp/1592538061) by Isabel Meirelles.
+- [The Best American Infographics 2014](http://www.amazon.com/The-Best-American-Infographics-2014/dp/0547974515) by Gareth Cook.
+- [The Visual Display of Quantitative Information](http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142) by Edward Tufte.
+- [The Wall Street Journal Guide to Information Graphics](http://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393347281/ref=sr_1_1?s=books&ie=UTF8&qid=1438269375&sr=1-1&keywords=wall+street+journal+guide+graphics) by Dona M. Wong
+
+## Twitter accounts
+- [Alberto Cairo](https://twitter.com/albertocairo)
+- [Benjamin Wiederkehr](https://twitter.com/datavis)
+- [Mike Bostock](https://twitter.com/mbostock)
+- [NYT Graphics](https://twitter.com/nytgraphics)
+- [Visualizing](https://twitter.com/VisualizingOrg)
+
+## Websites
+- [FlowingData](http://flowingdata.com/)
+- [Information is Beautiful](http://www.informationisbeautiful.net/)
+- [The Data Visualization Catalogue](http://www.datavizcatalogue.com/) - A collection of data visualization methods, with pros and cons.
+
+
+# Contributing
 
 - Please check for duplicates first.
 - Keep descriptions short, simple and unbiased.
@@ -124,7 +145,8 @@ Tools that are not tied to a particular platform or language.
 
 Thanks for your suggestions!
 
-## License
+
+# License
 
 [![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 
