@@ -16,6 +16,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 	- [Golang tools](#golang-tools)
 	- [iOS tools](#ios-tools)
 	- [Python tools](#python-tools)
+	- [R tools](#r-tools)
 	- [Ruby tools](#ruby-tools)
 	- [Other tools](#other-tools)
 	- [Data visualization books](#data-visualization-books)
@@ -92,6 +93,12 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [pygal](http://pygal.org/) - A dynamic SVG charting library.
 - [seaborn](http://stanford.edu/~mwaskom/software/seaborn/) - A library for making attractive and informative statistical graphics.
 - [toyplot](http://toyplot.readthedocs.org/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
+
+## R tools
+- [ggplot2](http://ggplot2.org/) - A plotting system based on the grammar of graphics.
+- [rbokeh](http://hafen.github.io/rbokeh/) - R Interface to Bokeh.
+- [rgl](https://cran.r-project.org/web/packages/rgl/index.html) - 3D Visualization Using OpenGL
+
 
 ## Ruby tools
 - [Chartkick](https://github.com/ankane/chartkick) - Create beautiful JavaScript charts with one line of Ruby.
