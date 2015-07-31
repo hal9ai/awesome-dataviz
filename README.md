@@ -47,6 +47,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 
 ### Charting libraries for graphs
 - [Cola.js](http://marvl.infotech.monash.edu/webcola/) - A tool to create diagrams using constraint-based optimization techniques. Works with d3 and svg.js.
+- [Cytoscape.js](http://js.cytoscape.org/) - JavaScript library for graph drawing maintained by [Cytoscape](http://www.cytoscape.org) core developers.
 - [Linkurious](https://github.com/Linkurious/linkurious.js/) - A toolkit to speed up the development of graph visualization and interaction applications. Based on Sigma.js.
 - [Sigma.js](http://sigmajs.org/) - JavaScript library dedicated to graph drawing.
 - [VivaGraph](https://github.com/anvaka/VivaGraphJS) - Graph drawing library for JavaScript.
@@ -122,6 +123,7 @@ Tools that are not tied to a particular platform or language.
 - [The Best American Infographics 2014](http://www.amazon.com/The-Best-American-Infographics-2014/dp/0547974515) by Gareth Cook.
 - [The Visual Display of Quantitative Information](http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142) by Edward Tufte.
 - [The Wall Street Journal Guide to Information Graphics](http://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393347281/ref=sr_1_1?s=books&ie=UTF8&qid=1438269375&sr=1-1&keywords=wall+street+journal+guide+graphics) by Dona M. Wong
+- [Visualization Analysis and Design](http://www.amazon.com/Visualization-Analysis-Design-Peters-Series/dp/1466508914) by Tamara Munzner.
 
 ## Twitter accounts
 - [Alberto Cairo](https://twitter.com/albertocairo)
