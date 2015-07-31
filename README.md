@@ -30,15 +30,15 @@ A curated list of awesome data visualizations frameworks, libraries and software
 
 ### Charting libraries
 
-- [C3](http://c3js.org/) - C3 is a D3-based chart library.
+- [C3](http://c3js.org/) - a D3-based reusable chart library.
 - [Chart.js](http://www.chartjs.org/) - Charts with the canvas tag.
 - [Charted](https://github.com/mikesall/charted) - A charting tool that produces automatic, shareable charts from any data file.
 - [Chartist.js](http://gionkunz.github.io/chartist-js/) - Responsive charts with great browser compatibility.
 - [Dimple](http://dimplejs.org/) - An object-oriented API for business analytics.
-- [Dygraphs](http://dygraphs.com/) - Interactive line charts library that works with huge data sets.
-- [Echarts](http://echarts.baidu.com/index-en.html) - Enterprise Charts by Baidu.
+- [Dygraphs](http://dygraphs.com/) - Interactive line charts library that works with huge datasets.
+- [Echarts](http://echarts.baidu.com/index-en.html) - Highly customizable and interactive charts ready for big datasets.
 - [Epoch](http://fastly.github.io/epoch/) - Perfect to create real-time charts.
-- [Highcharts](https://github.com/highslide-software/highcharts.com) - Highcharts is a JavaScript charting library based on SVG and VML rendering. Free ([CC BY-NC](http://creativecommons.org/licenses/by-nc/3.0/)) for non-profit projects.
+- [Highcharts](https://github.com/highslide-software/highcharts.com) - A charting library based on SVG and VML rendering. Free ([CC BY-NC](http://creativecommons.org/licenses/by-nc/3.0/)) for non-profit projects.
 - [MetricsGraphics.js](http://metricsgraphicsjs.org/) - Optimized for time-series data.
 - [Morris.js](http://morrisjs.github.io/morris.js/) - Pretty time-series line graphs.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
