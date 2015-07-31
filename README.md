@@ -13,7 +13,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 		- [dc.js](#dcjs)
 		- [Misc](#Misc)
 	- [Android tools](#android-tools)
-	- [C++ tools](#cpp-tools)
+	- [C++ tools](#c++-tools)
 	- [Golang tools](#golang-tools)
 	- [iOS tools](#ios-tools)
 	- [Python tools](#python-tools)
