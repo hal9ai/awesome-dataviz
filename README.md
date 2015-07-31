@@ -13,6 +13,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 		- [dc.js](#dcjs)
 		- [Misc](#Misc)
 	- [Android tools](#android-tools)
+	- [C++ tools](#c++-tools)
 	- [Golang tools](#golang-tools)
 	- [iOS tools](#ios-tools)
 	- [Python tools](#python-tools)
@@ -82,6 +83,9 @@ A curated list of awesome data visualizations frameworks, libraries and software
 ## Android tools
 - [HelloCharts](https://github.com/lecho/hellocharts-android) - Charting library for Android compatible with API 8+.
 - [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) - A powerful & easy to use chart library.
+
+## C++ tools
+- [Visualization Toolkit (VTK)](https://gitlab.kitware.com/vtk/vtk/blob/master/README.md) - open-source C++ library for 3d Graphics, image processing and visualization.
 
 ## Golang tools
 - [Charts for Go](https://github.com/vdobler/chart) - Basic charts in Go. Can render to ASCII, SVG and images.
