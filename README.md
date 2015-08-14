@@ -56,7 +56,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 ### Maps
 - [CartoDB](https://github.com/CartoDB/cartodb) - CartoDB is an open source tool that allows for the storage and visualization of geospatial data on the web.
 - [Cesium](https://github.com/AnalyticalGraphicsInc/cesium) - WebGL virtual globe and map engine.
-- [Leaflet](http://leafletjs.com) - JavaScript library for mobile-friendly interactive maps. 
+- [Leaflet](http://leafletjs.com) - JavaScript library for mobile-friendly interactive maps.
 - [Leaflet Data Visualization Framework](https://github.com/humangeo/leaflet-dvf)  - A framework designed to simplify data visualization and thematic mapping using Leaflet.
 - [Mapsense.js](https://developer.mapsense.co/documentation/) - Combines d3.js with tile maps.
 - [Modest Maps](http://modestmaps.com/) - BSD-licensed display and interaction library for tile-based maps in Javascript.
@@ -79,6 +79,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Textures.js](http://riccardoscalco.github.io/textures/) - A library to create SVG patterns.
 - [Timeline.js](http://timeline.knightlab.com/) -  Create interactive timelines.
 - [Vega](http://vega.github.io/vega/) - Vega is a visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs.
+- [Vis.js](http://visjs.org/) - A dynamic visualization library including timeline, networks and graphs (2D and 3D).
 
 ## Android tools
 - [HelloCharts](https://github.com/lecho/hellocharts-android) - Charting library for Android compatible with API 8+.
