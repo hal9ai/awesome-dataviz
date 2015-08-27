@@ -106,6 +106,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 
 ## R tools
 - [ggplot2](http://ggplot2.org/) - A plotting system based on the grammar of graphics.
+- [lattice](http://lattice.r-forge.r-project.org) - trellis graphics for R
 - [rbokeh](http://hafen.github.io/rbokeh/) - R Interface to Bokeh.
 - [rgl](https://cran.r-project.org/web/packages/rgl/index.html) - 3D Visualization Using OpenGL
 
