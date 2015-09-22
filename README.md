@@ -87,7 +87,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) - A powerful & easy to use chart library.
 
 ## C++ tools
-- [Visualization Toolkit (VTK)](https://gitlab.kitware.com/vtk/vtk/blob/master/README.md) - open-source C++ library for 3d Graphics, image processing and visualization.
+- [Visualization Toolkit (VTK)](https://gitlab.kitware.com/vtk/vtk/blob/master/README.md) - open-source library for 3d Graphics, image processing and visualization.
 
 ## Golang tools
 - [Charts for Go](https://github.com/vdobler/chart) - Basic charts in Go. Can render to ASCII, SVG and images.
@@ -100,7 +100,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 
 ## Python tools
 - [bokeh](http://bokeh.pydata.org/) - Interactive Web Plotting for Python.
-- [matplotlib](http://matplotlib.org/) - A python 2D plotting library.
+- [matplotlib](http://matplotlib.org/) - 2D plotting library.
 - [pygal](http://pygal.org/) - A dynamic SVG charting library.
 - [seaborn](http://stanford.edu/~mwaskom/software/seaborn/) - A library for making attractive and informative statistical graphics.
 - [toyplot](http://toyplot.readthedocs.org/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
@@ -112,7 +112,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [rgl](https://cran.r-project.org/web/packages/rgl/index.html) - 3D Visualization Using OpenGL
 
 ## Ruby tools
-- [Chartkick](https://github.com/ankane/chartkick) - Create beautiful JavaScript charts with one line of Ruby.
+- [Chartkick](https://github.com/ankane/chartkick) - Create charts with one line of Ruby.
 
 ## Other tools
 Tools that are not tied to a particular platform or language.
