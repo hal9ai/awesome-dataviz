@@ -34,7 +34,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 
 - [C3](http://c3js.org/) - a D3-based reusable chart library.
 - [Chart.js](http://www.chartjs.org/) - Charts with the canvas tag.
-- [Charted](https://github.com/mikesall/charted) - A charting tool that produces automatic, shareable charts from any data file.
 - [Chartist.js](http://gionkunz.github.io/chartist-js/) - Responsive charts with great browser compatibility.
 - [Dimple](http://dimplejs.org/) - An object-oriented API for business analytics.
 - [Dygraphs](http://dygraphs.com/) - Interactive line charts library that works with huge datasets.
@@ -117,6 +116,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 ## Other tools
 Tools that are not tied to a particular platform or language.
 
+- [Charted](https://github.com/mikesall/charted) - A charting tool that produces automatic, shareable charts from any data file.
 - [Lightning](http://lightning-viz.org/) - A data-visualization server providing API-based access to reproducible, web-based, interactive visualizations.
 - [RAW](http://raw.densitydesign.org/) - Create web visualizations from CSV or Excel files.
 - [Spark](https://github.com/holman/spark) - Sparklines for the shell. It have several [implementations in different languages](https://github.com/holman/spark/wiki/Alternative-Implementations).
