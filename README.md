@@ -130,11 +130,11 @@ Tools that are not tied to a particular platform or language.
 # Resources
 
 ## Books
-- [Design for Information](http://www.amazon.es/Design-Information-Introduction-Histories-Visualizations/dp/1592538061) by Isabel Meirelles.
-- [The Best American Infographics 2014](http://www.amazon.com/The-Best-American-Infographics-2014/dp/0547974515) by Gareth Cook.
-- [The Visual Display of Quantitative Information](http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142) by Edward Tufte.
-- [The Wall Street Journal Guide to Information Graphics](http://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393347281/ref=sr_1_1?s=books&ie=UTF8&qid=1438269375&sr=1-1&keywords=wall+street+journal+guide+graphics) by Dona M. Wong
-- [Visualization Analysis and Design](http://www.amazon.com/Visualization-Analysis-Design-Peters-Series/dp/1466508914) by Tamara Munzner.
+- [Design for Information](http://www.amazon.com/Design-Information-Introduction-Histories-Visualizations/dp/1592538061?tag=awesomedatavi-20) by Isabel Meirelles.
+- [The Best American Infographics 2014](http://www.amazon.com/The-Best-American-Infographics-2014/dp/0547974515?tag=awesomedatavi-20) by Gareth Cook.
+- [The Visual Display of Quantitative Information](http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142?tag=awesomedatavi-20) by Edward Tufte.
+- [The Wall Street Journal Guide to Information Graphics](http://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393347281?tag=awesomedatavi-20) by Dona M. Wong
+- [Visualization Analysis and Design](http://www.amazon.com/Visualization-Analysis-Design-Peters-Series/dp/1466508914?tag=awesomedatavi-20) by Tamara Munzner.
 
 ## Twitter accounts
 - [Alberto Cairo](https://twitter.com/albertocairo)
