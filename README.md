@@ -140,6 +140,7 @@ Tools that are not tied to a particular platform or language.
 - [Alberto Cairo](https://twitter.com/albertocairo)
 - [Benjamin Wiederkehr](https://twitter.com/datavis)
 - [Mike Bostock](https://twitter.com/mbostock)
+- [Nadieh Bremer](https://twitter.com/NadiehBremer)
 - [NYT Graphics](https://twitter.com/nytgraphics)
 - [Visualizing](https://twitter.com/VisualizingOrg)
 
