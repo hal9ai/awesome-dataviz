@@ -122,6 +122,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 Tools that are not tied to a particular platform or language.
 
 - [Charted](https://github.com/mikesall/charted) - A charting tool that produces automatic, shareable charts from any data file.
+- [Gephi](https://github.com/gephi/gephi) - An open-source platform for visualizing and manipulating large graphs
 - [Lightning](http://lightning-viz.org/) - A data-visualization server providing API-based access to reproducible, web-based, interactive visualizations.
 - [RAW](http://raw.densitydesign.org/) - Create web visualizations from CSV or Excel files.
 - [Spark](https://github.com/holman/spark) - Sparklines for the shell. It have several [implementations in different languages](https://github.com/holman/spark/wiki/Alternative-Implementations).
