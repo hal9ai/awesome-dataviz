@@ -38,8 +38,8 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Dimple](http://dimplejs.org/) - An object-oriented API for business analytics.
 - [Dygraphs](http://dygraphs.com/) - Interactive line charts library that works with huge datasets.
 - [Echarts](http://echarts.baidu.com/index-en.html) - Highly customizable and interactive charts ready for big datasets.
-- [Epoch](http://fastly.github.io/epoch/) - Perfect to create real-time charts.
-- [Highcharts](https://github.com/highslide-software/highcharts.com) - A charting library based on SVG and VML rendering. Free ([CC BY-NC](http://creativecommons.org/licenses/by-nc/3.0/)) for non-profit projects.
+- [Epoch](https://github.com/epochjs/epoch) - Perfect to create real-time charts.
+- [Highcharts](https://github.com/highcharts/highcharts) - A charting library based on SVG and VML rendering. Free ([CC BY-NC](http://creativecommons.org/licenses/by-nc/3.0/)) for non-profit projects.
 - [MetricsGraphics.js](http://metricsgraphicsjs.org/) - Optimized for time-series data.
 - [Morris.js](http://morrisjs.github.io/morris.js/) - Pretty time-series line graphs.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
@@ -59,7 +59,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Cesium](https://github.com/AnalyticalGraphicsInc/cesium) - WebGL virtual globe and map engine.
 - [Leaflet](http://leafletjs.com) - JavaScript library for mobile-friendly interactive maps.
 - [Leaflet Data Visualization Framework](https://github.com/humangeo/leaflet-dvf)  - A framework designed to simplify data visualization and thematic mapping using Leaflet.
-- [Mapsense.js](https://developer.mapsense.co/documentation/) - Combines d3.js with tile maps.
+- [Mapsense.js](http://mapsense.github.io/mapsense.js/) - Combines d3.js with tile maps.
 - [Modest Maps](http://modestmaps.com/) - BSD-licensed display and interaction library for tile-based maps in Javascript.
 
 ### d3
@@ -126,7 +126,7 @@ Tools that are not tied to a particular platform or language.
 - [Lightning](http://lightning-viz.org/) - A data-visualization server providing API-based access to reproducible, web-based, interactive visualizations.
 - [RAW](http://raw.densitydesign.org/) - Create web visualizations from CSV or Excel files.
 - [Spark](https://github.com/holman/spark) - Sparklines for the shell. It have several [implementations in different languages](https://github.com/holman/spark/wiki/Alternative-Implementations).
-- [Periscope](https://www.periscope.io/) - Create charts directly from SQL queries.
+- [Periscope](https://www.periscopedata.com/) - Create charts directly from SQL queries.
 
 
 # Resources
@@ -165,6 +165,6 @@ Thanks for your suggestions!
 
 # License
 
-[![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, [Fabio Souto](http://fabiosouto.me/) has waived all copyright and related or neighboring rights to this work.
