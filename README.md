@@ -99,13 +99,13 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [ios-charts](https://github.com/danielgindi/ios-charts) -  iOS port of MPAndroidChart. You can create charts for both platforms with very similar code.
 
 ## Python tools
-- [bokeh](http://bokeh.pydata.org/) - Interactive Web Plotting for Python.
+- [bokeh](http://bokeh.pydata.org/en/latest/) - Interactive Web Plotting for Python.
 - [ggplot](https://github.com/yhat/ggplot) - Same API as ggplot2 for R.
 - [matplotlib](http://matplotlib.org/) - 2D plotting library.
-- [pygal](http://pygal.org/) - A dynamic SVG charting library.
+- [pygal](http://www.pygal.org/en/latest/) - A dynamic SVG charting library.
 - [PyQtGraph](http://www.pyqtgraph.org/) - Interactive and realtime 2D/3D/Image plotting and science/engineering widgets.
 - [seaborn](http://stanford.edu/~mwaskom/software/seaborn/) - A library for making attractive and informative statistical graphics.
-- [toyplot](http://toyplot.readthedocs.org/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
+- [toyplot](http://toyplot.readthedocs.org/en/stable/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
 - [Vincent](https://github.com/wrobstory/vincent) - A Python to Vega translator.
 - [VisPy](http://vispy.org/) - High-performance scientific visualization based on OpenGL.
 
@@ -150,7 +150,7 @@ Tools that are not tied to a particular platform or language.
 - [FlowingData](http://flowingdata.com/)
 - [Information is Beautiful](http://www.informationisbeautiful.net/)
 - [The Data Visualization Catalogue](http://www.datavizcatalogue.com/) - A collection of data visualization methods, with pros and cons.
-- [Visual Complexity](http://www.visualcomplexity.com/) - A site about the visualization of complex networks.
+- [Visual Complexity](http://www.visualcomplexity.com/vc/) - A site about the visualization of complex networks.
 
 
 # Contributing
