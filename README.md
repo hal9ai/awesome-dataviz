@@ -114,8 +114,11 @@ A curated list of awesome data visualizations frameworks, libraries and software
 ## R tools
 - [ggplot2](http://ggplot2.org/) - A plotting system based on the grammar of graphics.
 - [lattice](http://lattice.r-forge.r-project.org) - trellis graphics for R
+- [plotly](http://plot.ly) - Interactive charts (including adding interactivity to ggplot2 output), cartograms and simple network diagrams
 - [rbokeh](http://hafen.github.io/rbokeh/) - R Interface to Bokeh.
 - [rgl](https://cran.r-project.org/web/packages/rgl/index.html) - 3D Visualization Using OpenGL
+- [shiny](http://shiny.rstudio.com) - Framework for creating interactive applications/visualisations
+- [visNetwork](http://dataknowledge.github.io/visNetwork/) - Interactive network visualisations
 
 ## Ruby tools
 - [Chartkick](https://github.com/ankane/chartkick) - Create charts with one line of Ruby.
