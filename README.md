@@ -109,6 +109,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [toyplot](http://toyplot.readthedocs.org/en/stable/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
 - [Vincent](https://github.com/wrobstory/vincent) - A Python to Vega translator.
 - [VisPy](http://vispy.org/) - High-performance scientific visualization based on OpenGL.
+- [mpld3](https://github.com/mpld3/mpld3) - D3 Renderings of Matplotlib Graphics
 
 ## R tools
 - [ggplot2](http://ggplot2.org/) - A plotting system based on the grammar of graphics.
