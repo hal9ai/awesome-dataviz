@@ -102,7 +102,9 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [bokeh](http://bokeh.pydata.org/en/latest/) - Interactive Web Plotting for Python.
 - [ggplot](https://github.com/yhat/ggplot) - Same API as ggplot2 for R.
 - [glumpy](https://github.com/glumpy/glumpy) - OpenGL scientific visualizations library.
-- [matplotlib](http://matplotlib.org/) - 2D plotting library.
+- [matplotlib](http://matplotlib.org/) - 2D and basic 3D plotting library.
+- [VTK, Mayavi, Paraview, PyVTK](https://github.com/enthought/mayavi) - open-source libraries for 3d plotting, graphics, image processing and visualization based on VTK with Python interface on multiple levels.
+- [plotly](https://plot.ly/python/) - Interactive charts, 3D plots, cartograms and simple network diagrams
 - [pygal](http://www.pygal.org/en/latest/) - A dynamic SVG charting library.
 - [PyQtGraph](http://www.pyqtgraph.org/) - Interactive and realtime 2D/3D/Image plotting and science/engineering widgets.
 - [seaborn](http://stanford.edu/~mwaskom/software/seaborn/) - A library for making attractive and informative statistical graphics.
