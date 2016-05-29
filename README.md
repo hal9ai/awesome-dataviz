@@ -93,6 +93,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Charts for Go](https://github.com/vdobler/chart) - Basic charts in Go. Can render to ASCII, SVG and images.
 - [svgo](https://github.com/ajstarks/svgo) - Go Language Library for SVG generation.
 
+
 ## iOS tools
 - [JBChartView](https://github.com/Jawbone/JBChartView) - Charting library for both line and bar graphs.
 - [PNChart](https://github.com/kevinzhow/PNChart) - A simple and beautiful chart lib used in Piner and CoinsMan.
@@ -103,13 +104,13 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [ggplot](https://github.com/yhat/ggplot) - Same API as ggplot2 for R.
 - [glumpy](https://github.com/glumpy/glumpy) - OpenGL scientific visualizations library.
 - [matplotlib](http://matplotlib.org/) - 2D plotting library.
+- [mpld3](https://github.com/mpld3/mpld3) - D3 Renderings of Matplotlib Graphics
 - [pygal](http://www.pygal.org/en/latest/) - A dynamic SVG charting library.
 - [PyQtGraph](http://www.pyqtgraph.org/) - Interactive and realtime 2D/3D/Image plotting and science/engineering widgets.
 - [seaborn](http://stanford.edu/~mwaskom/software/seaborn/) - A library for making attractive and informative statistical graphics.
 - [toyplot](http://toyplot.readthedocs.org/en/stable/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
 - [Vincent](https://github.com/wrobstory/vincent) - A Python to Vega translator.
 - [VisPy](http://vispy.org/) - High-performance scientific visualization based on OpenGL.
-- [mpld3](https://github.com/mpld3/mpld3) - D3 Renderings of Matplotlib Graphics
 
 ## R tools
 - [ggplot2](http://ggplot2.org/) - A plotting system based on the grammar of graphics.
