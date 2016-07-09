@@ -66,7 +66,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 ### Misc
 - [Chroma.js](http://gka.github.io/chroma.js/) - A small library for color manipulation.
 - [Piecon](https://github.com/lipka/piecon) - Pie charts in your favicon.
-- [Recline.js](http://okfnlabs.org/recline/) - Simple but powerful library for building data applications in pure JavaScript and HTML.
 - [Textures.js](http://riccardoscalco.github.io/textures/) - A library to create SVG patterns.
 - [Timeline.js](http://timeline.knightlab.com/) -  Create interactive timelines.
 - [Vega](http://vega.github.io/vega/) - Vega is a visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs.
