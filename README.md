@@ -11,7 +11,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 		- [Charting libraries for graphs](#charting-libraries-for-graphs)
 		- [Maps](#maps)
 		- [d3](#d3)
-		- [dc.js](#dcjs)
 		- [Misc](#misc)
 	- [Android tools](#android-tools)
 	- [C++ tools](#c-tools)
@@ -34,6 +33,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [C3](http://c3js.org/) - a D3-based reusable chart library.
 - [Chart.js](http://www.chartjs.org/) - Charts with the canvas tag.
 - [Chartist.js](http://gionkunz.github.io/chartist-js/) - Responsive charts with great browser compatibility.
+- [dc.js](https://github.com/dc-js/dc.js) is an multi-Dimensional charting built to work natively with crossfilter.
 - [Dimple](http://dimplejs.org/) - An object-oriented API for business analytics.
 - [Dygraphs](http://dygraphs.com/) - Interactive line charts library that works with huge datasets.
 - [Echarts](https://github.com/ecomfe/echarts) - Highly customizable and interactive charts ready for big datasets.
@@ -64,14 +64,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 
 ### d3
 - See [Awesome D3](https://github.com/wbkd/awesome-d3).
-
-### dc.js
-[dc.js](https://github.com/dc-js/dc.js) is an multi-Dimensional charting built to work natively with crossfilter.
-
-- [angular-dc](https://github.com/TomNeyland/angular-dc) - AngularJS directives for dc.js.
-- [dc.leaflet.js](https://github.com/yurukov/dc.leaflet.js) - dc.js charts using Leaflet maps.
-- [ember-dc](https://github.com/andrewreedy/ember-dc) - Ember Component Wrappers for dc.js.
-
 
 ### Misc
 - [Chroma.js](http://gka.github.io/chroma.js/) - A small library for color manipulation.
