@@ -104,7 +104,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [ggplot](https://github.com/yhat/ggplot) - plotting system based on [R's](#r-tools) ggplot2.
 - [glumpy](https://github.com/glumpy/glumpy) - OpenGL scientific visualizations library.
 - [matplotlib](http://matplotlib.org/) - 2D plotting library.
-- [mpld3](https://github.com/mpld3/mpld3) - D3 Renderings of Matplotlib Graphics
 - [pygal](http://www.pygal.org/en/latest/) - A dynamic SVG charting library.
 - [PyQtGraph](http://www.pyqtgraph.org/) - Interactive and realtime 2D/3D/Image plotting and science/engineering widgets.
 - [seaborn](http://stanford.edu/~mwaskom/software/seaborn/) - A library for making attractive and informative statistical graphics.
@@ -114,8 +113,8 @@ A curated list of awesome data visualizations frameworks, libraries and software
 
 ## R tools
 - [ggplot2](http://ggplot2.org/) - A plotting system based on the grammar of graphics.
-- [lattice](http://lattice.r-forge.r-project.org) - trellis graphics for R
 - [ggvis](http://ggvis.rstudio.com/) - A data visualization package with a syntax similar to ggplot2 which allows you to create rich interactive graphics.
+- [lattice](http://lattice.r-forge.r-project.org) - trellis graphics for R
 - [plotly](https://github.com/ropensci/plotly) - Interactive charts (including adding interactivity to ggplot2 output), cartograms and simple network diagrams
 - [rbokeh](http://hafen.github.io/rbokeh/) - R Interface to Bokeh.
 - [rgl](https://cran.r-project.org/web/packages/rgl/index.html) - 3D Visualization Using OpenGL
