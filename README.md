@@ -85,9 +85,9 @@ A curated list of awesome data visualizations frameworks, libraries and software
 
 
 ## iOS tools
+- [Charts](https://github.com/danielgindi/Charts) -  iOS port of MPAndroidChart. You can create charts for both platforms with very similar code.
 - [JBChartView](https://github.com/Jawbone/JBChartView) - Charting library for both line and bar graphs.
 - [PNChart](https://github.com/kevinzhow/PNChart) - A simple and beautiful chart lib used in Piner and CoinsMan.
-- [ios-charts](https://github.com/danielgindi/ios-charts) -  iOS port of MPAndroidChart. You can create charts for both platforms with very similar code.
 
 ## Python tools
 - [bokeh](http://bokeh.pydata.org/en/latest/) - Interactive Web Plotting for Python.
