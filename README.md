@@ -98,7 +98,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [PyQtGraph](http://www.pyqtgraph.org/) - Interactive and realtime 2D/3D/Image plotting and science/engineering widgets.
 - [seaborn](http://stanford.edu/~mwaskom/software/seaborn/) - A library for making attractive and informative statistical graphics.
 - [toyplot](http://toyplot.readthedocs.org/en/stable/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
-- [Vincent](https://github.com/wrobstory/vincent) - A Python to Vega translator.
 - [VisPy](http://vispy.org/) - High-performance scientific visualization based on OpenGL.
 
 ## R tools
