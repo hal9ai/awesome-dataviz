@@ -40,7 +40,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Epoch](https://github.com/epochjs/epoch) - Perfect to create real-time charts.
 - [Highcharts](https://github.com/highcharts/highcharts) - A charting library based on SVG and VML rendering. Free ([CC BY-NC](http://creativecommons.org/licenses/by-nc/3.0/) for non-profit projects.
 - [MetricsGraphics.js](http://metricsgraphicsjs.org/) - Optimized for time-series data.
-- [Morris.js](http://morrisjs.github.io/morris.js/) - Pretty time-series line graphs.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
 - [Peity](https://github.com/benpickles/peity) - Create small inline svg charts.
 - [Plotly.js](https://github.com/plotly/plotly.js/) - Powerful declarative library with support for 20 chart types.
@@ -59,7 +58,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Leaflet](http://leafletjs.com) - JavaScript library for mobile-friendly interactive maps.
 - [Leaflet Data Visualization Framework](https://github.com/humangeo/leaflet-dvf)  - A framework designed to simplify data visualization and thematic mapping using Leaflet.
 - [Mapael](https://github.com/neveldo/jQuery-Mapael) - jQuery plugin based on the.js to display vector maps.
-- [Mapsense.js](http://mapsense.github.io/mapsense.js/) - Combines d3.js with tile maps.
 - [Modest Maps](http://modestmaps.com/) - BSD-licensed display and interaction library for tile-based maps in Javascript.
 
 ### d3
