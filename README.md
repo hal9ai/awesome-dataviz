@@ -38,7 +38,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Dygraphs](http://dygraphs.com/) - Interactive line charts library that works with huge datasets.
 - [Echarts](https://github.com/ecomfe/echarts) - Highly customizable and interactive charts ready for big datasets.
 - [Epoch](https://github.com/epochjs/epoch) - Perfect to create real-time charts.
-- [Highcharts](https://github.com/highcharts/highcharts) - A charting library based on SVG and VML rendering. Free ([CC BY-NC](http://creativecommons.org/licenses/by-nc/3.0/) for non-profit projects.
+- [Highcharts](https://github.com/highcharts/highcharts) - A charting library based on SVG and VML rendering. Free ([CC BY-NC](https://creativecommons.org/licenses/by-nc/3.0/) for non-profit projects.
 - [MetricsGraphics.js](http://metricsgraphicsjs.org/) - Optimized for time-series data.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
 - [Peity](https://github.com/benpickles/peity) - Create small inline svg charts.
@@ -127,11 +127,11 @@ Tools that are not tied to a particular platform or language.
 # Resources
 
 ## Books
-- [Design for Information](http://www.amazon.com/Design-Information-Introduction-Histories-Visualizations/dp/1592538061) by Isabel Meirelles.
-- [The Best American Infographics 2014](http://www.amazon.com/The-Best-American-Infographics-2014/dp/0547974515) by Gareth Cook.
-- [The Visual Display of Quantitative Information](http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142) by Edward Tufte.
-- [The Wall Street Journal Guide to Information Graphics](http://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393347281) by Dona M. Wong
-- [Visualization Analysis and Design](http://www.amazon.com/Visualization-Analysis-Design-Peters-Series/dp/1466508914) by Tamara Munzner.
+- [Design for Information](https://www.amazon.com/Design-Information-Introduction-Histories-Visualizations/dp/1592538061) by Isabel Meirelles.
+- [The Best American Infographics 2014](https://www.amazon.com/The-Best-American-Infographics-2014/dp/0547974515) by Gareth Cook.
+- [The Visual Display of Quantitative Information](https://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142) by Edward Tufte.
+- [The Wall Street Journal Guide to Information Graphics](https://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393347281) by Dona M. Wong
+- [Visualization Analysis and Design](https://www.amazon.com/Visualization-Analysis-Design-Peters-Series/dp/1466508914) by Tamara Munzner.
 
 ## Twitter accounts
 - [Alberto Cairo](https://twitter.com/albertocairo)
@@ -160,6 +160,6 @@ Thanks for your suggestions!
 
 # License
 
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, [Fabio Souto](http://fabiosouto.me/) has waived all copyright and related or neighboring rights to this work.
