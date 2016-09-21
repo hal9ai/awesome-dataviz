@@ -73,7 +73,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Piecon](https://github.com/lipka/piecon) - Pie charts in your favicon.
 - [Textures.js](http://riccardoscalco.github.io/textures/) - A library to create SVG patterns.
 - [Timeline.js](http://timeline.knightlab.com/) -  Create interactive timelines.
-- [Vega](http://vega.github.io/vega/) - Vega is a visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs.
+- [Vega](https://vega.github.io/vega/) - Vega is a visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs.
 - [Vis.js](http://visjs.org/) - A dynamic visualization library including timeline, networks and graphs (2D and 3D).
 
 ## Android tools
@@ -102,7 +102,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [pygal](http://www.pygal.org/en/latest/) - A dynamic SVG charting library.
 - [PyQtGraph](http://www.pyqtgraph.org/) - Interactive and realtime 2D/3D/Image plotting and science/engineering widgets.
 - [seaborn](http://stanford.edu/~mwaskom/software/seaborn/) - A library for making attractive and informative statistical graphics.
-- [toyplot](http://toyplot.readthedocs.org/en/stable/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
+- [toyplot](http://toyplot.readthedocs.io/en/stable/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
 - [VisPy](http://vispy.org/) - High-performance scientific visualization based on OpenGL.
 
 ## R tools
@@ -133,10 +133,10 @@ Tools that are not tied to a particular platform or language.
 
 ## Books
 - [Design for Information](https://www.amazon.com/Design-Information-Introduction-Histories-Visualizations/dp/1592538061) by Isabel Meirelles.
-- [The Best American Infographics 2014](https://www.amazon.com/The-Best-American-Infographics-2014/dp/0547974515) by Gareth Cook.
-- [The Visual Display of Quantitative Information](https://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142) by Edward Tufte.
+- [The Best American Infographics 2014](https://www.amazon.com/Best-American-Infographics-2014/dp/0547974515) by Gareth Cook.
+- [The Visual Display of Quantitative Information](https://www.amazon.com/Visual-Display-Quantitative-Information/dp/0961392142) by Edward Tufte.
 - [The Wall Street Journal Guide to Information Graphics](https://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393347281) by Dona M. Wong
-- [Visualization Analysis and Design](https://www.amazon.com/Visualization-Analysis-Design-Peters-Series/dp/1466508914) by Tamara Munzner.
+- [Visualization Analysis and Design](https://www.amazon.com/Visualization-Analysis-Design-AK-Peters/dp/1466508914) by Tamara Munzner.
 
 ## Twitter accounts
 - [Alberto Cairo](https://twitter.com/albertocairo)
