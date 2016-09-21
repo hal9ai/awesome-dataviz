@@ -11,6 +11,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 		- [Charting libraries for graphs](#charting-libraries-for-graphs)
 		- [Maps](#maps)
 		- [d3](#d3)
+		- [React](#react)
 		- [Misc](#misc)
 	- [Android tools](#android-tools)
 	- [C++ tools](#c-tools)
@@ -62,6 +63,10 @@ A curated list of awesome data visualizations frameworks, libraries and software
 
 ### d3
 - See [Awesome D3](https://github.com/wbkd/awesome-d3).
+
+### React
+- [React-vis](https://github.com/uber/react-vis) - React components to build data visualizations.
+- [Victory](https://formidable.com/open-source/victory/) - Composable components for building interactive data visualizations
 
 ### Misc
 - [Chroma.js](http://gka.github.io/chroma.js/) - A small library for color manipulation.
