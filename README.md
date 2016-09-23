@@ -148,6 +148,7 @@ Tools that are not tied to a particular platform or language.
 
 ## Websites
 - [FlowingData](http://flowingdata.com/)
+- [Gnuplotting](http://www.gnuplotting.org/) - [Gnuplot](http://www.gnuplot.info/) tutorials
 - [Information is Beautiful](http://www.informationisbeautiful.net/)
 - [The Data Visualization Catalogue](http://www.datavizcatalogue.com/) - A collection of data visualization methods, with pros and cons.
 - [Visual Complexity](http://www.visualcomplexity.com/vc/) - A site about the visualization of complex networks.
