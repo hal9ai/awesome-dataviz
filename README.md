@@ -39,7 +39,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Dygraphs](http://dygraphs.com/) - Interactive line charts library that works with huge datasets.
 - [Echarts](https://github.com/ecomfe/echarts) - Highly customizable and interactive charts ready for big datasets.
 - [Epoch](https://github.com/epochjs/epoch) - Perfect to create real-time charts.
-- [Highcharts](https://github.com/highcharts/highcharts) - A charting library based on SVG and VML rendering. Free ([CC BY-NC](https://creativecommons.org/licenses/by-nc/3.0/) for non-profit projects.
 - [MetricsGraphics.js](http://metricsgraphicsjs.org/) - Optimized for time-series data.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
 - [Peity](https://github.com/benpickles/peity) - Create small inline svg charts.
