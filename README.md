@@ -83,7 +83,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Visualization Toolkit (VTK)](https://gitlab.kitware.com/vtk/vtk/blob/master/README.md) - open-source library for 3d Graphics, image processing and visualization.
 
 ## Golang tools
-- [Charts for Go](https://github.com/vdobler/chart) - Basic charts in Go. Can render to ASCII, SVG and images.
 - [svgo](https://github.com/ajstarks/svgo) - Go Language Library for SVG generation.
 
 
