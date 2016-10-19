@@ -54,7 +54,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 
 ### Maps
 - [CartoDB](https://github.com/CartoDB/cartodb) - CartoDB is an open source tool that allows for the storage and visualization of geospatial data on the web.
-- [Cesium](https://github.com/AnalyticalGraphicsInc/cesium) - WebGL virtual globe and map engine.
+- [Cesium](https://github.com/AnalyticalGraphicsInc/cesium) - WebGL 3D globes and maps.
 - [Leaflet](http://leafletjs.com) - JavaScript library for mobile-friendly interactive maps.
 - [Leaflet Data Visualization Framework](https://github.com/humangeo/leaflet-dvf)  - A framework designed to simplify data visualization and thematic mapping using Leaflet.
 - [Mapael](https://github.com/neveldo/jQuery-Mapael) - jQuery plugin based on the.js to display vector maps.
@@ -88,6 +88,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 
 
 ## iOS tools
+- [BEMSimpleLineGraph](https://github.com/Boris-Em/BEMSimpleLineGraph) - Highly customizable and interactive line graphs.
 - [Charts](https://github.com/danielgindi/Charts) -  iOS port of MPAndroidChart. You can create charts for both platforms with very similar code.
 - [JBChartView](https://github.com/Jawbone/JBChartView) - Charting library for both line and bar graphs.
 - [PNChart](https://github.com/kevinzhow/PNChart) - A simple and beautiful chart lib used in Piner and CoinsMan.
