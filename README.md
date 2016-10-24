@@ -54,10 +54,11 @@ A curated list of awesome data visualizations frameworks, libraries and software
 ### Maps
 - [CartoDB](https://github.com/CartoDB/cartodb) - CartoDB is an open source tool that allows for the storage and visualization of geospatial data on the web.
 - [Cesium](https://github.com/AnalyticalGraphicsInc/cesium) - WebGL 3D globes and maps.
+- [DataMaps](https://github.com/markmarkoh/datamaps) - Interactive SVG maps using D3.js.
 - [Leaflet](http://leafletjs.com) - JavaScript library for mobile-friendly interactive maps.
 - [Leaflet Data Visualization Framework](https://github.com/humangeo/leaflet-dvf)  - A framework designed to simplify data visualization and thematic mapping using Leaflet.
 - [Mapael](https://github.com/neveldo/jQuery-Mapael) - jQuery plugin based on the.js to display vector maps.
-- [Modest Maps](http://modestmaps.com/) - BSD-licensed display and interaction library for tile-based maps in Javascript.
+
 
 ### d3
 - See [Awesome D3](https://github.com/wbkd/awesome-d3)
