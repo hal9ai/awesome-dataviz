@@ -48,7 +48,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 ### Charting libraries for graphs
 - [Cola.js](http://marvl.infotech.monash.edu/webcola/) - A tool to create diagrams using constraint-based optimization techniques. Works with d3 and svg.js.
 - [Cytoscape.js](http://js.cytoscape.org/) - JavaScript library for graph drawing maintained by [Cytoscape](http://www.cytoscape.org) core developers.
-- [Linkurious](https://github.com/Linkurious/linkurious.js/) - A toolkit to speed up the development of graph visualization and interaction applications. Based on Sigma.js.
 - [Sigma.js](http://sigmajs.org/) - JavaScript library dedicated to graph drawing.
 - [VivaGraph](https://github.com/anvaka/VivaGraphJS) - Graph drawing library for JavaScript.
 
@@ -61,7 +60,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Modest Maps](http://modestmaps.com/) - BSD-licensed display and interaction library for tile-based maps in Javascript.
 
 ### d3
-- See [Awesome D3](https://github.com/wbkd/awesome-d3).
+- See [Awesome D3](https://github.com/wbkd/awesome-d3)
 
 ### React
 - [React-vis](https://github.com/uber/react-vis) - React components to build data visualizations.
