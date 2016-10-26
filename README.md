@@ -76,8 +76,8 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Vis.js](http://visjs.org/) - A dynamic visualization library including timeline, networks and graphs (2D and 3D).
 
 ## Android tools
-- [HelloCharts](https://github.com/lecho/hellocharts-android) - Charting library for Android compatible with API 8+.
 - [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) - A powerful & easy to use chart library.
+- [WilliamChart](https://github.com/diogobernardino/WilliamChart) - Simple chart library.
 
 ## C++ tools
 - [Visualization Toolkit (VTK)](https://gitlab.kitware.com/vtk/vtk/blob/master/README.md) - open-source library for 3d Graphics, image processing and visualization.
