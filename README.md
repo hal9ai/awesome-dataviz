@@ -65,6 +65,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 
 ### React
 - [React-vis](https://github.com/uber/react-vis) - React components to build data visualizations.
+- [Recharts](https://github.com/recharts/recharts) - Declarative react components to render D3 charts.
 - [Victory](https://formidable.com/open-source/victory/) - Composable components for building interactive data visualizations
 
 ### Misc
