@@ -127,7 +127,7 @@ Tools that are not tied to a particular platform or language.
 - [Lightning](http://lightning-viz.org/) - A data-visualization server providing API-based access to reproducible, web-based, interactive visualizations.
 - [RAW](http://raw.densitydesign.org/) - Create web visualizations from CSV or Excel files.
 - [Spark](https://github.com/holman/spark) - Sparklines for the shell. It have several [implementations in different languages](https://github.com/holman/spark/wiki/Alternative-Implementations).
-- [Circos](http://circos.ca) - Visualizes data in a circular layout — this makes Circos ideal for exploring relationships between objects or positions. free software, written in Perl and licensed under GPL. [Mirror on github](http://github.com/node/circos).
+- [Circos](http://circos.ca) - Visualizes data in a circular layout — this makes Circos ideal for exploring relationships between objects or positions. free software, written in Perl and licensed under GPL. [Mirror on github](https://github.com/node/circos).
 
 # Resources
 
