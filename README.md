@@ -96,9 +96,11 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [PNChart](https://github.com/kevinzhow/PNChart) - A simple and beautiful chart lib used in Piner and CoinsMan.
 
 ## Python tools
+- [altair](https://altair-viz.github.io/) - Declarative statistical visualizations, based on Vega-lite.
 - [bokeh](http://bokeh.pydata.org/en/latest/) - Interactive Web Plotting for Python.
 - [diagram](https://github.com/tehmaze/diagram) - Text mode diagrams using UTF-8 characters
 - [ggplot](https://github.com/yhat/ggplot) - plotting system based on [R's](#r-tools) ggplot2.
+- [holoviews](http://holoviews.org/) - Complex and declarative visualizations from annotated data.
 - [glumpy](https://github.com/glumpy/glumpy) - OpenGL scientific visualizations library.
 - [matplotlib](http://matplotlib.org/) - 2D plotting library.
 - [pygal](http://www.pygal.org/en/latest/) - A dynamic SVG charting library.
