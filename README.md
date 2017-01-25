@@ -38,7 +38,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [dc.js](https://github.com/dc-js/dc.js) is an multi-Dimensional charting built to work natively with crossfilter.
 - [Dimple](http://dimplejs.org/) - An object-oriented API for business analytics.
 - [Dygraphs](http://dygraphs.com/) - Interactive line charts library that works with huge datasets.
-- [Echarts](https://github.com/ecomfe/echarts) - Highly customizable and interactive charts ready for big datasets.
+- [Echarts](https://github.com/ecomfe/echarts) - Highly customizable and interactive charts ready for big datasets. [React wrapper](https://github.com/hustcc/echarts-for-react)
 - [Epoch](https://github.com/epochjs/epoch) - Perfect to create real-time charts.
 - [MetricsGraphics.js](http://metricsgraphicsjs.org/) - Optimized for time-series data.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
@@ -68,7 +68,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [React-vis](https://github.com/uber/react-vis) - React components to build data visualizations.
 - [Recharts](https://github.com/recharts/recharts) - Declarative react components to render D3 charts.
 - [Victory](https://formidable.com/open-source/victory/) - Composable components for building interactive data visualizations
-- [echarts-for-react](https://github.com/hustcc/echarts-for-react) - Baidu Echarts(v3.0) components for React wrapper.
 
 ### Misc
 - [Chroma.js](http://gka.github.io/chroma.js/) - A small library for color manipulation.
