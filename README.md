@@ -83,6 +83,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [WilliamChart](https://github.com/diogobernardino/WilliamChart) - Simple chart library.
 
 ## C++ tools
+- [PlotJuggler](https://github.com/facontidavide/PlotJuggler) - open-source Qt5 application to plot charts (based on Qwt).
 - [Visualization Toolkit (VTK)](https://gitlab.kitware.com/vtk/vtk/blob/master/README.md) - open-source library for 3d Graphics, image processing and visualization.
 
 ## Golang tools
