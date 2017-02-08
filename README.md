@@ -32,6 +32,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 ## JavaScript tools
 
 ### Charting libraries
+- [AnyChart](http://www.anychart.com) - a set of fast, simple and flexible libraries for interactive charts, maps and dashboards (SVG/VML). Free for non-commercial use.
 - [C3](http://c3js.org/) - a D3-based reusable chart library.
 - [Chart.js](http://www.chartjs.org/) - Charts with the canvas tag.
 - [Chartist.js](http://gionkunz.github.io/chartist-js/) - Responsive charts with great browser compatibility.
