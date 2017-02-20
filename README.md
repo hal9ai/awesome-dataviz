@@ -101,9 +101,8 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [bokeh](http://bokeh.pydata.org/en/latest/) - Interactive Web Plotting for Python.
 - [diagram](https://github.com/tehmaze/diagram) - Text mode diagrams using UTF-8 characters
 - [ggplot](https://github.com/yhat/ggpy) - plotting system based on [R's](#r-tools) ggplot2.
-- [gleam](https://github.com/dgrtwo/gleam) - Interactive web visualizations of data using Python.
-- [holoviews](http://holoviews.org/) - Complex and declarative visualizations from annotated data.
 - [glumpy](https://github.com/glumpy/glumpy) - OpenGL scientific visualizations library.
+- [holoviews](http://holoviews.org/) - Complex and declarative visualizations from annotated data.
 - [matplotlib](http://matplotlib.org/) - 2D plotting library.
 - [missingno](https://github.com/ResidentMario/missingno) - provides flexible toolset of data-visualization utilities that allows quick visual summary of the completeness of your dataset, based on matplotlib.
 - [pygal](http://www.pygal.org/en/latest/) - A dynamic SVG charting library.
