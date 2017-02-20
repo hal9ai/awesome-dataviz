@@ -111,7 +111,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [seaborn](https://seaborn.pydata.org/) - A library for making attractive and informative statistical graphics.
 - [toyplot](http://toyplot.readthedocs.io/en/stable/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
 - [VisPy](http://vispy.org/) - High-performance scientific visualization based on OpenGL.
-- [Superset](https://github.com/airbnb/superset) - A data exploration platform designed to be visual, intuitive, and interactive
 
 ## R tools
 - [ggplot2](http://ggplot2.org/) - A plotting system based on the grammar of graphics.
@@ -134,6 +133,7 @@ Tools that are not tied to a particular platform or language.
 - [Lightning](http://lightning-viz.org/) - A data-visualization server providing API-based access to reproducible, web-based, interactive visualizations.
 - [RAW](http://rawgraphs.io) - Create web visualizations from CSV or Excel files.
 - [Spark](https://github.com/holman/spark) - Sparklines for the shell. It have several [implementations in different languages](https://github.com/holman/spark/wiki/Alternative-Implementations).
+- [Superset](https://github.com/airbnb/superset) - A data exploration platform designed to be visual, intuitive, and interactive
 
 # Resources
 
