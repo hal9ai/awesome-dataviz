@@ -105,6 +105,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [holoviews](http://holoviews.org/) - Complex and declarative visualizations from annotated data.
 - [matplotlib](http://matplotlib.org/) - 2D plotting library.
 - [missingno](https://github.com/ResidentMario/missingno) - provides flexible toolset of data-visualization utilities that allows quick visual summary of the completeness of your dataset, based on matplotlib.
+- [plotly](https://plot.ly/python) - Interactive web based visualization built on top of [plotly.js](https://github.com/plotly/plotly.js)
 - [pygal](http://www.pygal.org/en/latest/) - A dynamic SVG charting library.
 - [PyQtGraph](http://www.pyqtgraph.org/) - Interactive and realtime 2D/3D/Image plotting and science/engineering widgets.
 - [seaborn](https://seaborn.pydata.org/) - A library for making attractive and informative statistical graphics.
