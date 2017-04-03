@@ -5,7 +5,7 @@
 A curated list of awesome data visualizations frameworks, libraries and software. Inspired by [awesome-python](https://github.com/vinta/awesome-python).
 
 
-## Table of contents
+## Contents
 - [Awesome dataviz](#awesome-dataviz)
 	- [JavaScript tools](#javascript-tools)
 		- [Charting libraries](#charting-libraries)
