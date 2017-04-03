@@ -39,7 +39,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Dygraphs](http://dygraphs.com/) - Interactive line charts library that works with huge datasets.
 - [Echarts](https://github.com/ecomfe/echarts) - Highly customizable and interactive charts ready for big datasets. [React wrapper](https://github.com/hustcc/echarts-for-react)
 - [Epoch](https://github.com/epochjs/epoch) - Perfect to create real-time charts.
-- [MetricsGraphics.js](http://metricsgraphicsjs.org/) - Optimized for time-series data.
+- [MetricsGraphics.js](https://metricsgraphicsjs.org/) - Optimized for time-series data.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
 - [Peity](https://github.com/benpickles/peity) - Create small inline svg charts.
 - [Plotly.js](https://github.com/plotly/plotly.js/) - Powerful declarative library with support for 20 chart types.
@@ -105,7 +105,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [holoviews](http://holoviews.org/) - Complex and declarative visualizations from annotated data.
 - [matplotlib](http://matplotlib.org/) - 2D plotting library.
 - [missingno](https://github.com/ResidentMario/missingno) - provides flexible toolset of data-visualization utilities that allows quick visual summary of the completeness of your dataset, based on matplotlib.
-- [plotly](https://plot.ly/python) - Interactive web based visualization built on top of [plotly.js](https://github.com/plotly/plotly.js)
+- [plotly](https://plot.ly/python/) - Interactive web based visualization built on top of [plotly.js](https://github.com/plotly/plotly.js)
 - [pygal](http://www.pygal.org/en/latest/) - A dynamic SVG charting library.
 - [PyQtGraph](http://www.pyqtgraph.org/) - Interactive and realtime 2D/3D/Image plotting and science/engineering widgets.
 - [seaborn](https://seaborn.pydata.org/) - A library for making attractive and informative statistical graphics.
