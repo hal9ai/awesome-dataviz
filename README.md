@@ -121,6 +121,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [rgl](https://cran.r-project.org/web/packages/rgl/index.html) - 3D Visualization Using OpenGL
 - [shiny](http://shiny.rstudio.com) - Framework for creating interactive applications/visualisations
 - [visNetwork](http://dataknowledge.github.io/visNetwork/) - Interactive network visualisations
+- [ECharts2Shiny](https://github.com/XD-DENG/ECharts2Shiny) - Ebmed interactive charts built by ECharts into R Shiny applications
 
 ## Ruby tools
 - [Chartkick](https://github.com/ankane/chartkick) - Create charts with one line of Ruby.
