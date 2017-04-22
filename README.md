@@ -155,6 +155,7 @@ Tools that are not tied to a particular platform or language.
 - [Visualizing](https://twitter.com/VisualizingOrg)
 
 ## Websites
+- [Chartopedia](http://www.anychart.com/chartopedia) - A guide for choosing the right chart types.
 - [FlowingData](http://flowingdata.com/)
 - [Gnuplotting](http://www.gnuplotting.org/) - [Gnuplot](http://www.gnuplot.info/) tutorials
 - [Information is Beautiful](http://www.informationisbeautiful.net/)
