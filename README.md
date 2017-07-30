@@ -134,6 +134,7 @@ Tools that are not tied to a particular platform or language.
 - [RAW](http://rawgraphs.io) - Create web visualizations from CSV or Excel files.
 - [Spark](https://github.com/holman/spark) - Sparklines for the shell. It have several [implementations in different languages](https://github.com/holman/spark/wiki/Alternative-Implementations).
 - [Superset](https://github.com/airbnb/superset) - A data exploration platform designed to be visual, intuitive, and interactive
+- [CBoard](https://github.com/yzhang921/CBoard)- A java built, easy to use, self-service open BI reporting and BI dashboard platform.
 
 # Resources
 
