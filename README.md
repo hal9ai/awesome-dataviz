@@ -160,6 +160,7 @@ Tools that are not tied to a particular platform or language.
 - [Information is Beautiful](http://www.informationisbeautiful.net/)
 - [The Data Visualization Catalogue](http://www.datavizcatalogue.com/) - A collection of data visualization methods, with pros and cons.
 - [Visual Complexity](http://www.visualcomplexity.com/vc/) - A site about the visualization of complex networks.
+- [Twitter's Most Shared #dataviz Content in a Simple Weekly Digest](http://theherdlocker.com/tweet/popularity/dataviz) - via The Herd Locker
 
 
 # Contributing
