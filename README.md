@@ -70,6 +70,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [nivo](https://github.com/plouc/nivo) - Supercharged dataviz components for React with isomorphic ability, [demo](http://nivo.rocks).
 
 ### Misc
+- [Axibase Charts](https://axibase.com/products/axibase-time-series-database/visualization/) - Declarative widget library optimized for presenting time series data.
 - [Chroma.js](http://gka.github.io/chroma.js/) - A small library for color manipulation.
 - [Piecon](https://github.com/lipka/piecon) - Pie charts in your favicon.
 - [Textures.js](http://riccardoscalco.github.io/textures/) - A library to create SVG patterns.
