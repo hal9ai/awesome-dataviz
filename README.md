@@ -163,6 +163,9 @@ Tools that are not tied to a particular platform or language.
 - [The Data Visualization Catalogue](http://www.datavizcatalogue.com/) - A collection of data visualization methods, with pros and cons.
 - [Visual Complexity](http://www.visualcomplexity.com/vc/) - A site about the visualization of complex networks.
 
+# Podcasts
+
+- [Data Stories](http://datastori.es/)
 
 # Contributing
 
