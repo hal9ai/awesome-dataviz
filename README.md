@@ -24,6 +24,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 	- [Other tools](#other-tools)
 - [Resources](#resources)
 	- [Books](#books)
+	- [Podcasts](#podcasts)
 	- [Twitter accounts](#twitter-accounts)
  	- [Websites](#websites)
 - [Contributing](#contributing)
@@ -147,6 +148,9 @@ Tools that are not tied to a particular platform or language.
 - [Interactive Data Visualization for the Web](http://chimera.labs.oreilly.com/books/1230000000345) by Scott Murray. Available to read online. Focused on D3.
 - [Data Visualization Toolkit](http://datavisualizationtoolkit.com) by Barrett Austin Clark. Uses D3, Ruby on Rails, Postgres, PostGIS, & Leaflet.
 
+## Podcasts
+- [Data Stories](http://datastori.es/)
+
 ## Twitter accounts
 - [Alberto Cairo](https://twitter.com/albertocairo)
 - [Benjamin Wiederkehr](https://twitter.com/datavis)
@@ -177,9 +181,6 @@ Tools that are not tied to a particular platform or language.
 - [vis4.net](https://www.vis4.net/blog/) - Random thoughts on visualization and data journalism by Gregor Aisch  
 - [Visual Complexity](http://www.visualcomplexity.com/vc/) - A site about the visualization of complex networks.  
 
-# Podcasts
-
-- [Data Stories](http://datastori.es/)
 
 # Contributing
 
