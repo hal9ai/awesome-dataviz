@@ -177,6 +177,9 @@ Tools that are not tied to a particular platform or language.
 - [vis4.net](https://www.vis4.net/blog/) - Random thoughts on visualization and data journalism by Gregor Aisch  
 - [Visual Complexity](http://www.visualcomplexity.com/vc/) - A site about the visualization of complex networks.  
 
+# Podcasts
+
+- [Data Stories](http://datastori.es/)
 
 # Contributing
 
