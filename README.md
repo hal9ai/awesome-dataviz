@@ -71,7 +71,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [nivo](https://github.com/plouc/nivo) - Supercharged dataviz components for React with isomorphic ability, [demo](http://nivo.rocks).
 
 ### Misc
-- [Chroma.js](http://gka.github.io/chroma.js/) - A small library for color manipulation.
 - [Piecon](https://github.com/lipka/piecon) - Pie charts in your favicon.
 - [Textures.js](http://riccardoscalco.github.io/textures/) - A library to create SVG patterns.
 - [Timeline.js](http://timeline.knightlab.com/) -  Create interactive timelines.
