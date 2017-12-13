@@ -36,6 +36,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 ### Charting libraries
 - [Chart.js](http://www.chartjs.org/) - Charts with the canvas tag.
 - [Chartist.js](http://gionkunz.github.io/chartist-js/) - Responsive charts with great browser compatibility.
+- [d2b.js](http://www.d2bjs.org/) - Reusable chart library, using D3 v4+ and including support for axis, pie, sankey, sunburst charts and more.
 - [dc.js](https://github.com/dc-js/dc.js) is an multi-Dimensional charting built to work natively with crossfilter.
 - [Dimple](http://dimplejs.org/) - An object-oriented API for business analytics.
 - [Dygraphs](http://dygraphs.com/) - Interactive line charts library that works with huge datasets.
