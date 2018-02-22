@@ -180,6 +180,7 @@ Tools that are not tied to a particular platform or language.
 - [University of Washington Interactive Data Lab Papers](http://idl.cs.washington.edu/papers)
 - [vis4.net](https://www.vis4.net/blog/) - Random thoughts on visualization and data journalism by Gregor Aisch  
 - [Visual Complexity](http://www.visualcomplexity.com/vc/) - A site about the visualization of complex networks.  
+- [Curated Data Science Resources](https://hackr.io/tutorials/learn-data-science) - A collection of top recommended resources.  
 
 
 # Contributing
