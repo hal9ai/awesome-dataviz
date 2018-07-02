@@ -139,9 +139,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [mermaidjs](https://mermaidjs.github.io/mermaid-live-editor) - A simple markdown-like script language for generating charts from text via javascript
 - [viz-js.com](http://viz-js.com/) - A hack to put [Graphviz](http://www.graphviz.org/) on the web
 - [wavedrom.com](http://wavedrom.com/) - Draws your Timing Diagram or Waveform from simple textual description
-- [webgraphviz.com](http://www.webgraphviz.com/) - Browser-based editor compatible with [Graphviz](http://www.graphviz.org/)
 - [websequencediagrams.com](https://www.websequencediagrams.com/) - Sequence diagrams using simple markup
-- [yuml.me](https://yuml.me/) - Class, activitiy and use-case diagrams
 
 ## Other tools
 Tools that are not tied to a particular platform or language.
