@@ -59,7 +59,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Cesium](https://github.com/AnalyticalGraphicsInc/cesium) - WebGL 3D globes and maps.
 - [DataMaps](https://github.com/markmarkoh/datamaps) - Interactive SVG maps using D3.js.
 - [Leaflet](http://leafletjs.com) - JavaScript library for mobile-friendly interactive maps.
-- [Leaflet Data Visualization Framework](https://github.com/humangeo/leaflet-dvf)  - A framework designed to simplify data visualization and thematic mapping using Leaflet.
 - [Mapael](https://github.com/neveldo/jQuery-Mapael) - jQuery plugin based on raphael.js to display vector maps.
 
 
