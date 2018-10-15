@@ -72,6 +72,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [nivo](https://github.com/plouc/nivo) - Supercharged dataviz components for React with isomorphic ability, [demo](http://nivo.rocks).
 - [Number Picture](http://numberpicture.com/build) - Low-level building blocks for constructing animated visualizations with React & D3.
 - [React Svg Textures](https://github.com/finnfiddle/react-svg-textures) - Textures.js ported to React. Fully isomorphic.
+- [DevExtreme React Chart](https://devexpress.github.io/devextreme-reactive/react/chart/) - High-performance plugin-based React chart for Bootstrap and Material Design.
 
 ### Misc
 - [Piecon](https://github.com/lipka/piecon) - Pie charts in your favicon.
