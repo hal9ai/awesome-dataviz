@@ -131,6 +131,9 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [rgl](https://cran.r-project.org/web/packages/rgl/index.html) - 3D Visualization Using OpenGL
 - [shiny](http://shiny.rstudio.com) - Framework for creating interactive applications/visualisations
 - [visNetwork](http://dataknowledge.github.io/visNetwork/) - Interactive network visualisations
+- [networkD3](http://christophergandrud.github.io/networkD3/) provides tools for creating D3 JavaScript network graphs from R.
+- [dygraphs](http://rstudio.github.io/dygraphs) Charting time-series data in R.
+- [leaflet](http://rstudio.github.io/leaflet/) Interactive geospatial maps in R using the popular leaflet JS library.
 
 ## Ruby tools
 - [Chartkick](https://github.com/ankane/chartkick) - Create charts with one line of Ruby.
