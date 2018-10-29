@@ -108,6 +108,7 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [altair](https://altair-viz.github.io/) - Declarative statistical visualizations, based on Vega-Lite.
 - [bokeh](http://bokeh.pydata.org/en/latest/) - Interactive Web Plotting for Python.
 - [diagram](https://github.com/tehmaze/diagram) - Text mode diagrams using UTF-8 characters
+- [fastplot](https://github.com/marty90/fastplot) - Publication-quality plots with a simple interface over MatPlotLib.
 - [ggplot](https://github.com/yhat/ggpy) - plotting system based on [R's](#r-tools) ggplot2.
 - [glumpy](https://github.com/glumpy/glumpy) - OpenGL scientific visualizations library.
 - [holoviews](http://holoviews.org/) - Complex and declarative visualizations from annotated data.
