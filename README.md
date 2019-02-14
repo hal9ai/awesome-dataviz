@@ -2,7 +2,7 @@
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Build Status](https://api.travis-ci.org/fasouto/awesome-dataviz.svg?branch=master)](https://travis-ci.org/fasouto/awesome-dataviz)
 
 
-A curated list of awesome data visualizations frameworks, libraries and software. Inspired by [awesome-python](https://github.com/vinta/awesome-python).
+A curated list of awesome **open-source** data visualizations frameworks, libraries and software. Inspired by [awesome-python](https://github.com/vinta/awesome-python).
 
 
 ## Contents
@@ -42,7 +42,6 @@ A curated list of awesome data visualizations frameworks, libraries and software
 - [Dygraphs](http://dygraphs.com/) - Interactive line charts library that works with huge datasets.
 - [Echarts](https://github.com/ecomfe/echarts) - Highly customizable and interactive charts ready for big datasets. [React wrapper](https://github.com/hustcc/echarts-for-react)
 - [Epoch](https://github.com/epochjs/epoch) - Perfect to create real-time charts.
-- [Highcharts](https://github.com/highcharts/highcharts) - Highcharts makes it easy for developers to set up interactive charts in their web pages.
 - [MetricsGraphics.js](https://metricsgraphicsjs.org/) - Optimized for time-series data.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
 - [Plotly.js](https://github.com/plotly/plotly.js/) - Powerful declarative library with support for 20 chart types.
