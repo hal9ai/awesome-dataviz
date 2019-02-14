@@ -35,6 +35,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 ## JavaScript tools
 
 ### Charting libraries
+- [ApexCharts](https://apexcharts.com/) - Modern & Interactive SVG Charts.
 - [Chart.js](http://www.chartjs.org/) - Charts with the canvas tag.
 - [Chartist.js](http://gionkunz.github.io/chartist-js/) - Responsive charts with great browser compatibility.
 - [dc.js](https://github.com/dc-js/dc.js) is an multi-Dimensional charting built to work natively with crossfilter.
@@ -46,7 +47,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
 - [Plotly.js](https://github.com/plotly/plotly.js/) - Powerful declarative library with support for 20 chart types.
 - [TechanJS](http://techanjs.org/) - Stock and financial charts.
-- [ApexCharts](https://apexcharts.com/) - Modern & Interactive SVG Charts.
+- [TOAST UI Chart](https://github.com/nhnent/tui.chart) - Complete library with support for legacy browsers.
 
 ### Charting libraries for graphs
 - [Cola.js](http://marvl.infotech.monash.edu/webcola/) - A tool to create diagrams using constraint-based optimization techniques. Works with d3 and svg.js.
