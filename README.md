@@ -66,6 +66,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - See [Awesome D3](https://github.com/wbkd/awesome-d3)
 
 ### React
+- [BizCharts](https://github.com/alibaba/BizCharts) - Alibaba data visualization library based on G2 and React. [English docs](https://github.com/alibaba/BizCharts/tree/master/doc_en)
 - [React-vis](https://github.com/uber/react-vis) - React components to build data visualizations.
 - [Recharts](https://github.com/recharts/recharts) - Declarative react components to render D3 charts.
 - [Victory](https://formidable.com/open-source/victory/) - Composable components for building interactive data visualizations
