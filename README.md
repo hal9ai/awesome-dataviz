@@ -151,6 +151,7 @@ Tools that are not tied to a particular platform or language.
 - [Lightning](http://lightning-viz.org/) - A data-visualization server providing API-based access to reproducible, web-based, interactive visualizations.
 - [RAW](http://rawgraphs.io) - Create web visualizations from CSV or Excel files.
 - [Spark](https://github.com/holman/spark) - Sparklines for the shell. It have several [implementations in different languages](https://github.com/holman/spark/wiki/Alternative-Implementations).
+- [Data Illustrator](http://www.data-illustrator.com/) - Create infographics and data visualizations without programming and output them as SVG.
 
 # Resources
 
