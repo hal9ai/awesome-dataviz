@@ -46,7 +46,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [MetricsGraphics.js](https://metricsgraphicsjs.org/) - Optimized for time-series data.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
 - [Plotly.js](https://github.com/plotly/plotly.js/) - Powerful declarative library with support for 20 chart types.
-- [Syncfusion Charts](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types) - A rich gallery of [30+ charts](https://ej2.syncfusion.com/demos/#/material/chart/stacked-line-100.html) and graphs, with incomparable performance and lot of features which is available on all major web frameworks such as [Angular](https://www.syncfusion.com/angular-ui-components/angular-charts), [React](https://www.syncfusion.com/react-ui-components/react-charts), and [Vue](https://www.syncfusion.com/vue-ui-components/vue-charts). 
+- [Syncfusion Charts](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types) - A rich gallery of [30+ charts](https://ej2.syncfusion.com/demos/#/material/chart/stacked-line-100.html) and graphs, with incomparable performance and lot of features.
 - [TechanJS](http://techanjs.org/) - Stock and financial charts.
 - [TOAST UI Chart](https://github.com/nhnent/tui.chart) - Complete library with support for legacy browsers.
 
