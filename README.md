@@ -46,6 +46,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [MetricsGraphics.js](https://metricsgraphicsjs.org/) - Optimized for time-series data.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
 - [Plotly.js](https://github.com/plotly/plotly.js/) - Powerful declarative library with support for 20 chart types.
+- [Syncfusion Charts](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types) - A rich gallery of [30+ charts](https://ej2.syncfusion.com/demos/#/material/chart/stacked-line-100.html) and graphs, with incomparable performance and lot of features which is available on all major web frameworks such as [Angular](https://www.syncfusion.com/angular-ui-components/angular-charts), [React](https://www.syncfusion.com/react-ui-components/react-charts), and [Vue](https://www.syncfusion.com/vue-ui-components/vue-charts). 
 - [TechanJS](http://techanjs.org/) - Stock and financial charts.
 - [TOAST UI Chart](https://github.com/nhnent/tui.chart) - Complete library with support for legacy browsers.
 
@@ -62,6 +63,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [DataMaps](https://github.com/markmarkoh/datamaps) - Interactive SVG maps using D3.js.
 - [Leaflet](http://leafletjs.com) - JavaScript library for mobile-friendly interactive maps.
 - [Mapael](https://github.com/neveldo/jQuery-Mapael) - jQuery plugin based on raphael.js to display vector maps.
+- [Syncfusion Maps](https://www.syncfusion.com/javascript-ui-controls/js-maps) - Interactive [Maps control](https://ej2.syncfusion.com/demos/#/material/maps/osm.html) to represent the statistical data of a geographical area, which is available in [Angular](https://www.syncfusion.com/angular-ui-components/angular-maps), [React](https://www.syncfusion.com/react-ui-components/react-maps) and [Vue](https://www.syncfusion.com/vue-ui-components/vue-maps) frameworks.
 
 
 ### d3
@@ -75,6 +77,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [nivo](https://github.com/plouc/nivo) - Supercharged dataviz components for React with isomorphic ability, [demo](http://nivo.rocks).
 - [React Svg Textures](https://github.com/finnfiddle/react-svg-textures) - Textures.js ported to React. Fully isomorphic.
 - [DevExtreme React Chart](https://devexpress.github.io/devextreme-reactive/react/chart/) - High-performance plugin-based React chart for Bootstrap and Material Design.
+- [Syncfusion React Charts](https://www.syncfusion.com/react-ui-components/react-charts) - [30+ React chart types](https://ej2.syncfusion.com/react/demos/#/material/stock-chart/multiple-series) that works out-of-the-box with seamless interaction, responsiveness and smooth animation. 
 
 ### Misc
 - [Piecon](https://github.com/lipka/piecon) - Pie charts in your favicon.
