@@ -123,6 +123,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [veusz](https://veusz.github.io/) - Python multiplatform GUI plotting tool and graphing library
 - [VisPy](http://vispy.org/) - High-performance scientific visualization based on OpenGL.
 - [vtk](https://www.vtk.org/) - 3D computer graphics, image processing, and visualization that includes a Python interface.
+- [TensorWatch](https://github.com/microsoft/tensorwatch) - Debugging and visualization tool for data science and machine learning
 
 ## R tools
 - [ggplot2](http://ggplot2.org/) - A plotting system based on the grammar of graphics.
