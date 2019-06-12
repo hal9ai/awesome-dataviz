@@ -82,6 +82,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [Timeline.js](http://timeline.knightlab.com/) -  Create interactive timelines.
 - [Vega](https://vega.github.io/vega/) - Vega is a visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs.
 - [Vis.js](http://visjs.org/) - A dynamic visualization library including timeline, networks and graphs (2D and 3D).
+- [ZingGrid](https://www.zinggrid.com) - A Javascript library for generating responsive tables and grids.
 
 ## Android tools
 - [DecoView](https://github.com/bmarrdev/android-DecoView-charting) - Animated circular wheel chart library.
