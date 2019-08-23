@@ -126,7 +126,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [vtk](https://www.vtk.org/) - 3D computer graphics, image processing, and visualization that includes a Python interface.
 
 ## R tools
-- [ggplot2](http://ggplot2.org/) - A plotting system based on the grammar of graphics.
+- [ggplot2](https://ggplot2.tidyverse.org/) - A plotting system based on the grammar of graphics.
 - [ggvis](http://ggvis.rstudio.com/) - A data visualization package with a syntax similar to ggplot2 which allows you to create rich interactive graphics.
 - [lattice](http://lattice.r-forge.r-project.org) - trellis graphics for R
 - [plotly](https://github.com/ropensci/plotly) - Interactive charts (including adding interactivity to ggplot2 output), cartograms and simple network diagrams
