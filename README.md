@@ -109,6 +109,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 ## Python tools
 - [altair](https://altair-viz.github.io/) - Declarative statistical visualizations, based on Vega-Lite.
 - [bokeh](http://bokeh.pydata.org/en/latest/) - Interactive Web Plotting for Python.
+- [chartify](https://labs.spotify.com/2018/11/15/introducing-chartify-easier-chart-creation-in-python-for-data-scientists/) - Bokeh wrapper that aims to make charting intuitive, remove the burden of custom data formatting, and offer a simple solution for 80% of problems
 - [diagram](https://github.com/tehmaze/diagram) - Text mode diagrams using UTF-8 characters
 - [ggplot](https://github.com/yhat/ggpy) - plotting system based on [R's](#r-tools) ggplot2.
 - [glumpy](https://github.com/glumpy/glumpy) - OpenGL scientific visualizations library.
