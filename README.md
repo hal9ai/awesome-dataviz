@@ -48,6 +48,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [Plotly.js](https://github.com/plotly/plotly.js/) - Powerful declarative library with support for 20 chart types.
 - [TechanJS](http://techanjs.org/) - Stock and financial charts.
 - [TOAST UI Chart](https://github.com/nhnent/tui.chart) - Complete library with support for legacy browsers.
+- [GraphicsJS](http://www.graphicsjs.org) - Lightweight JS graphics library with intuitive API, based on SVG/VML.
 
 ### Charting libraries for graphs
 - [Cola.js](http://marvl.infotech.monash.edu/webcola/) - A tool to create diagrams using constraint-based optimization techniques. Works with d3 and svg.js.
