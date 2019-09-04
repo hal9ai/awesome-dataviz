@@ -98,6 +98,8 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 
 ## Golang tools
 - [svgo](https://github.com/ajstarks/svgo) - Go Language Library for SVG generation.
+- [plot](https://github.com/gonum/plot) - API for building and drawing plots in Go.
+- [go-echars](https://github.com/chenjiandongx/go-echarts) - Simple yet powerful data visualizing library for Go.
 
 
 ## iOS tools
