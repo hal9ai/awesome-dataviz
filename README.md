@@ -127,6 +127,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [veusz](https://veusz.github.io/) - Python multiplatform GUI plotting tool and graphing library
 - [VisPy](http://vispy.org/) - High-performance scientific visualization based on OpenGL.
 - [vtk](https://www.vtk.org/) - 3D computer graphics, image processing, and visualization that includes a Python interface.
+- [pyechars](https://github.com/pyecharts/pyecharts) - Python binding for Echarts library.
 
 ## R tools
 - [ggplot2](https://ggplot2.tidyverse.org/) - A plotting system based on the grammar of graphics.
