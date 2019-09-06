@@ -1,4 +1,4 @@
-# Awesome dataviz 
+# Awesome dataviz
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Build Status](https://api.travis-ci.org/fasouto/awesome-dataviz.svg?branch=master)](https://travis-ci.org/fasouto/awesome-dataviz)
 
 
@@ -122,6 +122,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [PyVista](https://github.com/pyvista/pyvista) – 3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK)
 - [seaborn](https://seaborn.pydata.org/) - A library for making attractive and informative statistical graphics.
 - [toyplot](http://toyplot.readthedocs.io/en/stable/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
+- [three.py](https://github.com/stemkoski/three.py/) - Easy to use 3D library based on PyOpenGL. Inspired by Three.js.
 - [veusz](https://veusz.github.io/) - Python multiplatform GUI plotting tool and graphing library
 - [VisPy](http://vispy.org/) - High-performance scientific visualization based on OpenGL.
 - [vtk](https://www.vtk.org/) - 3D computer graphics, image processing, and visualization that includes a Python interface.
@@ -193,10 +194,10 @@ Tools that are not tied to a particular platform or language.
 - [the functional art](http://www.thefunctionalart.com/)
 - [The Open News](https://source.opennews.org/articles/) blog -  Open news has some good dataviz related articles from time to time
 - [The Pudding](https://pudding.cool/)
-- [Truth & Beauty Operations](https://truth-and-beauty.net/) 
+- [Truth & Beauty Operations](https://truth-and-beauty.net/)
 - [University of Washington Interactive Data Lab Papers](http://idl.cs.washington.edu/papers)
-- [vis4.net](https://www.vis4.net/blog/) - Random thoughts on visualization and data journalism by Gregor Aisch  
-- [Visual Complexity](http://www.visualcomplexity.com/vc/) - A site about the visualization of complex networks.  
+- [vis4.net](https://www.vis4.net/blog/) - Random thoughts on visualization and data journalism by Gregor Aisch
+- [Visual Complexity](http://www.visualcomplexity.com/vc/) - A site about the visualization of complex networks.
 
 
 # Contributing
