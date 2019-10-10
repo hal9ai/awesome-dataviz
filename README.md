@@ -181,6 +181,7 @@ Tools that are not tied to a particular platform or language.
 
 ## Websites
 - [Ann K. Emery](http://annkemery.com/)'s blog
+- [Data Visualization Society](https://www.datavisualizationsociety.com/) - The Data Visualization Society is an organization dedicated to fostering community for data visualization professionals.
 - [eagereyes](https://eagereyes.org/)
 - [EvergreenData](http://stephanieevergreen.com/)
 - [FlowingData](http://flowingdata.com/)
