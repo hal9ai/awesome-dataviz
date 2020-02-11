@@ -36,6 +36,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 
 ### Charting libraries
 - [ApexCharts](https://apexcharts.com/) - Modern & Interactive SVG Charts.
+- [MuzeJS](https://muzejs.org) - Cross connected, customizable, interactive charts with data-first approach.
 - [Chart.js](http://www.chartjs.org/) - Charts with the canvas tag.
 - [Chartist.js](http://gionkunz.github.io/chartist-js/) - Responsive charts with great browser compatibility.
 - [dc.js](https://github.com/dc-js/dc.js) is an multi-Dimensional charting built to work natively with crossfilter.
