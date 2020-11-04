@@ -43,6 +43,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [Dygraphs](http://dygraphs.com/) - Interactive line charts library that works with huge datasets.
 - [Echarts](https://github.com/ecomfe/echarts) - Highly customizable and interactive charts ready for big datasets. [React wrapper](https://github.com/hustcc/echarts-for-react)
 - [Epoch](https://github.com/epochjs/epoch) - Perfect to create real-time charts.
+- [lit-line](https://github.com/apinet/lit-line) - SVG Line Chart Web Component - light, fast, interactive & fully responsive.
 - [MetricsGraphics.js](https://metricsgraphicsjs.org/) - Optimized for time-series data.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
 - [Plotly.js](https://github.com/plotly/plotly.js/) - Powerful declarative library with support for 20 chart types.
