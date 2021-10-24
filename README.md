@@ -16,7 +16,6 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 		- [Misc](#misc)
 	- [Android tools](#android-tools)
 	- [C++ tools](#c-tools)
-	- [Excel tools](#excel-tools)
 	- [Golang tools](#golang-tools)
 	- [iOS tools](#ios-tools)
 	- [Python tools](#python-tools)
@@ -87,9 +86,6 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [DecoView](https://github.com/bmarrdev/android-DecoView-charting) - Animated circular wheel chart library.
 - [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) - A powerful & easy to use chart library.
 - [WilliamChart](https://github.com/diogobernardino/WilliamChart) - Simple chart library.
-
-## Excel tools
-- [Best Excel Maps](http://bestexcelmaps.com/) - Choropleth maps for Microsoft Excel.
 
 ## C++ tools
 - [LargeVis](https://github.com/lferry007/LargeVis) - implementation of the [LargeVis paper](https://arxiv.org/abs/1602.00370), used to visualize large-scale and high-dimensional data.
