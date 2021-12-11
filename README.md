@@ -1,11 +1,8 @@
-## Dear visitor, I no longer have the time/energy to maintain this repo. If somebody wants to take over this please write to the email in my profile.
-
-
-# Awesome dataviz
+# Awesome Dataviz
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Build Status](https://api.travis-ci.org/fasouto/awesome-dataviz.svg?branch=master)](https://travis-ci.org/fasouto/awesome-dataviz)
 
 
-A curated list of awesome **open-source** data visualizations frameworks, libraries and software. Inspired by [awesome-python](https://github.com/vinta/awesome-python).
+A curated list of awesome **open-source** data visualizations frameworks, libraries and software. Inspired by [awesome-python](https://github.com/vinta/awesome-python) and originally created by [fasouto](https://github.com/fasouto).
 
 
 ## Contents
@@ -213,6 +210,11 @@ Tools that are not tied to a particular platform or language.
 
 Thanks for your suggestions!
 
+
+# Contributors
+
+- [Fabio Souto](https://github.com/fasouto) originally createad this repo, connect with Fabio at [fabiosouto.me](https://fabiosouto.me/).
+- [Javier Luraschi](https://github.com/javierluraschi) is the current maintainer, he builds predictive visualizations at [Hal9](https://hal9.com).
 
 # License
 
