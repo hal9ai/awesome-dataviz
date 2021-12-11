@@ -26,6 +26,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 	- [Other tools](#other-tools)
 - [Resources](#resources)
 	- [Books](#books)
+	- [Catalogs](#catalogs)
 	- [Podcasts](#podcasts)
 	- [Twitter accounts](#twitter-accounts)
  	- [Websites](#websites)
@@ -65,7 +66,6 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [Leaflet](http://leafletjs.com) - JavaScript library for mobile-friendly interactive maps.
 - [Mapael](https://github.com/neveldo/jQuery-Mapael) - jQuery plugin based on raphael.js to display vector maps.
 
-
 ### d3
 - See [Awesome D3](https://github.com/wbkd/awesome-d3)
 
@@ -103,7 +103,6 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [svgo](https://github.com/ajstarks/svgo) - Go Language Library for SVG generation.
 - [plot](https://github.com/gonum/plot) - API for building and drawing plots in Go.
 - [go-echars](https://github.com/chenjiandongx/go-echarts) - Simple yet powerful data visualizing library for Go.
-
 
 ## iOS tools
 - [BEMSimpleLineGraph](https://github.com/Boris-Em/BEMSimpleLineGraph) - Highly customizable and interactive line graphs.
@@ -176,6 +175,21 @@ Tools that are not tied to a particular platform or language.
 - [Data Visualization Toolkit](http://datavisualizationtoolkit.com) by Barrett Austin Clark. Uses D3, Ruby on Rails, Postgres, PostGIS, & Leaflet.
 - [Grammar of Graphics](https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448/) by Leland Wilkinson. Basic visualization theory.
 
+## Catalogs
+- [The Data Visualization Catalogue](http://www.datavizcatalogue.com) - A collection of data visualization methods, with pros and cons.
+- [Data Viz Project](https://datavizproject.com)
+- [The R Graph Gallery](https://www.r-graph-gallery.com)
+- [From data to Viz](https://www.data-to-viz.com)
+- [Chartopedia](https://www.anychart.com/chartopedia)
+- [Interactive Chart Chooser](https://depictdatastudio.com/charts/) by Depict Data Studio
+- [Visualization Universe: Charts](http://visualizationuniverse.com/charts/)
+- Wikipedia
+  - [Examples of diagrams used for data visualization](https://en.wikipedia.org/wiki/Data_visualization#Examples_of_diagrams_used_for_data_visualization)
+  - [List of graphical methods](https://en.wikipedia.org/wiki/List_of_graphical_methods)
+  - [Types of diagrams](https://en.wikipedia.org/wiki/Diagram#Main_diagram_types)
+  - [Types of plots](https://en.wikipedia.org/wiki/Plot_(graphics)#Types_of_plots)
+  - [Types of charts](https://en.wikipedia.org/wiki/Chart#Types_of_charts)
+
 ## Podcasts
 - [Data Stories](http://datastori.es/)
 - [DataFramed](https://www.datacamp.com/community/podcast)
@@ -202,7 +216,6 @@ Tools that are not tied to a particular platform or language.
 - [Junk Charts](http://junkcharts.typepad.com/) - Kaiser Fung takes apart why certain datavizes work/don't work
 - [Lisa Rost thinks and discusses about why we dataviz](https://lisacharlotterost.github.io/)
 - [Makeover Monday](http://www.makeovermonday.co.uk/) blog - [#MakeoverMonday](https://twitter.com/search?q=%23makeovermonday) on twitter
-- [The Data Visualization Catalogue](http://www.datavizcatalogue.com/) - A collection of data visualization methods, with pros and cons.
 - [the functional art](http://www.thefunctionalart.com/)
 - [The Open News](https://source.opennews.org/articles/) blog -  Open news has some good dataviz related articles from time to time
 - [The Pudding](https://pudding.cool/)
