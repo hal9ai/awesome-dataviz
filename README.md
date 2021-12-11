@@ -206,6 +206,7 @@ Tools that are not tied to a particular platform or language.
 - [Visualizing](https://twitter.com/VisualizingOrg)
 
 ## Websites
+- [Data For Visualization](https://dataforvisualization.com/) blog - Storytelling with data from the software developer's eye
 - [Ann K. Emery](http://annkemery.com/)'s blog
 - [Data Visualization Society](https://www.datavisualizationsociety.com/) - The Data Visualization Society is an organization dedicated to fostering community for data visualization professionals.
 - [eagereyes](https://eagereyes.org/)
