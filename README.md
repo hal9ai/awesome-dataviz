@@ -44,9 +44,12 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [Echarts](https://github.com/ecomfe/echarts) - Highly customizable and interactive charts ready for big datasets. [React wrapper](https://github.com/hustcc/echarts-for-react)
 - [Epoch](https://github.com/epochjs/epoch) - Perfect to create real-time charts.
 - [Google Charts](https://developers.google.com/chart) - Interactive charts for browsers and mobile devices.
+- [lit-line](https://github.com/apinet/lit-line) - SVG Line Chart Web Component - light, fast, interactive & fully responsive.
+- [GraphicsJS](http://www.graphicsjs.org) - Lightweight JS graphics library with intuitive API, based on SVG/VML.
 - [MetricsGraphics.js](https://metricsgraphicsjs.org/) - Optimized for time-series data.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
 - [Plotly.js](https://github.com/plotly/plotly.js/) - Powerful declarative library with support for 20 chart types.
+- [React wrapper](https://github.com/hustcc/echarts-for-react)
 - [TechanJS](http://techanjs.org/) - Stock and financial charts.
 - [TOAST UI Chart](https://github.com/nhnent/tui.chart) - Complete library with support for legacy browsers.
 - [Vizzu](https://github.com/vizzuhq/vizzu-lib) - Library for animated data visualizations and data stories.
@@ -57,6 +60,8 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [Sigma.js](http://sigmajs.org/) - JavaScript library dedicated to graph drawing.
 - [VivaGraph](https://github.com/anvaka/VivaGraphJS) - Graph drawing library for JavaScript.
 - [G6](https://github.com/antvis/g6) - Alibaba graph visualization framework in JavaScript.
+- [diagram.js](https://github.com/bpmn-io/diagram-js) - Javascript diagram library serving as the basis for camunda's online BPMN modeler.
+- [Uber React Digraph](https://github.com/uber/react-digraph) - React.js based directed graph library maintained by UBER.
 
 ### Maps
 - [CARTO](https://github.com/CartoDB/cartodb) - CARTO is an open source tool that allows for the storage and visualization of geospatial data on the web.
@@ -107,6 +112,9 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [Charts](https://github.com/danielgindi/Charts) -  iOS port of MPAndroidChart. You can create charts for both platforms with very similar code.
 - [JBChartView](https://github.com/Jawbone/JBChartView) - Charting library for both line and bar graphs.
 - [PNChart](https://github.com/kevinzhow/PNChart) - A simple and beautiful chart lib used in Piner and CoinsMan.
+
+## Machine Learning tools
+- [TensorWatch](https://github.com/microsoft/tensorwatch) - Debugging and visualization tool for data science and machine learning
 
 ## Python tools
 - [altair](https://altair-viz.github.io/) - Declarative statistical visualizations, based on Vega-Lite.
@@ -188,6 +196,7 @@ Tools that are not tied to a particular platform or language.
   - [Types of diagrams](https://en.wikipedia.org/wiki/Diagram#Main_diagram_types)
   - [Types of plots](https://en.wikipedia.org/wiki/Plot_(graphics)#Types_of_plots)
   - [Types of charts](https://en.wikipedia.org/wiki/Chart#Types_of_charts)
+- [Data Visualisation: A Handbook for Data Driven Design](https://www.amazon.com/Data-Visualisation-Handbook-Driven-Design/dp/1526468921/) by Andy Kirk
 
 ## Podcasts
 - [Data Stories](http://datastori.es/)
