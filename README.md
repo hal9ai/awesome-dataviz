@@ -165,6 +165,7 @@ Tools that are not tied to a particular platform or language.
 - [Spark](https://github.com/holman/spark) - Sparklines for the shell. It have several [implementations in different languages](https://github.com/holman/spark/wiki/Alternative-Implementations).
 - [Visual-Insights](https://github.com/ObservedObserver/visual-insights) - Automatic insights extraction and visualization specification in data analysis.
 
+
 # Resources
 
 ## Books
@@ -176,6 +177,7 @@ Tools that are not tied to a particular platform or language.
 - [Interactive Data Visualization for the Web](https://chimera.labs.oreilly.com/books/1230000000345) by Scott Murray. Available to read online. Focused on D3.
 - [Data Visualization Toolkit](https://datavisualizationtoolkit.com) by Barrett Austin Clark. Uses D3, Ruby on Rails, Postgres, PostGIS, & Leaflet.
 - [Grammar of Graphics](https://www.amazon.com/Grammar-Graphics-Statistics-Computing/dp/0387245448/) by Leland Wilkinson. Basic visualization theory.
+- [Data Visualisation: A Handbook for Data Driven Design](https://www.amazon.com/Data-Visualisation-Handbook-Driven-Design/dp/1526468921/) by Andy Kirk
 
 ## Catalogs
 - [The Data Visualization Catalogue](https://www.datavizcatalogue.com) - A collection of data visualization methods, with pros and cons.
@@ -185,12 +187,11 @@ Tools that are not tied to a particular platform or language.
 - [Chartopedia](https://www.anychart.com/chartopedia)
 - [Interactive Chart Chooser](https://depictdatastudio.com/charts/) by Depict Data Studio
 - Wikipedia
-  - [Examples of diagrams used for data visualization](https://en.wikipedia.org/wiki/Data_visualization#Examples_of_diagrams_used_for_data_visualization)
+  - [Data visualization techniques](https://en.wikipedia.org/wiki/Data_visualization#Techniques)
   - [List of graphical methods](https://en.wikipedia.org/wiki/List_of_graphical_methods)
-  - [Types of diagrams](https://en.wikipedia.org/wiki/Diagram#Main_diagram_types)
+  - [Types of diagrams](https://en.wikipedia.org/wiki/Diagram#Gallery_of_diagram_types)
   - [Types of plots](https://en.wikipedia.org/wiki/Plot_(graphics)#Types_of_plots)
-  - [Types of charts](https://en.wikipedia.org/wiki/Chart#Types_of_charts)
-- [Data Visualisation: A Handbook for Data Driven Design](https://www.amazon.com/Data-Visualisation-Handbook-Driven-Design/dp/1526468921/) by Andy Kirk
+  - [Types of charts](https://en.wikipedia.org/wiki/Chart#Types)
 
 ## Podcasts
 - [Data Stories](https://datastori.es/)
@@ -239,6 +240,7 @@ Thanks for your suggestions!
 
 - Fabio Souto originally createad this repo, connect with Fabio at [fabiosouto.me](https://fabiosouto.me/).
 - [Javier Luraschi](https://github.com/javierluraschi) is the current maintainer, he builds predictive visualizations at [Hal9](https://hal9.com).
+
 
 # License
 
