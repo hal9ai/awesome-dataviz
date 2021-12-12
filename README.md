@@ -39,13 +39,11 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [Chart.js](https://www.chartjs.org/) - Charts with the canvas tag.
 - [Chartist.js](https://gionkunz.github.io/chartist-js/) - Responsive charts with great browser compatibility.
 - [dc.js](https://github.com/dc-js/dc.js) is an multi-Dimensional charting built to work natively with crossfilter.
-- [Dimple](https://dimplejs.org/) - An object-oriented API for business analytics.
 - [Dygraphs](https://dygraphs.com/) - Interactive line charts library that works with huge datasets.
 - [Echarts](https://github.com/ecomfe/echarts) - Highly customizable and interactive charts ready for big datasets.
 - [Epoch](https://github.com/epochjs/epoch) - Perfect to create real-time charts.
 - [Google Charts](https://developers.google.com/chart) - Interactive charts for browsers and mobile devices.
 - [lit-line](https://github.com/apinet/lit-line) - SVG Line Chart Web Component - light, fast, interactive & fully responsive.
-- [GraphicsJS](https://www.graphicsjs.org) - Lightweight JS graphics library with intuitive API, based on SVG/VML.
 - [MetricsGraphics.js](https://metricsgraphicsjs.org/) - Optimized for time-series data.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
 - [Plotly.js](https://github.com/plotly/plotly.js/) - Powerful declarative library with support for 20 chart types.
@@ -76,7 +74,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - See [Awesome D3](https://github.com/wbkd/awesome-d3)
 
 ### React
-- [BizCharts](https://github.com/alibaba/BizCharts) - Alibaba data visualization library based on G2 and React. [English docs](https://github.com/alibaba/BizCharts/tree/master/doc_en)
+- [BizCharts](https://github.com/alibaba/BizCharts) - Alibaba data visualization library based on G2 and React.
 - [React-vis](https://github.com/uber/react-vis) - React components to build data visualizations.
 - [Recharts](https://github.com/recharts/recharts) - Declarative react components to render D3 charts.
 - [Victory](https://formidable.com/open-source/victory/) - Composable components for building interactive data visualizations
@@ -155,16 +153,13 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 
 ## Markup-based tools
 - [mermaidjs](https://mermaidjs.github.io/mermaid-live-editor) - A simple markdown-like script language for generating charts from text via javascript
-- [viz-js.com](https://viz-js.com/) - A hack to put [Graphviz](https://www.graphviz.org/) on the web
 - [wavedrom.com](https://wavedrom.com/) - Draws your Timing Diagram or Waveform from simple textual description
 
 ## Other tools
 Tools that are not tied to a particular platform or language.
 - [Charted](https://github.com/mikesall/charted) - A charting tool that produces automatic, shareable charts from any data file.
-- [Circos](https://circos.ca) - Visualizes data in a circular layout, ideal for exploring relationships between objects or positions. [Mirror on github](https://github.com/node/circos).
 - [Gephi](https://github.com/gephi/gephi) - An open-source platform for visualizing and manipulating large graphs
 - [Kepler.gl](https://kepler.gl/) - Geospatial analysis tool for large-scale data sets.
-- [Lightning](https://lightning-viz.org/) - A data-visualization server providing API-based access to reproducible, web-based, interactive visualizations.
 - [Mermaid](https://github.com/knsv/mermaid) - A tool used to generate diagrams and flowcharts from text in a similar manner as markdown.
 - [RAW](https://rawgraphs.io) - Create web visualizations from CSV or Excel files.
 - [Spark](https://github.com/holman/spark) - Sparklines for the shell. It have several [implementations in different languages](https://github.com/holman/spark/wiki/Alternative-Implementations).
@@ -189,7 +184,6 @@ Tools that are not tied to a particular platform or language.
 - [From data to Viz](https://www.data-to-viz.com)
 - [Chartopedia](https://www.anychart.com/chartopedia)
 - [Interactive Chart Chooser](https://depictdatastudio.com/charts/) by Depict Data Studio
-- [Visualization Universe: Charts](https://visualizationuniverse.com/charts/)
 - Wikipedia
   - [Examples of diagrams used for data visualization](https://en.wikipedia.org/wiki/Data_visualization#Examples_of_diagrams_used_for_data_visualization)
   - [List of graphical methods](https://en.wikipedia.org/wiki/List_of_graphical_methods)
@@ -220,18 +214,15 @@ Tools that are not tied to a particular platform or language.
 - [eagereyes](https://eagereyes.org/)
 - [EvergreenData](https://stephanieevergreen.com/)
 - [FlowingData](https://flowingdata.com/)
-- [Gnuplotting](https://www.gnuplotting.org/) - [Gnuplot](https://www.gnuplot.info/) tutorials
 - [Information is Beautiful](https://www.informationisbeautiful.net/)
 - [Junk Charts](https://junkcharts.typepad.com/) - Kaiser Fung takes apart why certain datavizes work/don't work
 - [Lisa Rost thinks and discusses about why we dataviz](https://lisacharlotterost.github.io/)
 - [Makeover Monday](https://www.makeovermonday.co.uk/) blog - [#MakeoverMonday](https://twitter.com/search?q=%23makeovermonday) on twitter
-- [the functional art](https://www.thefunctionalart.com/)
 - [The Open News](https://source.opennews.org/articles/) blog -  Open news has some good dataviz related articles from time to time
 - [The Pudding](https://pudding.cool/)
 - [Truth & Beauty Operations](https://truth-and-beauty.net/)
 - [University of Washington Interactive Data Lab Papers](https://idl.cs.washington.edu/papers)
 - [vis4.net](https://www.vis4.net/blog/) - Random thoughts on visualization and data journalism by Gregor Aisch
-- [Visual Complexity](https://www.visualcomplexity.com/vc/) - A site about the visualization of complex networks.
 
 
 # Contributing
