@@ -1,0 +1,46 @@
+name: Tests
+
+on:
+  pull_request:
+    branches: [ '*' ]
+  push:
+    branches: [ '*' ] 
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: ['2.6', '2.7', '3.0']
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby-version }}
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+    - name: Install bot
+      run: rake install
+    - name: Run tests
+      run: |
+        awesome_bot
+        awesome_bot bin/assets/test-no-issues
+        awesome_bot bin/assets/test-no-links
+        awesome_bot bin/assets/test-embedded-link
+        awesome_bot bin/assets/test-parse --white-list coveralls,travis-ci
+        awesome_bot bin/assets/test-dupe --allow-dupe
+        awesome_bot bin/assets/test-timeout --allow-timeout --set-timeout 1
+        awesome_bot bin/assets/test-timeout-and-redirect --allow-timeout --set-timeout 1 --allow-redirect
+        awesome_bot bin/assets/test-redirect --allow-redirect
+        awesome_bot bin/assets/test-redirect --allow-redirect -a 301
+        awesome_bot bin/assets/test-statuses --white-list bot,bad,super
+        awesome_bot bin/assets/test-errors --allow-redirect --allow-ssl
+        awesome_bot -f bin/assets/test-no-issues,bin/assets/test-no-links
+        awesome_bot -f bin/assets/test-no-issues,bin/assets/test-redirect --allow-redirect
+        awesome_bot bin/assets/test-no-* --allow-redirect
+        awesome_bot bin/assets/test-ssl --allow-ssl
+        awesome_bot README.md --allow-dupe --white-list gph.is,giphy,travis-ci.org,codeload,badge,rubydoc,rubygems,circleci,codeship,blob/master
+    - name: Install gem
+      run: gem install awesome_bot
