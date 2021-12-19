@@ -44,6 +44,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [Epoch](https://github.com/epochjs/epoch) - Perfect to create real-time charts.
 - [Google Charts](https://developers.google.com/chart) - Interactive charts for browsers and mobile devices.
 - [G2](https://g2plot.antv.vision/en) - an interactive and responsive charting library based on the grammar of graphics, maintained by Alibaba
+- [GraphicsJS](http://www.graphicsjs.org) - Lightweight JS graphics library with intuitive API, based on SVG/VML.
 - [lit-line](https://github.com/apinet/lit-line) - SVG Line Chart Web Component - light, fast, interactive & fully responsive.
 - [MetricsGraphics.js](https://metricsgraphicsjs.org/) - Optimized for time-series data.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
@@ -68,7 +69,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [Deck.gl](https://deck.gl/) - WebGL framework for visual exploratory data analysis of large datasets.
 - [L7](https://github.com/antvis/L7) - Large-scale WebGL-powered Geospatial Data Visualization By Ant Financial
 - [DataMaps](https://github.com/markmarkoh/datamaps) - Interactive SVG maps using D3.js.
-- [Dipper](https://github.com/antvis/dipper) - Map application development framework powered by [L7](https://github.com/antvis/L7), maintained by Alibaba
+- [Dipper](https://github.com/antvis/dipper) - Map application development framework powered by L7, maintained by Alibaba.
 - [Leaflet](https://leafletjs.com) - JavaScript library for mobile-friendly interactive maps.
 - [Mapael](https://github.com/neveldo/jQuery-Mapael) - jQuery plugin based on raphael.js to display vector maps.
 
@@ -77,7 +78,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 
 ### React
 - [BizCharts](https://github.com/alibaba/BizCharts) - Data visualization library based on [G2](https://github.com/antvis/G2) and React
-- [Graphin](https://github.com/antvis/Graphin) - Graph visualization library powered by React & Typescript (built on top of [G6](https://github.com/antvis/g6)), maintained by Alibaba
+- [Graphin](https://github.com/antvis/Graphin) - Graph visualization library powered by React & Typescript (built on top of G6, maintained by Alibaba.
 - [React-vis](https://github.com/uber/react-vis) - React components to build data visualizations.
 - [Recharts](https://github.com/recharts/recharts) - Declarative react components to render D3 charts.
 - [Victory](https://formidable.com/open-source/victory/) - Composable components for building interactive data visualizations
