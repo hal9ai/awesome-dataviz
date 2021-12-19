@@ -67,7 +67,8 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [CARTO](https://github.com/CartoDB/cartodb) - CARTO is an open source tool that allows for the storage and visualization of geospatial data on the web.
 - [Cesium](https://github.com/AnalyticalGraphicsInc/cesium) - WebGL 3D globes and maps.
 - [Deck.gl](https://deck.gl/) - WebGL framework for visual exploratory data analysis of large datasets.
-- [L7](https://github.com/antvis/L7) - Large-scale WebGL-powered Geospatial Data Visualization By Ant Financial
+- [L7](https://github.com/antvis/L7) - Large-scale WebGL-powered Geospatial Data Visualization analysis framework, maintained by Alibaba
+- [L7 Plot](https://github.com/antvis/L7Plot) - Geospatial Visualization Chart Library, maintained by Alibaba
 - [DataMaps](https://github.com/markmarkoh/datamaps) - Interactive SVG maps using D3.js.
 - [Dipper](https://github.com/antvis/dipper) - Map application development framework powered by L7, maintained by Alibaba.
 - [Leaflet](https://leafletjs.com) - JavaScript library for mobile-friendly interactive maps.
