@@ -168,6 +168,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 ## Other tools
 Tools that are not tied to a particular platform or language.
 - [Charted](https://github.com/mikesall/charted) - A charting tool that produces automatic, shareable charts from any data file.
+- [Foxglove Studio](https://foxglove.dev) – A fully integrated visualization and debugging desktop app for your robotics data. Combines functionality of tools like `rviz`, `rqt`, and more. Also available via [web app](https://studio.foxglove.dev).
 - [Gephi](https://github.com/gephi/gephi) - An open-source platform for visualizing and manipulating large graphs
 - [Kepler.gl](https://kepler.gl/) - Geospatial analysis tool for large-scale data sets.
 - [Mermaid](https://github.com/knsv/mermaid) - A tool used to generate diagrams and flowcharts from text in a similar manner as markdown.
@@ -175,7 +176,8 @@ Tools that are not tied to a particular platform or language.
 - [Spark](https://github.com/holman/spark) - Sparklines for the shell. It have several [implementations in different languages](https://github.com/holman/spark/wiki/Alternative-Implementations).
 - [Visual-Insights](https://github.com/ObservedObserver/visual-insights) - Automatic insights extraction and visualization specification in data analysis.
 - [X6](https://x6.antv.vision/en) - diagram creation library for rapid construction of DAG diagrams, ER diagrams, flowcharts and other applications, maintained by Alibaba
-- [Graphviz](https://graphviz.org/) - Open source graph visualization command line tool and library. From input text to SVG,PDF,interactive web graph browser. 
+- [Graphviz](https://graphviz.org/) - Open source graph visualization command line tool and library. From input text to SVG,PDF,interactive web graph browser.
+- [Webviz](https://webviz.io) – A web app developed by [Cruise](https://getcruise.com) for visualizing robotics data.
 
 # Resources
 
