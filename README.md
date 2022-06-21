@@ -108,6 +108,16 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [LargeVis](https://github.com/lferry007/LargeVis) - implementation of the [LargeVis paper](https://arxiv.org/abs/1602.00370), used to visualize large-scale and high-dimensional data.
 - [PlotJuggler](https://github.com/facontidavide/PlotJuggler) - open-source Qt5 application to plot charts (based on Qwt).
 - [Visualization Toolkit (VTK)](https://gitlab.kitware.com/vtk/vtk/blob/master/README.md) - open-source library for 3d Graphics, image processing and visualization.
+- [ParaView](https://www.paraview.org) - Multi-platform data analysis and visualization application based on VTK.
+  (C++, BSD, [GitLab](https://gitlab.kitware.com/paraview/paraview))
+- [Polyscope](https://polyscope.run/) - Viewer and user interface for 3D geometry processing.
+  (C++, MIT, [GitHub](https://github.com/nmwsharp/polyscope))
+- [F3D](https://f3d-app.github.io/f3d/) - Cross-platform, fast, and minimalist 3D viewer with scientific visualization tools. (C++, BSD, [GitHub](https://github.com/f3d-app/f3d))
+- [TTK](https://topology-tool-kit.github.io/) - Topological data analysis and visualization.
+  (C++/Python, BSD, [GitHub](https://github.com/topology-tool-kit/ttk))
+
+
+
 
 ## Golang tools
 - [svgo](https://github.com/ajstarks/svgo) - Go Language Library for SVG generation.
@@ -147,7 +157,11 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [vtk](https://www.vtk.org/) - 3D computer graphics, image processing, and visualization that includes a Python interface.
 - [pandas-profiling](https://github.com/pandas-profiling/pandas-profiling) - generates statistical analytic reports with visualization for quick data analysis.
 - [pyechars](https://github.com/pyecharts/pyecharts) - Python binding for Echarts library.
-
+- [vedo](https://vedo.embl.es) - Library for scientific analysis and visualization of 3D objects based on VTK.
+  (Python, MIT, [GitHub](https://github.com/marcomusy/vedo))
+- [yt](https://yt-project.org/) - Toolkit for analysis and visualization of volumetric data.
+  (Python, BSD, [GitHub](https://github.com/yt-project/yt))
+  
 ## R tools
 - [ggplot2](https://ggplot2.tidyverse.org/) - A plotting system based on the grammar of graphics.
 - [ggvis](https://ggvis.rstudio.com/) - A data visualization package with a syntax similar to ggplot2 which allows you to create rich interactive graphics.
