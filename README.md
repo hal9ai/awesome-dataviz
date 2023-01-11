@@ -48,6 +48,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [lit-line](https://github.com/apinet/lit-line) - SVG Line Chart Web Component - light, fast, interactive & fully responsive.
 - [MetricsGraphics.js](https://metricsgraphicsjs.org/) - Optimized for time-series data.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
+- [Perspective](https://github.com/finos/perspective) - interactive data visualization and analytics component, well-suited for large, streaming and static datasets.
 - [Plotly.js](https://github.com/plotly/plotly.js/) - Powerful declarative library with support for 20 chart types.
 - [React wrapper](https://github.com/hustcc/echarts-for-react)
 - [TechanJS](https://techanjs.org/) - Stock and financial charts.
@@ -135,6 +136,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [mayai](https://docs.enthought.com/mayavi/mayavi/) - interactive scientific data visualization and 3D plotting in Python.
 - [matplotlib](https://matplotlib.org/) - 2D plotting library.
 - [missingno](https://github.com/ResidentMario/missingno) - provides flexible toolset of data-visualization utilities that allows quick visual summary of the completeness of your dataset, based on matplotlib.
+- [perspective-python](https://github.com/finos/perspective) - interactive data visualization and analytics component, well-suited for large, streaming and static datasets
 - [plotly](https://plot.ly/python/) - Interactive web based visualization built on top of [plotly.js](https://github.com/plotly/plotly.js)
 - [pptk](https://github.com/heremaps/pptk) - Visualize and work with 2D/3D pointclouds
 - [PyQtGraph](https://www.pyqtgraph.org/) - Interactive and realtime 2D/3D/Image plotting and science/engineering widgets.
