@@ -139,6 +139,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [pptk](https://github.com/heremaps/pptk) - Visualize and work with 2D/3D pointclouds
 - [PyQtGraph](https://www.pyqtgraph.org/) - Interactive and realtime 2D/3D/Image plotting and science/engineering widgets.
 - [PyVista](https://github.com/pyvista/pyvista) – 3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK)
+- [Rerun](https://github.com/rerun-io/rerun) - An SDK for logging computer vision and robotics data paired with a visualizer for exploring that data over time.
 - [seaborn](https://seaborn.pydata.org/) - A library for making attractive and informative statistical graphics.
 - [toyplot](https://toyplot.readthedocs.io/en/stable/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
 - [three.py](https://github.com/stemkoski/three.py/) - Easy to use 3D library based on PyOpenGL. Inspired by Three.js.
@@ -160,6 +161,9 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 
 ## Ruby tools
 - [Chartkick](https://github.com/ankane/chartkick) - Create charts with one line of Ruby.
+
+## Rust tools
+- [Rerun](https://github.com/rerun-io/rerun) - An SDK for logging computer vision and robotics data paired with a visualizer for exploring that data over time.
 
 ## Markup-based tools
 - [mermaidjs](https://mermaidjs.github.io/mermaid-live-editor) - A simple markdown-like script language for generating charts from text via javascript
