@@ -166,6 +166,7 @@ Tools that are not tied to a particular platform or language.
 - [Interactive Data Visualization for the Web](http://chimera.labs.oreilly.com/books/1230000000345) by Scott Murray. Available to read online. Focused on D3.
 - [Data Visualization Toolkit](http://datavisualizationtoolkit.com) by Barrett Austin Clark. Uses D3, Ruby on Rails, Postgres, PostGIS, & Leaflet.
 - [R in Action, Third Edition](https://www.manning.com/books/r-in-action-third-edition) by Robert I. Kabacoff. A complete learning resource for R and tidyverse.
+- [Everyday Data Visualization](https://www.manning.com/books/everyday-data-visualization) by Desireé Abbott. A field guide for design techniques that will improve the charts, reports, and data dashboards you build every day.
 
 ## Podcasts
 - [Data Stories](http://datastori.es/)
