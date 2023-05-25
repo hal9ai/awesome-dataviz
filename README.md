@@ -122,6 +122,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 
 ## Machine Learning tools
 - [TensorWatch](https://github.com/microsoft/tensorwatch) - Debugging and visualization tool for data science and machine learning
+- [Phoenix](https://github.com/Arize-ai/phoenix) - ML observability in a notebook with UMAP visualizations
 
 ## Python tools
 - [altair](https://altair-viz.github.io/) - Declarative statistical visualizations, based on Vega-Lite.
