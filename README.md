@@ -122,6 +122,8 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 
 ## Machine Learning tools
 - [TensorWatch](https://github.com/microsoft/tensorwatch) - Debugging and visualization tool for data science and machine learning
+- [Comet](https://github.com/comet-ml/comet-examples) - An MLOps platform for tracking, visualizing, and debugging your machine learning workflows from training straight through to produciton.
+- [CometLLM](https://github.com/comet-ml/comet-llm) - Track, visualize, and search your LLM prompts and chains in this easy-to-use, 100% open-source tool.
 
 ## Python tools
 - [altair](https://altair-viz.github.io/) - Declarative statistical visualizations, based on Vega-Lite.
