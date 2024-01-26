@@ -167,6 +167,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 
 ## Other tools
 Tools that are not tied to a particular platform or language.
+- [Resseract Lite](https://github.com/abistarun/resseract-lite) - A Data Analytics and Visualization Tool with flexible architecture to visualize and analyse data
 - [Charted](https://github.com/mikesall/charted) - A charting tool that produces automatic, shareable charts from any data file.
 - [Gephi](https://github.com/gephi/gephi) - An open-source platform for visualizing and manipulating large graphs
 - [Kepler.gl](https://kepler.gl/) - Geospatial analysis tool for large-scale data sets.
