@@ -62,6 +62,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [G6](https://github.com/antvis/g6) - Graph visualization library powered by Javascript & Typescript, maintained by Alibaba
 - [diagram.js](https://github.com/bpmn-io/diagram-js) - Javascript diagram library serving as the basis for camunda's online BPMN modeler.
 - [Uber React Digraph](https://github.com/uber/react-digraph) - React.js based directed graph library maintained by UBER.
+- [Vizdom](https://github.com/vizdom-dev/vizdom) - A declarative graph layout and rendering engine for Javascript/Typescript powered by Rust/WebAssembly.
 
 ### Maps
 - [CARTO](https://github.com/CartoDB/cartodb) - CARTO is an open source tool that allows for the storage and visualization of geospatial data on the web.
