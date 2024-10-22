@@ -173,6 +173,7 @@ Tools that are not tied to a particular platform or language.
 - [Mermaid](https://github.com/knsv/mermaid) - A tool used to generate diagrams and flowcharts from text in a similar manner as markdown.
 - [RAW](https://rawgraphs.io) - Create web visualizations from CSV or Excel files.
 - [Spark](https://github.com/holman/spark) - Sparklines for the shell. It have several [implementations in different languages](https://github.com/holman/spark/wiki/Alternative-Implementations).
+- [Squey](https://squey.org) - Visualization software for exploring and understanding large amounts of tabular data (using parallel coordinates, timeseries and scatter plots).
 - [Visual-Insights](https://github.com/ObservedObserver/visual-insights) - Automatic insights extraction and visualization specification in data analysis.
 - [X6](https://x6.antv.vision/en) - diagram creation library for rapid construction of DAG diagrams, ER diagrams, flowcharts and other applications, maintained by Alibaba
 - [Graphviz](https://graphviz.org/) - Open source graph visualization command line tool and library. From input text to SVG,PDF,interactive web graph browser. 
