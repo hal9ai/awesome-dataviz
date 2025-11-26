@@ -171,6 +171,7 @@ Tools that are not tied to a particular platform or language.
 - [Gephi](https://github.com/gephi/gephi) - An open-source platform for visualizing and manipulating large graphs
 - [Kepler.gl](https://kepler.gl/) - Geospatial analysis tool for large-scale data sets.
 - [Mermaid](https://github.com/knsv/mermaid) - A tool used to generate diagrams and flowcharts from text in a similar manner as markdown.
+- [Datastripes](https://datastripes.com) - Drag and drop flow canvas for in-browser data analysis and dashboards from files and SQL.
 - [RAW](https://rawgraphs.io) - Create web visualizations from CSV or Excel files.
 - [Spark](https://github.com/holman/spark) - Sparklines for the shell. It have several [implementations in different languages](https://github.com/holman/spark/wiki/Alternative-Implementations).
 - [Visual-Insights](https://github.com/ObservedObserver/visual-insights) - Automatic insights extraction and visualization specification in data analysis.
