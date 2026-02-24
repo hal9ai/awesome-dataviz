@@ -171,6 +171,7 @@ Tools that are not tied to a particular platform or language.
 - [Gephi](https://github.com/gephi/gephi) - An open-source platform for visualizing and manipulating large graphs
 - [Kepler.gl](https://kepler.gl/) - Geospatial analysis tool for large-scale data sets.
 - [Mermaid](https://github.com/knsv/mermaid) - A tool used to generate diagrams and flowcharts from text in a similar manner as markdown.
+- [MetaReview](https://metareview-8c1.pages.dev/) - Interactive statistical visualization tool built with D3.js v7. Generates forest plots, funnel plots (standard + contour-enhanced), Galbraith plots, L'Abbé plots, meta-regression scatter plots, Baujat plots, network graphs, dose-response curves, cumulative forest plots, and PRISMA flow diagrams. Supports SVG/PNG export.
 - [RAW](https://rawgraphs.io) - Create web visualizations from CSV or Excel files.
 - [Spark](https://github.com/holman/spark) - Sparklines for the shell. It have several [implementations in different languages](https://github.com/holman/spark/wiki/Alternative-Implementations).
 - [Visual-Insights](https://github.com/ObservedObserver/visual-insights) - Automatic insights extraction and visualization specification in data analysis.
