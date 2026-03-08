@@ -73,6 +73,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [Dipper](https://github.com/antvis/dipper) - Map application development framework powered by L7, maintained by Alibaba.
 - [Leaflet](https://leafletjs.com) - JavaScript library for mobile-friendly interactive maps.
 - [Mapael](https://github.com/neveldo/jQuery-Mapael) - jQuery plugin based on raphael.js to display vector maps.
+- [Pharos AI](https://conflicts.app) - Open-source OSINT conflict-tracking dashboard with geospatial visualization using Deck.gl, MapLibre, and React. ([Source Code](https://github.com/Juliusolsson05/pharos-ai))
 
 ### d3
 - See [Awesome D3](https://github.com/wbkd/awesome-d3)
