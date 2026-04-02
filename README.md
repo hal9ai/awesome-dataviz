@@ -92,6 +92,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 
 ### Misc
 - [Graphology](https://github.com/graphology/graphology) - A robust & multipurpose Graph object for javascript & TypeScript; Serves as a base library to power other graph visualization libraries.
+- [ODataMap](https://github.com/CherishChenCherish/odatamap) - Interactive scientific research data map. Visualizes 250M+ papers across 7 knowledge continents using D3.js. [Demo](https://odatamap.cherishchen2510.workers.dev)
 - [Piecon](https://github.com/lipka/piecon) - Pie charts in your favicon.
 - [Textures.js](https://riccardoscalco.github.io/textures/) - A library to create SVG patterns.
 - [Timeline.js](https://timeline.knightlab.com/) -  Create interactive timelines.
