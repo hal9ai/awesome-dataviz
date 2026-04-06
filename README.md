@@ -5,6 +5,7 @@
 A curated list of awesome **open-source** data visualizations frameworks, libraries and software. Inspired by [awesome-python](https://github.com/vinta/awesome-python) and originally created by [fasouto](https://github.com/fasouto).
 
 
+- [guardian-agent-prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 production-tested AI agent system prompts for data visualization workflow orchestration, automated chart management, and multi-agent coordination. MIT licensed.
 ## Contents
 - [Awesome dataviz](#awesome-dataviz)
 	- [JavaScript tools](#javascript-tools)
