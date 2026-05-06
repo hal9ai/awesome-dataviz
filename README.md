@@ -98,6 +98,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [Vega](https://vega.github.io/vega/) - Vega is a visualization grammar, a declarative format for creating, saving, and sharing interactive visualization designs.
 - [Vega-Lite](https://vega.github.io/vega-lite/) - is a high-level grammar of interactive graphics. It provides a concise JSON syntax for rapidly generating visualizations to support analysis.
 - [Vis.js](https://visjs.org/) - A dynamic visualization library including timeline, networks and graphs (2D and 3D).
+- [gp-treemap](https://www.npmjs.com/package/@imbue-ai/gp-treemap) - Open source HTML canvas treemap component supporting millions of nodes, and some functional resource usage tools, like disk and S3 usage visualization ([GrandPerspective](https://grandperspectiv.sourceforge.net/)-style)
 
 ## Android tools
 - [DecoView](https://github.com/bmarrdev/android-DecoView-charting) - Animated circular wheel chart library.
