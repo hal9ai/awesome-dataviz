@@ -9,6 +9,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [Awesome dataviz](#awesome-dataviz)
 	- [JavaScript tools](#javascript-tools)
 		- [Charting libraries](#charting-libraries)
+- [Observable Plot](https://github.com/observablehq/plot) - A JavaScript library for exploratory data visualization.
 		- [Charting libraries for graphs](#charting-libraries-for-graphs)
 		- [Maps](#maps)
 		- [d3](#d3)
