@@ -237,6 +237,7 @@ Tools that are not tied to a particular platform or language.
 - [Truth & Beauty Operations](https://truth-and-beauty.net/)
 - [University of Washington Interactive Data Lab Papers](https://idl.cs.washington.edu/papers)
 - [vis4.net](https://www.vis4.net/blog/) - Random thoughts on visualization and data journalism by Gregor Aisch
+- [Marble Taxonomy Explorer](https://ashutoshsinghpr7.github.io/marble-taxonomy-explorer/) - Interactive knowledge graph visualization of 1,590 learning topics using Cytoscape.js with force-directed, concentric, and BFS layouts. [Source](https://github.com/ashutoshsinghpr7/marble-taxonomy-explorer)
 
 
 # Contributing
