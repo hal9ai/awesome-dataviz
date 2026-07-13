@@ -233,6 +233,7 @@ Tools that are not tied to a particular platform or language.
 - [Lisa Rost thinks and discusses about why we dataviz](https://lisacharlotterost.github.io/)
 - [Makeover Monday](https://www.makeovermonday.co.uk/) blog - [#MakeoverMonday](https://twitter.com/search?q=%23makeovermonday) on twitter
 - [The Open News](https://source.opennews.org/articles/) blog -  Open news has some good dataviz related articles from time to time
+- [The Planet Thinks](https://theplanetthinks.com/) - Real-time visualization of Wikipedia edits on a 3D globe
 - [The Pudding](https://pudding.cool/)
 - [Truth & Beauty Operations](https://truth-and-beauty.net/)
 - [University of Washington Interactive Data Lab Papers](https://idl.cs.washington.edu/papers)
