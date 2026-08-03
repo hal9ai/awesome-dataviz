@@ -21,6 +21,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 	- [Python tools](#python-tools)
 	- [R tools](#r-tools)
 	- [Ruby tools](#ruby-tools)
+	- [Rust tools](#rust-tools)
 	- [Markup-based tools](#markup-based-tools)
 	- [Other tools](#other-tools)
 - [Resources](#resources)
@@ -160,6 +161,9 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 
 ## Ruby tools
 - [Chartkick](https://github.com/ankane/chartkick) - Create charts with one line of Ruby.
+
+## Rust tools
+- [malevich](https://github.com/shergin/malevich) - Terminal plotting: line, scatter, bar, histogram, heatmap, box plot, violin and more, with automatic axes.
 
 ## Markup-based tools
 - [mermaidjs](https://mermaidjs.github.io/mermaid-live-editor) - A simple markdown-like script language for generating charts from text via javascript
