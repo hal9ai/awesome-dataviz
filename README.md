@@ -73,6 +73,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [Dipper](https://github.com/antvis/dipper) - Map application development framework powered by L7, maintained by Alibaba.
 - [Leaflet](https://leafletjs.com) - JavaScript library for mobile-friendly interactive maps.
 - [Mapael](https://github.com/neveldo/jQuery-Mapael) - jQuery plugin based on raphael.js to display vector maps.
+- [VectorAtlas](https://vectoratlas.menelabs.com/) - Free, 80KB SVG world map with one path per country, id-keyed by ISO 3166-1 alpha-2 code, ready for choropleths.
 
 ### d3
 - See [Awesome D3](https://github.com/wbkd/awesome-d3)
