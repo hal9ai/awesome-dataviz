@@ -115,7 +115,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 ## Golang tools
 - [svgo](https://github.com/ajstarks/svgo) - Go Language Library for SVG generation.
 - [plot](https://github.com/gonum/plot) - API for building and drawing plots in Go.
-- [go-echars](https://github.com/chenjiandongx/go-echarts) - Simple yet powerful data visualizing library for Go.
+- [go-echarts](https://github.com/chenjiandongx/go-echarts) - Simple yet powerful data visualizing library for Go.
 
 ## iOS tools
 - [BEMSimpleLineGraph](https://github.com/Boris-Em/BEMSimpleLineGraph) - Highly customizable and interactive line graphs.
@@ -135,7 +135,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [glumpy](https://github.com/glumpy/glumpy) - OpenGL scientific visualizations library.
 - [holoviews](https://holoviews.org/) - Complex and declarative visualizations from annotated data.
 - [ipychart](https://github.com/nicohlr/ipychart) - The power of Chart.js in Jupyter Notebook.
-- [mayai](https://docs.enthought.com/mayavi/mayavi/) - interactive scientific data visualization and 3D plotting in Python.
+- [mayavi](https://docs.enthought.com/mayavi/mayavi/) - interactive scientific data visualization and 3D plotting in Python.
 - [matplotlib](https://matplotlib.org/) - 2D plotting library.
 - [missingno](https://github.com/ResidentMario/missingno) - provides flexible toolset of data-visualization utilities that allows quick visual summary of the completeness of your dataset, based on matplotlib.
 - [plotly](https://plot.ly/python/) - Interactive web based visualization built on top of [plotly.js](https://github.com/plotly/plotly.js)
@@ -149,7 +149,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [VisPy](https://vispy.org/) - High-performance scientific visualization based on OpenGL.
 - [vtk](https://www.vtk.org/) - 3D computer graphics, image processing, and visualization that includes a Python interface.
 - [pandas-profiling](https://github.com/pandas-profiling/pandas-profiling) - generates statistical analytic reports with visualization for quick data analysis.
-- [pyechars](https://github.com/pyecharts/pyecharts) - Python binding for Echarts library.
+- [pyecharts](https://github.com/pyecharts/pyecharts) - Python binding for Echarts library.
 
 ## R tools
 - [ggplot2](https://ggplot2.tidyverse.org/) - A plotting system based on the grammar of graphics.
