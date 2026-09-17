@@ -13,11 +13,13 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 		- [Maps](#maps)
 		- [d3](#d3)
 		- [React](#react)
+		- [React Native](#react-native)
 		- [Misc](#misc)
 	- [Android tools](#android-tools)
 	- [C++ tools](#c-tools)
 	- [Golang tools](#golang-tools)
 	- [iOS tools](#ios-tools)
+	- [Machine Learning tools](#machine-learning-tools)
 	- [Python tools](#python-tools)
 	- [R tools](#r-tools)
 	- [Ruby tools](#ruby-tools)
@@ -30,6 +32,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 	- [Twitter accounts](#twitter-accounts)
  	- [Websites](#websites)
 - [Contributing](#contributing)
+- [Contributors](#contributors)
 - [License](#license)
 
 ## JavaScript tools
@@ -87,7 +90,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [React Svg Textures](https://github.com/finnfiddle/react-svg-textures) - Textures.js ported to React. Fully isomorphic.
 - [DevExtreme React Chart](https://devexpress.github.io/devextreme-reactive/react/chart/) - High-performance plugin-based React chart for Bootstrap and Material Design.
 
-## React Native
+### React Native
 - [F2](https://github.com/antvis/F2) - An elegant, interactive and flexible charting library for mobile, maintained by Alibaba
 
 ### Misc
@@ -253,6 +256,11 @@ Thanks for your suggestions!
 
 - Fabio Souto originally createad this repo, connect with Fabio at [fabiosouto.me](https://fabiosouto.me/).
 - [Javier Luraschi](https://github.com/javierluraschi) is the current maintainer, he builds predictive visualizations at [Hal9](https://hal9.com).
+
+
+# License
+
+Released under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE).
 
 
 - - -
