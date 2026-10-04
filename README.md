@@ -270,6 +270,7 @@ Tools that are not tied to a particular platform or language.
 - [Data Visualization Society](https://www.datavisualizationsociety.com/) - The Data Visualization Society is an organization dedicated to fostering community for data visualization professionals.
 - [eagereyes](https://eagereyes.org/)
 - [EvergreenData](https://stephanieevergreen.com/)
+- [Global Data Tracker](https://globaldatatracker.com/) - Interactive country-statistics explorer with historical charts and globe views.
 - [FlowingData](https://flowingdata.com/)
 - [Information is Beautiful](https://www.informationisbeautiful.net/)
 - [Junk Charts](https://junkcharts.typepad.com/) - Kaiser Fung takes apart why certain datavizes work/don't work
