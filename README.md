@@ -205,6 +205,7 @@ Tools that are not tied to a particular platform or language.
 - [Resseract Lite](https://github.com/abistarun/resseract-lite) - A Data Analytics and Visualization Tool with flexible architecture to visualize and analyse data
 - [Charted](https://github.com/mikesall/charted) - A charting tool that produces automatic, shareable charts from any data file.
 - [ChartDB](https://github.com/chartdb/chartdb) - An Open-source tool to visualize database schemas and generate ER diagrams from a single query.
+- [csvtodashboard](https://csvtodashboard.com) - Turn a CSV or Excel file into an auto-built dashboard in the browser - client-side, no upload.
 - [Gephi](https://github.com/gephi/gephi) - An open-source platform for visualizing and manipulating large graphs
 - [ink-uplot](https://github.com/planadecu/ink-uplot) - Render uPlot charts in the terminal (React Ink) with truecolor Unicode and kitty/sixel/iTerm2 graphics.
 - [Kepler.gl](https://kepler.gl/) - Geospatial analysis tool for large-scale data sets.
