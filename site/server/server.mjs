@@ -13,9 +13,19 @@ import { handleMcp } from './mcp.mjs';
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', 'dist');
 const PORT = Number(process.env.PORT || 8080);
 const CANONICAL_HOST = process.env.CANONICAL_HOST || 'awesomedataviz.com';
-// Once the custom domain serves traffic, set REDIRECT_TO_CANONICAL=1 so other
-// hostnames (the platform's default subdomain, www) 301 to it.
+// REDIRECT_TO_CANONICAL=1 makes other hostnames (the platform's default
+// subdomain) 301 to the canonical one. The deploy script only sets it after
+// /healthz on the canonical domain reports that host, so a proxy that hides
+// the original hostname can never cause a redirect loop.
 const REDIRECT = process.env.REDIRECT_TO_CANONICAL === '1';
+
+// The hostname the visitor asked for. Behind the platform's proxy that may
+// arrive in X-Forwarded-Host or Forwarded rather than Host.
+export function requestHost(req) {
+  const forwarded = /(?:^|[;,])\s*host="?([^;,"\s]+)/i.exec(req.headers.forwarded || '')?.[1];
+  const raw = req.headers['x-forwarded-host'] || forwarded || req.headers.host || '';
+  return String(raw).split(',')[0].trim().replace(/:\d+$/, '').toLowerCase();
+}
 
 export function loadSite(root = ROOT) {
   const manifest = JSON.parse(readFileSync(join(root, '_manifest.json'), 'utf8'));
@@ -152,22 +162,24 @@ export function createServer(site = loadSite()) {
 
   return http.createServer(async (req, res) => {
     const started = Date.now();
+    const host = requestHost(req);
     res.on('finish', () => {
-      if (process.env.ACCESS_LOG !== '0') console.log(`${req.method} ${req.url} ${res.statusCode} ${Date.now() - started}ms`);
+      if (process.env.ACCESS_LOG !== '0') console.log(`${req.method} ${host}${req.url} ${res.statusCode} ${Date.now() - started}ms`);
     });
     try {
-      const host = (req.headers.host || '').split(':')[0].toLowerCase();
-      const url = new URL(req.url, `http://${host || 'localhost'}`);
+      const url = new URL(req.url, 'http://localhost');
       const pathname = decodeURIComponent(url.pathname);
 
-      // Health check (exempt from redirects): reports which build is live, for deploy checks.
-      if (pathname === '/healthz') return send(res, 200, JSON.stringify({ ok: true, buildId: site.build.buildId, builtAt: site.build.builtAt }), { 'content-type': 'application/json', 'cache-control': 'no-store' });
+      // Health check (never redirected): which build is live and which host
+      // the server saw, so the deploy can tell whether redirects are safe.
+      if (pathname === '/healthz') {
+        return send(res, 200, JSON.stringify({ ok: true, buildId: site.build.buildId, builtAt: site.build.builtAt, host }), { 'content-type': 'application/json', 'cache-control': 'no-store' });
+      }
       if (REDIRECT && host && host !== CANONICAL_HOST && host !== 'localhost' && !host.startsWith('127.')) {
         res.writeHead(301, { location: `https://${CANONICAL_HOST}${req.url}`, 'cache-control': 'public, max-age=86400' });
         return res.end();
       }
-      // Keep platform hostnames out of search indexes until they redirect.
-      const extra = host && host !== CANONICAL_HOST ? { 'x-robots-tag': 'noindex' } : {};
+      const extra = {};
 
       if (req.method === 'OPTIONS') {
         res.writeHead(204, { ...CORS, 'access-control-max-age': '86400' });

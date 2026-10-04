@@ -38,16 +38,17 @@ async function api(path, { method = 'GET', json, form } = {}) {
   return body;
 }
 
-// Resolves to the live build id at `url`, or null.
-async function liveBuild(url) {
+// The /healthz payload at `url` ({ buildId, host, ... }), or null.
+async function health(url) {
   try {
     const res = await fetch(`${url.replace(/\/$/, '')}/healthz`, { signal: AbortSignal.timeout(15000), redirect: 'manual' });
     if (!res.ok) return null;
-    return (await res.json()).buildId ?? null;
+    return await res.json();
   } catch {
     return null;
   }
 }
+const liveBuild = async (url) => (await health(url))?.buildId ?? null;
 
 async function waitFor(label, check, { timeout, every = 5000 }) {
   const deadline = Date.now() + timeout;
@@ -75,10 +76,16 @@ async function main() {
     console.log('  Set the idle timeout to always-on.');
   }
 
-  // Redirect platform hostnames to the custom domain only once it serves us.
-  const domainLive = (await liveBuild(`https://${DOMAIN}`)) !== null;
-  const env = { CANONICAL_HOST: DOMAIN, REDIRECT_TO_CANONICAL: domainLive ? '1' : '0' };
-  console.log(`  https://${DOMAIN} is ${domainLive ? 'live; other hostnames will redirect to it' : 'not serving yet; keeping the platform URL reachable'}.`);
+  // Redirect platform hostnames to the custom domain only once the running
+  // server proves it sees that hostname; otherwise a redirect would loop.
+  const probe = await health(`https://${DOMAIN}`);
+  const domainLive = probe !== null;
+  const hostSeen = probe?.host ?? null;
+  const redirect = process.env.CANONICAL_REDIRECT === 'off' ? false : hostSeen === DOMAIN;
+  const env = { CANONICAL_HOST: DOMAIN, REDIRECT_TO_CANONICAL: redirect ? '1' : '0' };
+  if (!domainLive) console.log(`  https://${DOMAIN} is not serving yet; keeping the platform URL reachable.`);
+  else if (redirect) console.log(`  https://${DOMAIN} is live; the platform URL will redirect to it.`);
+  else console.log(`  https://${DOMAIN} is live, but the server sees host "${hostSeen ?? 'unknown'}"; not redirecting other hostnames.`);
 
   const tarball = join(mkdtempSync(join(tmpdir(), 'adv-deploy-')), 'context.tar.gz');
   execFileSync('tar', ['-czf', tarball, '-C', SITE_DIR, 'Dockerfile', 'package.json', 'server', 'dist']);

@@ -4,7 +4,7 @@ import { mkdtempSync, mkdirSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, dirname } from 'node:path';
 import { gzipSync } from 'node:zlib';
-import { createServer, loadSite } from '../server/server.mjs';
+import { createServer, loadSite, requestHost } from '../server/server.mjs';
 import { handleMessage } from '../server/mcp.mjs';
 
 const TOOL = {
@@ -67,6 +67,15 @@ test('serves pages, redirects to trailing slashes and 404s', async () => {
   const missing = await fetch(`${base}/nope/`);
   assert.equal(missing.status, 404);
   assert.match(await missing.text(), /Not found/);
+});
+
+test('reads the visitor host through proxies', async () => {
+  assert.equal(requestHost({ headers: { host: 'internal.on.do.cloudish.ai', 'x-forwarded-host': 'awesomedataviz.com' } }), 'awesomedataviz.com');
+  assert.equal(requestHost({ headers: { host: 'x', forwarded: 'for=1.2.3.4;host=awesomedataviz.com;proto=https' } }), 'awesomedataviz.com');
+  assert.equal(requestHost({ headers: { host: 'Awesomedataviz.com:443' } }), 'awesomedataviz.com');
+  const health = await (await fetch(`${base}/healthz`, { headers: { 'x-forwarded-host': 'awesomedataviz.com' } })).json();
+  assert.equal(health.host, 'awesomedataviz.com');
+  assert.equal(health.buildId, 'test');
 });
 
 test('negotiates Markdown and compression', async () => {
