@@ -65,7 +65,7 @@ ${rank ? html`<td class="n rank">${i + 1}</td>` : ''}
   ${t.status && (t.status.key === 'inactive' || t.status.key === 'archived') ? statusBadge(t.status) : ''}
   <p class="tool-desc">${descriptionHtml(t.descriptionMd, model)}</p>
 </td>
-${showCategory ? html`<td class="hide-sm"><a class="quiet" href="${url.category(cat)}">${cat.title}</a></td>` : ''}
+${showCategory ? html`<td class="hide-sm nowrap"><a class="quiet" href="${url.category(cat)}" title="${cat.title}">${cat.label ?? cat.title}</a></td>` : ''}
 <td class="n stars-cell">${t.stars != null ? html`${num(t.stars)}<span class="inline-bar" aria-hidden="true"><span style="width:${pct.toFixed(1)}%"></span></span>` : html`<span class="muted">–</span>`}</td>
 <td class="n hide-sm activity-cell">${t.monthlyCommits ? html`${raw(sparkColumns(t.monthlyCommits))}<span>${formatNumber(t.commitsLastYear)}</span>` : html`<span class="muted">–</span>`}</td>
 <td class="hide-md nowrap">${ago(t.lastCommitAt, now)}</td>

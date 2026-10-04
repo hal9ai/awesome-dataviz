@@ -5,7 +5,7 @@ import { html, raw, url, abs, avatar, num, date, SITE, icon } from '../html.mjs'
 import { statTiles, chips, descriptionHtml } from '../components.mjs';
 import { landscape } from '../charts.mjs';
 import { GROUPS } from '../../content/categories.mjs';
-import { formatCompact, formatDate, formatNumber } from '../../util.mjs';
+import { formatCompact, formatDate, formatNumber, plural } from '../../util.mjs';
 
 export function landscapeRows(model) {
   const order = GROUPS.map((g) => g.key);
@@ -67,7 +67,7 @@ ${statTiles([
   <div class="section-head"><h2 id="browse">Browse by category</h2><a href="/categories/">All categories</a></div>
   ${groups.map(
     (g) => html`<h3 class="group-title">${g.title}</h3><ul class="category-grid">${g.categories.map(
-      (c) => html`<li><a class="category-card" href="${url.category(c)}"><span class="cat-title">${c.title}</span><span class="cat-count">${c.tools.length} tools</span><span class="cat-top">${c.tools
+      (c) => html`<li><a class="category-card" href="${url.category(c)}"><span class="cat-title">${c.title}</span><span class="cat-count">${plural(c.tools.length, 'tool')}</span><span class="cat-top">${c.tools
         .slice(0, 3)
         .map((t) => t.name)
         .join(', ')}</span></a></li>`

@@ -4,7 +4,7 @@ import { html, url, breadcrumbs, abs } from '../html.mjs';
 import { toolTable } from '../components.mjs';
 import { breadcrumbLd } from './tool.mjs';
 import { GROUPS } from '../../content/categories.mjs';
-import { formatDate, formatNumber } from '../../util.mjs';
+import { formatDate, formatNumber, plural } from '../../util.mjs';
 
 export function renderToolsIndex(ctx) {
   const { model, now } = ctx;
@@ -46,7 +46,7 @@ ${GROUPS.map((g) => {
   const cats = model.categories.filter((c) => c.group === g.key);
   if (!cats.length) return '';
   return html`<section aria-labelledby="g-${g.key}"><h2 id="g-${g.key}">${g.title}</h2><ul class="category-list">${cats.map(
-    (c) => html`<li><a href="${url.category(c)}"><span class="cat-title">${c.title}</span></a><span class="cat-count">${c.tools.length} tools</span><p>${c.summary}${
+    (c) => html`<li><a href="${url.category(c)}"><span class="cat-title">${c.title}</span></a><span class="cat-count">${plural(c.tools.length, 'tool')}</span><p>${c.summary}${
       c.tools.length ? html` Top: ${c.tools.slice(0, 4).map((t, i) => html`${i ? ', ' : ''}<a href="${url.tool(t)}">${t.name}</a>`)}.` : ''
     }</p></li>`
   )}</ul></section>`;
@@ -68,7 +68,7 @@ export function renderTopicsIndex(ctx) {
 ${breadcrumbs([{ name: 'Home', href: '/' }, { name: 'Topics' }])}
 <header class="page-header"><h1>Topics</h1><p class="lead">Collections that cut across languages: maps, networks, 3D, terminal charts, financial charts and more.</p></header>
 <ul class="category-list">${model.topics.map(
-    (tp) => html`<li><a href="${url.topic(tp)}"><span class="cat-title">${tp.title}</span></a><span class="cat-count">${tp.tools.length} tools</span><p>${tp.summary} Top: ${tp.tools
+    (tp) => html`<li><a href="${url.topic(tp)}"><span class="cat-title">${tp.title}</span></a><span class="cat-count">${plural(tp.tools.length, 'tool')}</span><p>${tp.summary} Top: ${tp.tools
       .slice(0, 4)
       .map((t, i) => html`${i ? ', ' : ''}<a href="${url.tool(t)}">${t.name}</a>`)}.</p></li>`
   )}</ul>

@@ -48,8 +48,10 @@ export function renderCollection(item, ctx, { kind }) {
   const ranked = tools.filter((t) => t.stars != null);
   const maintained = tools.filter((t) => t.status && ['active', 'maintained'].includes(t.status.key));
   const open = tools.filter(isOpenSource);
+  // Ranking questions only make sense for a real list.
+  const enough = tools.length >= 3;
   const faqBlock = faq([
-    ranked.length && {
+    ranked.length >= 2 && {
       q: `What is the most popular ${noun}?`,
       a: raw(
         `By GitHub stars, <a href="${url.tool(ranked[0])}">${esc(ranked[0].name)}</a> is the most popular, with ${formatCompact(ranked[0].stars)} stars${
@@ -57,7 +59,7 @@ export function renderCollection(item, ctx, { kind }) {
         }${ranked[2] ? ` and <a href="${url.tool(ranked[2])}">${esc(ranked[2].name)}</a> (${formatCompact(ranked[2].stars)})` : ''}.`
       ),
     },
-    maintained.length && {
+    enough && maintained.length && {
       q: `Which ${pluralNoun(noun)} are actively maintained?`,
       a: raw(
         `${maintained.length} of the ${tools.length} tools listed had commits in the last 12 months, including ${joinList(
@@ -65,7 +67,7 @@ export function renderCollection(item, ctx, { kind }) {
         )}. Each tool page shows monthly commit activity.`
       ),
     },
-    open.length && {
+    enough && open.length && {
       q: `Are these ${pluralNoun(noun)} free and open source?`,
       a: raw(
         `${open.length} of the ${tools.length} tools listed use an OSI-approved open-source license${
@@ -121,7 +123,7 @@ ${faqBlock.html}
 
   return {
     path,
-    title: `${heading} (${titleYear}): ${tools.length} tools ranked`,
+    title: `${heading} (${titleYear}): ${plural(tools.length, 'tool')} ranked`,
     description: `${plainText(item.summary, model)} Compare ${tools.length} ${pluralNoun(noun)} by GitHub stars, recent activity, license and downloads${
       ranked.length >= 2 ? `, including ${ranked.slice(0, 3).map((t) => t.name).join(', ')}` : ''
     }.`,

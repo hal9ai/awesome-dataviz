@@ -273,7 +273,7 @@ img.avatar[width="56"] { width: 56px; height: 56px; border-radius: 12px; }
 /* Filters */
 .filters { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin: 0 0 16px; }
 .filters label { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; color: var(--ink-2); font-weight: 550; }
-.filters input, .filters select { height: 36px; min-width: 150px; padding: 0 10px; border: 1px solid var(--border-strong); border-radius: 8px; background: var(--surface); color: var(--ink); font: inherit; font-size: 14px; }
+.filters input, .filters select { height: 36px; min-width: 150px; max-width: 280px; padding: 0 10px; border: 1px solid var(--border-strong); border-radius: 8px; background: var(--surface); color: var(--ink); font: inherit; font-size: 14px; }
 .filters input { min-width: 220px; }
 .filter-count { margin-left: auto; color: var(--muted); font-size: 14px; padding-bottom: 8px; font-variant-numeric: tabular-nums; }
 

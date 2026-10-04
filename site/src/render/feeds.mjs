@@ -6,7 +6,7 @@ import { plainText } from './components.mjs';
 import { toolSummary, alternativesFor } from './pages/tool.mjs';
 import { keyDifferences } from '../compare.mjs';
 import { inlineToText } from '../markdown.mjs';
-import { formatCompact, formatDate, formatNumber, perPeriod } from '../util.mjs';
+import { formatCompact, formatDate, formatNumber, perPeriod, plural } from '../util.mjs';
 
 const LICENSE_NOTE = 'Content: CC BY 4.0, Awesome Dataviz (https://awesomedataviz.com).';
 
@@ -121,7 +121,7 @@ export function collectionMarkdown(item, model, { kind }) {
   return [
     `# ${item.title}`,
     '',
-    `> ${item.summary} ${item.tools.length} tools, ranked by GitHub stars.`,
+    `> ${item.summary} ${plural(item.tools.length, 'tool')}, ranked by GitHub stars.`,
     '',
     ...intro.map((p) => plainText(p, model)).flatMap((p) => [p, '']),
     toolTableMarkdown(item.tools),
@@ -162,11 +162,11 @@ export function homeMarkdown(model) {
   const lines = [
     `# ${SITE.name}`,
     '',
-    `> ${SITE.tagline}: ${model.tools.length} tools in ${model.categories.length} categories, with live GitHub stars, activity, licenses and package downloads.`,
+    `> ${SITE.tagline}: ${plural(model.tools.length, 'tool')} in ${model.categories.length} categories, with live GitHub stars, activity, licenses and package downloads.`,
     '',
     '## Categories',
     '',
-    ...model.categories.map((c) => `- ${mdLink(c.title, abs(url.category(c)))}: ${c.summary} (${c.tools.length} tools)`),
+    ...model.categories.map((c) => `- ${mdLink(c.title, abs(url.category(c)))}: ${c.summary} (${plural(c.tools.length, 'tool')})`),
     '',
     '## Most popular tools',
     '',
@@ -188,11 +188,11 @@ export function llmsTxt(model, pairs) {
     '',
     '## Categories',
     '',
-    ...model.categories.map((c) => `- ${mdLink(c.title, abs(url.category(c).replace(/\/$/, '.md')))}: ${c.summary} ${c.tools.length} tools.`),
+    ...model.categories.map((c) => `- ${mdLink(c.title, abs(url.category(c).replace(/\/$/, '.md')))}: ${c.summary} ${plural(c.tools.length, 'tool')}.`),
     '',
     '## Topics',
     '',
-    ...model.topics.map((tp) => `- ${mdLink(tp.title, abs(url.topic(tp).replace(/\/$/, '.md')))}: ${tp.summary} ${tp.tools.length} tools.`),
+    ...model.topics.map((tp) => `- ${mdLink(tp.title, abs(url.topic(tp).replace(/\/$/, '.md')))}: ${tp.summary} ${plural(tp.tools.length, 'tool')}.`),
     '',
     '## Tools',
     '',
@@ -222,7 +222,7 @@ export function llmsFullTxt(model) {
   return [
     `# ${SITE.name}: full directory`,
     '',
-    `> ${SITE.tagline}. ${model.tools.length} tools, data refreshed ${model.builtAt.slice(0, 10)}. ${LICENSE_NOTE}`,
+    `> ${SITE.tagline}. ${plural(model.tools.length, 'tool')}, data refreshed ${model.builtAt.slice(0, 10)}. ${LICENSE_NOTE}`,
     '',
     ...model.categories.flatMap((c) => [collectionMarkdown(c, model, { kind: 'category' }).replace(/^# /, '## '), '']),
     '# Tools',
@@ -232,15 +232,15 @@ export function llmsFullTxt(model) {
 }
 
 export function toolsIndexMarkdown(model) {
-  return [`# All data visualization tools`, '', `> ${model.tools.length} tools ranked by GitHub stars. Data updated ${model.builtAt.slice(0, 10)}.`, '', toolTableMarkdown(model.tools), '', LICENSE_NOTE, ''].join('\n');
+  return [`# All data visualization tools`, '', `> ${plural(model.tools.length, 'tool')} ranked by GitHub stars. Data updated ${model.builtAt.slice(0, 10)}.`, '', toolTableMarkdown(model.tools), '', LICENSE_NOTE, ''].join('\n');
 }
 
 export function categoriesIndexMarkdown(model) {
-  return ['# Categories', '', ...model.categories.map((c) => `- ${mdLink(c.title, abs(url.category(c)))}: ${c.summary} (${c.tools.length} tools)`), '', LICENSE_NOTE, ''].join('\n');
+  return ['# Categories', '', ...model.categories.map((c) => `- ${mdLink(c.title, abs(url.category(c)))}: ${c.summary} (${plural(c.tools.length, 'tool')})`), '', LICENSE_NOTE, ''].join('\n');
 }
 
 export function topicsIndexMarkdown(model) {
-  return ['# Topics', '', ...model.topics.map((t) => `- ${mdLink(t.title, abs(url.topic(t)))}: ${t.summary} (${t.tools.length} tools)`), '', LICENSE_NOTE, ''].join('\n');
+  return ['# Topics', '', ...model.topics.map((t) => `- ${mdLink(t.title, abs(url.topic(t)))}: ${t.summary} (${plural(t.tools.length, 'tool')})`), '', LICENSE_NOTE, ''].join('\n');
 }
 
 export function compareIndexMarkdown(pairs) {
