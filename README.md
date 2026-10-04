@@ -379,6 +379,7 @@ Tools that are not tied to a particular platform or language.
 - [Resseract Lite](https://github.com/abistarun/resseract-lite) - A Data Analytics and Visualization Tool with flexible architecture to visualize and analyse data
 - [Sampler](https://github.com/sqshq/sampler) - Terminal dashboard that runs shell commands and visualizes their output, configured with YAML.
 - [SandDance](https://github.com/microsoft/SandDance) - Visual data exploration and presentation with animated unit visualizations, from Microsoft Research.
+- [sankeydiagram.net](https://sankeydiagram.net/) - Web app for creating and sharing Sankey diagrams of flows and budgets without code.
 - [Spark](https://github.com/holman/spark) - Sparklines for the shell. It has several [implementations in different languages](https://github.com/holman/spark/wiki/Alternative-Implementations).
 - [Squey](https://squey.org) - Visualization software for exploring and understanding large amounts of tabular data (using parallel coordinates, timeseries and scatter plots).
 - [VisiData](https://github.com/saulpw/visidata) - Terminal spreadsheet multitool for exploring and arranging tabular data, with basic plotting.

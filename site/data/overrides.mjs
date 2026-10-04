@@ -159,4 +159,5 @@ export default {
   'https://github.com/antvis/X6': { npm: '@antv/x6', history: ['x6.antv.vision'] },
   'https://graphviz.org/': { repo: 'gitlab:graphviz/graphviz', aliases: ['dot'] },
   'https://squey.org': { repo: 'gitlab:squey/squey' },
+  'https://sankeydiagram.net/': { repo: 'nxt3AT/sankeydiagram.net', license: 'MIT + Commons Clause', aliases: ['sankey'] },
 };
