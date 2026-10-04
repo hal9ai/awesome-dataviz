@@ -1,0 +1,55 @@
+name: Site
+
+# Builds awesomedataviz.com from README.md and deploys it to Cloudish.
+# Pull requests get the build and tests (a check that README entries parse);
+# main deploys on every change and once a day to refresh GitHub, npm, PyPI
+# and CRAN data.
+
+on:
+  push:
+    branches: [main]
+    paths: ['README.md', 'site/**', '.github/workflows/site.yaml']
+  pull_request:
+    paths: ['README.md', 'site/**', '.github/workflows/site.yaml']
+  schedule:
+    - cron: '23 6 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: site-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # README history powers the "listed since" dates
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Restore API cache
+        uses: actions/cache@v4
+        with:
+          path: site/.cache
+          key: site-cache-${{ github.run_id }}
+          restore-keys: site-cache-
+      - name: Test
+        run: npm test
+      - name: Build
+        run: npm run build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy to Cloudish
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: npm run deploy
+        env:
+          CLOUDISH_API_KEY: ${{ secrets.CLOUDISH_API_KEY }}

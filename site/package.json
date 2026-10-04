@@ -1,0 +1,19 @@
+{
+  "name": "awesomedataviz-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static site generator and server for awesomedataviz.com, built from the repository README.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node src/build.mjs",
+    "build:offline": "node src/build.mjs --offline",
+    "start": "node server/server.mjs",
+    "dev": "node src/build.mjs --offline --allow-broken-links && node server/server.mjs",
+    "test": "node --test test/",
+    "deploy": "node scripts/deploy.mjs"
+  },
+  "license": "CC-BY-4.0"
+}
