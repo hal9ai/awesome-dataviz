@@ -189,7 +189,7 @@ function footer(model) {
       <p>${SITE.tagline}. Curated by the community on <a href="${SITE.repo}" rel="noopener">GitHub</a> since 2014${
         updated ? html`, with data refreshed daily (last update <time datetime="${updated}">${formatDate(updated)}</time>)` : ''
       }.</p>
-      <p class="muted">Content is available under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener">CC BY 4.0</a>. Maintained by <a href="https://github.com/javierluraschi" rel="noopener">Javier Luraschi</a> and contributors.</p>
+      <p class="muted">Content is available under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license noopener">CC BY 4.0</a>. Maintained by <a href="https://github.com/javierluraschi" rel="noopener">Javier Luraschi</a> and contributors, sponsored by <a href="https://hal9.com" rel="noopener">Hal9</a>.</p>
     </div>
     <nav aria-label="Directory">
       <h2>Directory</h2>
