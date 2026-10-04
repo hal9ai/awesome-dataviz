@@ -33,6 +33,7 @@ both themes.
 | `src/render/` | HTML templates, SVG charts and machine-readable feeds |
 | `server/` | Static server, search API and MCP endpoint (no dependencies) |
 | `scripts/deploy.mjs` | Uploads the build to Cloudish and checks it is live |
+| `www-redirect/` | The tiny app that redirects `www.` to the apex domain |
 
 ## Develop
 
