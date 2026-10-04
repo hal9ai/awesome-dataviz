@@ -9,7 +9,6 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [Awesome dataviz](#awesome-dataviz)
 	- [JavaScript tools](#javascript-tools)
 		- [Charting libraries](#charting-libraries)
-- [Observable Plot](https://github.com/observablehq/plot) - A JavaScript library for exploratory data visualization.
 		- [Charting libraries for graphs](#charting-libraries-for-graphs)
 		- [Maps](#maps)
 		- [d3](#d3)
@@ -32,7 +31,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 	- [Catalogs](#catalogs)
 	- [Podcasts](#podcasts)
 	- [Twitter accounts](#twitter-accounts)
- 	- [Websites](#websites)
+	- [Websites](#websites)
 - [Contributing](#contributing)
 - [Contributors](#contributors)
 - [License](#license)
@@ -55,6 +54,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [lit-line](https://github.com/apinet/lit-line) - SVG Line Chart Web Component - light, fast, interactive & fully responsive.
 - [MetricsGraphics.js](https://metricsgraphicsjs.org/) - Optimized for time-series data.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
+- [Observable Plot](https://github.com/observablehq/plot) - A JavaScript library for exploratory data visualization.
 - [Plotly.js](https://github.com/plotly/plotly.js/) - Powerful declarative library with support for 20 chart types.
 - [React wrapper](https://github.com/hustcc/echarts-for-react)
 - [TechanJS](https://techanjs.org/) - Stock and financial charts.
@@ -98,7 +98,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [nivo](https://github.com/plouc/nivo) - Supercharged dataviz components for React with isomorphic ability, [demo](https://nivo.rocks).
 - [React Svg Textures](https://github.com/finnfiddle/react-svg-textures) - Textures.js ported to React. Fully isomorphic.
 - [DevExtreme React Chart](https://devexpress.github.io/devextreme-reactive/react/chart/) - High-performance plugin-based React chart for Bootstrap and Material Design.
-- [Graphic Walker]([https://github.com/Kanarie](https://github.com/Kanaries/graphic-walker)) - An embeddable React component that functions as an open source alternative to Tableau, which allows data scientists to analyze data and visualize patterns with simple drag-and-drop operations.
+- [Graphic Walker](https://github.com/Kanaries/graphic-walker) - An embeddable React component that functions as an open source alternative to Tableau, which allows data scientists to analyze data and visualize patterns with simple drag-and-drop operations.
 
 ### React Native
 - [F2](https://github.com/antvis/F2) - An elegant, interactive and flexible charting library for mobile, maintained by Alibaba
@@ -123,16 +123,10 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [LargeVis](https://github.com/lferry007/LargeVis) - implementation of the [LargeVis paper](https://arxiv.org/abs/1602.00370), used to visualize large-scale and high-dimensional data.
 - [PlotJuggler](https://github.com/facontidavide/PlotJuggler) - open-source Qt5 application to plot charts (based on Qwt).
 - [Visualization Toolkit (VTK)](https://gitlab.kitware.com/vtk/vtk/blob/master/README.md) - open-source library for 3d Graphics, image processing and visualization.
-- [ParaView](https://www.paraview.org) - Multi-platform data analysis and visualization application based on VTK.
-  (C++, BSD, [GitLab](https://gitlab.kitware.com/paraview/paraview))
-- [Polyscope](https://polyscope.run/) - Viewer and user interface for 3D geometry processing.
-  (C++, MIT, [GitHub](https://github.com/nmwsharp/polyscope))
+- [ParaView](https://www.paraview.org) - Multi-platform data analysis and visualization application based on VTK. (C++, BSD, [GitLab](https://gitlab.kitware.com/paraview/paraview))
+- [Polyscope](https://polyscope.run/) - Viewer and user interface for 3D geometry processing. (C++, MIT, [GitHub](https://github.com/nmwsharp/polyscope))
 - [F3D](https://f3d-app.github.io/f3d/) - Cross-platform, fast, and minimalist 3D viewer with scientific visualization tools. (C++, BSD, [GitHub](https://github.com/f3d-app/f3d))
-- [TTK](https://topology-tool-kit.github.io/) - Topological data analysis and visualization.
-  (C++/Python, BSD, [GitHub](https://github.com/topology-tool-kit/ttk))
-
-
-
+- [TTK](https://topology-tool-kit.github.io/) - Topological data analysis and visualization. (C++/Python, BSD, [GitHub](https://github.com/topology-tool-kit/ttk))
 
 ## Golang tools
 - [svgo](https://github.com/ajstarks/svgo) - Go Language Library for SVG generation.
@@ -148,8 +142,8 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 ## Machine Learning tools
 - [TensorWatch](https://github.com/microsoft/tensorwatch) - Debugging and visualization tool for data science and machine learning
 - [Phoenix](https://github.com/Arize-ai/phoenix) - ML observability in a notebook with UMAP visualizations
-- [Comet](https://github.com/comet-ml/comet-examples) - An MLOps platform for tracking, visualizing, and debugging your machine learning workflows from training straight through to produciton.
-- [CometLLM](https://github.com/comet-ml/comet-llm) - Track, visualize, and search your LLM prompts and chains in this easy-to-use, 100% open-source tool.
+- [Comet](https://github.com/comet-ml/comet-examples) - An MLOps platform for tracking, visualizing, and debugging your machine learning workflows from training straight through to production.
+- [Opik](https://github.com/comet-ml/opik) - Formerly CometLLM. Debug, evaluate, and monitor LLM applications with tracing and dashboards.
 
 ## Python tools
 - [altair](https://altair-viz.github.io/) - Declarative statistical visualizations, based on Vega-Lite.
@@ -171,7 +165,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [Quibbler](https://github.com/Technion-Kishony-lab/quibbler) - Your data and anything you plot is effortlessly live and interactive.
 - [Rerun](https://github.com/rerun-io/rerun) - An SDK for logging computer vision and robotics data paired with a visualizer for exploring that data over time.
 - [seaborn](https://seaborn.pydata.org/) - A library for making attractive and informative statistical graphics.
-- [syd](https://github.com/landoskape/syd) - A package for making GUIs around matplotlib figures easy, fast, and streamlined. 
+- [syd](https://github.com/landoskape/syd) - A package for making GUIs around matplotlib figures easy, fast, and streamlined.
 - [toyplot](https://toyplot.readthedocs.io/en/stable/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
 - [three.py](https://github.com/stemkoski/three.py/) - Easy to use 3D library based on PyOpenGL. Inspired by Three.js.
 - [uniplot](https://github.com/olavolav/uniplot) - Lightweight plotting to the terminal. 4x resolution via Unicode.
@@ -180,11 +174,9 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [vtk](https://www.vtk.org/) - 3D computer graphics, image processing, and visualization that includes a Python interface.
 - [pandas-profiling](https://github.com/pandas-profiling/pandas-profiling) - generates statistical analytic reports with visualization for quick data analysis.
 - [pyecharts](https://github.com/pyecharts/pyecharts) - Python binding for Echarts library.
-- [vedo](https://vedo.embl.es) - Library for scientific analysis and visualization of 3D objects based on VTK.
-  (Python, MIT, [GitHub](https://github.com/marcomusy/vedo))
-- [yt](https://yt-project.org/) - Toolkit for analysis and visualization of volumetric data.
-  (Python, BSD, [GitHub](https://github.com/yt-project/yt))
-  
+- [vedo](https://vedo.embl.es) - Library for scientific analysis and visualization of 3D objects based on VTK. (Python, MIT, [GitHub](https://github.com/marcomusy/vedo))
+- [yt](https://yt-project.org/) - Toolkit for analysis and visualization of volumetric data. (Python, BSD, [GitHub](https://github.com/yt-project/yt))
+
 ## R tools
 - [ggplot2](https://ggplot2.tidyverse.org/) - A plotting system based on the grammar of graphics.
 - [ggvis](https://ggvis.rstudio.com/) - A data visualization package with a syntax similar to ggplot2 which allows you to create rich interactive graphics.
@@ -236,8 +228,6 @@ Tools that are not tied to a particular platform or language.
 - [The Visual Display of Quantitative Information](https://www.amazon.com/Visual-Display-Quantitative-Information/dp/0961392142) by Edward Tufte.
 - [The Wall Street Journal Guide to Information Graphics](https://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393347281) by Dona M. Wong
 - [Visualization Analysis and Design](https://www.amazon.com/Visualization-Analysis-Design-AK-Peters/dp/1466508914) by Tamara Munzner.
-- [Interactive Data Visualization for the Web](http://chimera.labs.oreilly.com/books/1230000000345) by Scott Murray. Available to read online. Focused on D3.
-- [Data Visualization Toolkit](http://datavisualizationtoolkit.com) by Barrett Austin Clark. Uses D3, Ruby on Rails, Postgres, PostGIS, & Leaflet.
 - [R in Action, Third Edition](https://www.manning.com/books/r-in-action-third-edition) by Robert I. Kabacoff. A complete learning resource for R and tidyverse.
 - [Everyday Data Visualization](https://www.manning.com/books/everyday-data-visualization) by Desireé Abbott. A field guide for design techniques that will improve the charts, reports, and data dashboards you build every day.
 - [Interactive Data Visualization for the Web](https://chimera.labs.oreilly.com/books/1230000000345) by Scott Murray. Available to read online. Focused on D3.
