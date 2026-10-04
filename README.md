@@ -155,6 +155,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [PyVista](https://github.com/pyvista/pyvista) – 3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK)
 - [Quibbler](https://github.com/Technion-Kishony-lab/quibbler) - Your data and anything you plot is effortlessly live and interactive.
 - [seaborn](https://seaborn.pydata.org/) - A library for making attractive and informative statistical graphics.
+- [syd](https://github.com/landoskape/syd) - A package for making GUIs around matplotlib figures easy, fast, and streamlined. 
 - [toyplot](https://toyplot.readthedocs.io/en/stable/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
 - [three.py](https://github.com/stemkoski/three.py/) - Easy to use 3D library based on PyOpenGL. Inspired by Three.js.
 - [veusz](https://veusz.github.io/) - Python multiplatform GUI plotting tool and graphing library
