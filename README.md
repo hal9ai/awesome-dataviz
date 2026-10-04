@@ -40,6 +40,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [Chartist.js](https://gionkunz.github.io/chartist-js/) - Responsive charts with great browser compatibility.
 - [dc.js](https://github.com/dc-js/dc.js) is an multi-Dimensional charting built to work natively with crossfilter.
 - [Dygraphs](https://dygraphs.com/) - Interactive line charts library that works with huge datasets.
+- [dxcharts-lite](https://github.com/devexperts/dxcharts-lite) - Flexible financial charting library based on HTML5 canvas.
 - [Echarts](https://github.com/ecomfe/echarts) - Highly customizable and interactive charts ready for big datasets.
 - [Epoch](https://github.com/epochjs/epoch) - Perfect to create real-time charts.
 - [Google Charts](https://developers.google.com/chart) - Interactive charts for browsers and mobile devices.
