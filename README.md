@@ -262,6 +262,7 @@ Tools that are not tied to a particular platform or language.
 - [Junk Charts](https://junkcharts.typepad.com/) - Kaiser Fung takes apart why certain datavizes work/don't work
 - [Lisa Rost thinks and discusses about why we dataviz](https://lisacharlotterost.github.io/)
 - [Makeover Monday](https://www.makeovermonday.co.uk/) blog - [#MakeoverMonday](https://twitter.com/search?q=%23makeovermonday) on twitter
+- [Plottie](https://plottie.art) - Open-access library of scientific plots for inspiration and AI visualization tool.
 - [The Open News](https://source.opennews.org/articles/) blog -  Open news has some good dataviz related articles from time to time
 - [The Pudding](https://pudding.cool/)
 - [Truth & Beauty Operations](https://truth-and-beauty.net/)
