@@ -20,4 +20,4 @@ jobs:
     - name: Checks
       run: |
         gem install awesome_bot
-        awesome_bot README.md --allow-redirect --allow 403,503 --white-list lattice.r-forge.r-project.org
+        awesome_bot README.md --allow-redirect --allow 403,503 --white-list lattice.r-forge.r-project.org,datavizcatalogue.com
