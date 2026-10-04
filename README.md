@@ -158,6 +158,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 - [syd](https://github.com/landoskape/syd) - A package for making GUIs around matplotlib figures easy, fast, and streamlined. 
 - [toyplot](https://toyplot.readthedocs.io/en/stable/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
 - [three.py](https://github.com/stemkoski/three.py/) - Easy to use 3D library based on PyOpenGL. Inspired by Three.js.
+- [uniplot](https://github.com/olavolav/uniplot) - Lightweight plotting to the terminal. 4x resolution via Unicode.
 - [veusz](https://veusz.github.io/) - Python multiplatform GUI plotting tool and graphing library
 - [VisPy](https://vispy.org/) - High-performance scientific visualization based on OpenGL.
 - [vtk](https://www.vtk.org/) - 3D computer graphics, image processing, and visualization that includes a Python interface.
