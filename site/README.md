@@ -33,7 +33,6 @@ both themes.
 | `src/render/` | HTML templates, SVG charts and machine-readable feeds |
 | `server/` | Static server, search API and MCP endpoint (no dependencies) |
 | `scripts/deploy.mjs` | Uploads the build to Cloudish and checks it is live |
-| `www-redirect/` | The tiny app that redirects `www.` to the apex domain |
 
 ## Develop
 
@@ -55,6 +54,10 @@ the README or the site, and deploys `main` on every change and daily to refresh
 the data. The deploy needs the `CLOUDISH_API_KEY` repository secret.
 
 To deploy by hand: `CLOUDISH_API_KEY=... npm run deploy` after a build.
+
+Both `awesomedataviz.com` and `www.awesomedataviz.com` are custom domains on
+the same Cloudish project; `www` is added with `"redirect": true`, so Cloudish
+itself redirects it to the apex.
 
 ## Fixing data
 
