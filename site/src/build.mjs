@@ -12,6 +12,7 @@ import { dirname, extname, join, relative } from 'node:path';
 import { brotliCompressSync, gzipSync, constants as zlib } from 'node:zlib';
 import { loadCatalog, SITE_DIR, REPO_DIR } from './data.mjs';
 import { comparisonPairs } from './compare.mjs';
+import { loadPublished, slugRedirects, redirectMap, keptPairs } from './published.mjs';
 import { Cache, DAY, limiter, request } from './enrich/http.mjs';
 import { layout } from './render/html.mjs';
 import { renderTool } from './render/pages/tool.mjs';
@@ -179,7 +180,10 @@ async function main() {
     console.error(`Only ${Math.round(coverage * 100)}% of repositories have data; refusing to build.`);
     process.exit(1);
   }
-  const pairs = comparisonPairs(model);
+  const published = await loadPublished({ cacheDir: CACHE, offline, log });
+  const moved = slugRedirects(model, published);
+  const pairs = comparisonPairs(model, { keep: keptPairs(published, moved) });
+  const redirects = redirectMap(moved, published, pairs);
   const meta = repoMeta();
   const buildId = `${meta.sha ?? 'local'}-${hash(model.builtAt)}`;
 
@@ -265,11 +269,13 @@ async function main() {
   write('opensearch.xml', feeds.openSearch());
   const indexable = pages.filter((p) => !p.noindex).map((p) => p.path);
   write('sitemap.xml', feeds.sitemap(indexable, model.builtAt.slice(0, 10)));
+  write('_redirects.json', JSON.stringify(redirects));
   write('build.json', JSON.stringify({ buildId, builtAt: model.builtAt, sha: meta.sha, tools: model.tools.length, pages: pages.length }));
 
   const manifest = finalize();
   const broken = checkLinks(manifest);
   const files = Object.keys(manifest).length;
+  if (Object.keys(redirects).length) log(`  ${Object.keys(redirects).length} redirects for moved pages.`);
   log(`Built ${pages.length} pages (${model.tools.length} tools, ${model.categories.length} categories, ${model.topics.length} topics, ${pairs.length} comparisons), ${files} files in ${((Date.now() - started) / 1000).toFixed(1)}s.`);
   if (broken.size) {
     for (const [target, from] of broken) console.error(`  broken link ${target} (in ${from})`);

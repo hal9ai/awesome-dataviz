@@ -43,6 +43,20 @@ const META = {
       'Graph size decides a lot: [[sigma-js]] renders with WebGL to keep large graphs interactive, [[cytoscape-js]] combines visualization with graph analysis, and diagramming libraries focus on editing and constraint-based layout. For the graph data model and algorithms on their own, see [[graphology]].',
     ],
   },
+  'JavaScript tools > Financial charts': {
+    label: 'JS finance',
+    slug: 'javascript-financial-charts',
+    short: 'finance',
+    group: 'javascript',
+    language: 'JavaScript',
+    title: 'JavaScript financial charting libraries',
+    noun: 'JavaScript financial charting library',
+    summary: 'Candlestick, OHLC and trading charts with indicators for the browser.',
+    intro: [
+      'Charting libraries built for market data: candlestick and OHLC series, volume panes, technical indicators, drawing tools such as trend lines, and fast panning and zooming over long price histories. Most render with Canvas or WebGL to stay smooth with years of tick or minute data.',
+      'Check which indicators and drawing tools ship built in versus as plugins, whether real-time updates and streaming data are supported, and the license: [[lightweight-charts]] from TradingView is Apache-2.0, while some trading platforms offer only their full charting product under a commercial license. General-purpose libraries such as [[echarts]] and [[plotly-js]] also draw candlesticks when you need finance alongside other charts.',
+    ],
+  },
   'JavaScript tools > Maps': {
     label: 'JS maps',
     slug: 'javascript-maps',

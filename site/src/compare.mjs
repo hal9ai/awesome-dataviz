@@ -40,7 +40,7 @@ const EXTRA_PAIRS = [
   ['d2', 'mermaid'],
 ];
 
-export function comparisonPairs(model) {
+export function comparisonPairs(model, { keep = [] } = {}) {
   const pairs = new Map();
   const add = (a, b, context) => {
     if (!a || !b || a === b || a.stars == null || b.stars == null) return;
@@ -52,7 +52,8 @@ export function comparisonPairs(model) {
     const top = category.tools.filter((t) => t.stars != null).slice(0, TOP_PER_CATEGORY);
     for (let i = 0; i < top.length; i++) for (let j = i + 1; j < top.length; j++) add(top[i], top[j], category);
   }
-  for (const [a, b] of EXTRA_PAIRS) {
+  // Pages published before stay, as long as both tools are still listed.
+  for (const [a, b] of [...EXTRA_PAIRS, ...keep]) {
     const x = model.toolBySlug.get(a);
     const y = model.toolBySlug.get(b);
     if (x && y) add(x, y, x.primaryCategory === y.primaryCategory ? x.primaryCategory : null);

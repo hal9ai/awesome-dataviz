@@ -11,6 +11,7 @@ Browse it at **[awesomedataviz.com](https://awesomedataviz.com)**: search, ranki
 	- [JavaScript tools](#javascript-tools)
 		- [Charting libraries](#charting-libraries)
 		- [Charting libraries for graphs](#charting-libraries-for-graphs)
+		- [Financial charts](#financial-charts)
 		- [Maps](#maps)
 		- [d3](#d3)
 		- [React](#react)
@@ -53,7 +54,6 @@ Browse it at **[awesomedataviz.com](https://awesomedataviz.com)**: search, ranki
 - [Chartist.js](https://gionkunz.github.io/chartist-js/) - Responsive charts with great browser compatibility.
 - [Charts.css](https://github.com/ChartsCSS/charts.css) - CSS framework that styles HTML tables as charts.
 - [dc.js](https://github.com/dc-js/dc.js) - Multi-dimensional charting built to work natively with crossfilter.
-- [dxcharts-lite](https://github.com/devexperts/dxcharts-lite) - Flexible financial charting library based on HTML5 canvas.
 - [Dygraphs](https://dygraphs.com/) - Interactive line charts library that works with huge datasets.
 - [Epoch](https://github.com/epochjs/epoch) - Perfect to create real-time charts.
 - [Frappe Charts](https://github.com/frappe/charts) - Simple, responsive SVG charts with zero dependencies.
@@ -62,16 +62,13 @@ Browse it at **[awesomedataviz.com](https://awesomedataviz.com)**: search, ranki
 - [Glyph](https://github.com/seanhanca/glyph) - Deterministic chart library that renders the same JSON spec to identical SVG on every platform, with DuckDB inside and an MCP server for AI agents.
 - [Google Charts](https://developers.google.com/chart) - Interactive charts for browsers and mobile devices.
 - [GraphicsJS](http://www.graphicsjs.org) - Lightweight JS graphics library with intuitive API, based on SVG/VML.
-- [Lightweight Charts](https://github.com/tradingview/lightweight-charts) - Performant HTML5 canvas financial charts, from TradingView.
 - [lit-line](https://github.com/apinet/lit-line) - SVG Line Chart Web Component - light, fast, interactive & fully responsive.
 - [MetricsGraphics.js](https://metricsgraphicsjs.org/) - Optimized for time-series data.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
 - [Observable Plot](https://github.com/observablehq/plot) - A JavaScript library for exploratory data visualization.
 - [Plotly.js](https://github.com/plotly/plotly.js/) - Powerful declarative library with support for 20 chart types.
 - [roughViz](https://github.com/jwilber/roughViz) - Sketchy, hand-drawn style charts for the browser, based on Rough.js.
-- [TechanJS](https://techanjs.org/) - Stock and financial charts.
 - [TOAST UI Chart](https://github.com/nhn/tui.chart) - Complete library with support for legacy browsers.
-- [TradeCanvas](https://github.com/bonguynvan/tradecanvas) - Financial charts with indicators, drawing tools and live feeds, drawn with Canvas 2D or WebGL.
 - [Unovis](https://github.com/f5/unovis) - Modular data visualization framework for React, Angular, Svelte, Vue and vanilla TypeScript, by F5.
 - [uPlot](https://github.com/leeoniya/uPlot) - Small, fast canvas-based charts for time series, lines, areas, OHLC and bars.
 - [Vizzu](https://github.com/vizzuhq/vizzu-lib) - Library for animated data visualizations and data stories.
@@ -92,6 +89,12 @@ Browse it at **[awesomedataviz.com](https://awesomedataviz.com)**: search, ranki
 - [Vue Flow](https://github.com/bcakmakoglu/vue-flow) - Flowchart and node-based graph component for Vue 3.
 - [X6](https://github.com/antvis/X6) - Diagramming library for DAGs, ER diagrams, flowcharts and other graph editors, maintained by Alibaba.
 - [xyflow](https://github.com/xyflow/xyflow) - React Flow and Svelte Flow: libraries for building node-based editors, flow charts and interactive diagrams.
+
+### Financial charts
+- [dxcharts-lite](https://github.com/devexperts/dxcharts-lite) - Flexible financial charting library based on HTML5 canvas.
+- [Lightweight Charts](https://github.com/tradingview/lightweight-charts) - Performant HTML5 canvas financial charts, from TradingView.
+- [TechanJS](https://techanjs.org/) - Stock and financial charts.
+- [TradeCanvas](https://github.com/bonguynvan/tradecanvas) - Financial charts with indicators, drawing tools and live feeds, drawn with Canvas 2D or WebGL.
 
 ### Maps
 - [CanvasGlobe](https://github.com/Shree-hari/canvas-globe) - Interactive Canvas 2D globes and flat world maps for JavaScript and React.

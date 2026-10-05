@@ -34,8 +34,10 @@ export function loadSite(root = ROOT) {
   const categories = JSON.parse(readFileSync(join(root, 'api', 'categories.json'), 'utf8')).categories;
   const topics = JSON.parse(readFileSync(join(root, 'api', 'topics.json'), 'utf8')).topics;
   const build = JSON.parse(readFileSync(join(root, 'build.json'), 'utf8'));
+  const redirectsFile = join(root, '_redirects.json');
+  const redirects = existsSync(redirectsFile) ? JSON.parse(readFileSync(redirectsFile, 'utf8')) : {};
   const tools = new Map(api.tools.map((t) => [t.slug, t]));
-  return { root, manifest, tools, categories, topics, build, index: buildIndex(index.records) };
+  return { root, manifest, tools, categories, topics, build, redirects, index: buildIndex(index.records) };
 }
 
 // Pages run one inline script (the theme boot, allowed by hash) and use
@@ -201,6 +203,11 @@ export function createServer(site = loadSite()) {
       if (hit?.file) {
         const twin = hit.file.endsWith('.html') && wantsMarkdown(req) ? markdownTwin(site, hit.file) : null;
         return serveFile(req, res, site, twin ?? hit.file, { headers: { ...extra, ...(twin ? { 'content-location': twin } : {}) } });
+      }
+      const moved = site.redirects[pathname] ?? site.redirects[`${pathname}/`];
+      if (moved) {
+        res.writeHead(301, { location: moved + (url.search || ''), 'cache-control': 'public, max-age=86400' });
+        return res.end();
       }
       return serveFile(req, res, site, '/404.html', { status: 404, headers: { ...extra, 'cache-control': 'public, max-age=60' } });
     } catch (error) {

@@ -50,6 +50,7 @@ before(async () => {
   file('/assets/app.abc.js.gz', gzipSync(files['/assets/app.abc.js']));
   manifest['/assets/app.abc.js'].gz = true;
   file('/_manifest.json', JSON.stringify(manifest));
+  file('/_redirects.json', JSON.stringify({ '/tools/chartjs/': '/tools/chart-js/' }));
   server = createServer(loadSite(root));
   await new Promise((r) => server.listen(0, '127.0.0.1', r));
   base = `http://127.0.0.1:${server.address().port}`;
@@ -76,6 +77,14 @@ test('reads the visitor host through proxies', async () => {
   const health = await (await fetch(`${base}/healthz`, { headers: { 'x-forwarded-host': 'awesomedataviz.com' } })).json();
   assert.equal(health.host, 'awesomedataviz.com');
   assert.equal(health.buildId, 'test');
+});
+
+test('moved pages redirect permanently', async () => {
+  for (const path of ['/tools/chartjs/', '/tools/chartjs']) {
+    const res = await fetch(`${base}${path}`, { redirect: 'manual' });
+    assert.equal(res.status, 301, path);
+    assert.equal(res.headers.get('location'), '/tools/chart-js/');
+  }
 });
 
 test('negotiates Markdown and compression', async () => {

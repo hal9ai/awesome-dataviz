@@ -53,6 +53,7 @@ export const TOPICS = [
     noun: 'financial charting library',
     summary: 'Candlesticks, OHLC and trading charts.',
     intro: 'Libraries specialized in financial data: candlestick and OHLC charts, technical indicators, and fast pan-and-zoom over long price histories.',
+    categories: ['javascript-financial-charts'],
     githubTopics: ['finance', 'trading', 'candlestick', 'stock', 'financial-charts', 'stock-charts', 'candlestick-chart', 'trading-charts'],
     keywords: [/financ/i, /\bstock\b/i, /candlestick/i, /\btrading\b/i, /\bOHLC\b/],
     exclude: ['dash', 'fl-chart', 'react-native-graph', 'plotly-rs'],
