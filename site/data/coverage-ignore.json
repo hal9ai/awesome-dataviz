@@ -48,6 +48,10 @@
   "reason": "Deprecated in favor of Ant Design Charts, which is listed."
  },
  {
+  "repo": "antvis/Infographic",
+  "reason": "Infographics from text templates rather than data charts (decided 2026-10-05)."
+ },
+ {
   "repo": "AnyChart/AnyChart-Android",
   "reason": "Proprietary license."
  },
@@ -58,6 +62,10 @@
  {
   "repo": "apache/sedona",
   "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "APIs-guru/graphql-voyager",
+  "reason": "GraphQL API schema viewer, a developer tool (decided 2026-10-05)."
  },
  {
   "repo": "arl/statsviz",
@@ -130,6 +138,10 @@
  {
   "repo": "chartbrew/chartbrew",
   "reason": "Functional Source License (source-available); not OSI open source."
+ },
+ {
+  "repo": "chartdb/chartdb",
+  "reason": "Removed 2026-10-05: database schema diagram editor, not a data visualization library."
  },
  {
   "repo": "ChatLab/ChatLab",
@@ -208,6 +220,10 @@
   "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
  },
  {
+  "repo": "didi/LogicFlow",
+  "reason": "Diagram editor framework, not a data visualization library (decided 2026-10-05)."
+ },
+ {
   "repo": "DKirwan/calendar-heatmap",
   "reason": "Data visualization library, but unmaintained for years; not added."
  },
@@ -234,6 +250,10 @@
  {
   "repo": "electricitymaps/electricitymaps-contrib",
   "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "excalidraw/excalidraw",
+  "reason": "Drawing whiteboard, not a data visualization library (decided 2026-10-05)."
  },
  {
   "repo": "foru17/neko-master",
@@ -400,6 +420,10 @@
   "reason": "Data visualization library, but unmaintained for years; not added."
  },
  {
+  "repo": "jgraph/drawio",
+  "reason": "Removed 2026-10-05: diagram drawing app, not a data visualization library."
+ },
+ {
   "repo": "jmcnamara/XlsxWriter",
   "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
  },
@@ -460,6 +484,10 @@
   "reason": "Generic graphics, 3D or game engine, not a data visualization library."
  },
  {
+  "repo": "liam-hq/liam",
+  "reason": "Database schema diagram tool, not a data visualization library (decided 2026-10-05)."
+ },
+ {
   "repo": "liujuntao123/smart-excalidraw-next",
   "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
  },
@@ -474,6 +502,10 @@
  {
   "repo": "lmcinnes/umap",
   "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "lux-org/lux",
+  "reason": "Data visualization library, but no commits since March 2024 (decided 2026-10-05)."
  },
  {
   "repo": "lxfater/inpaint-web",
@@ -778,6 +810,10 @@
  {
   "repo": "proj4js/proj4js",
   "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "projectstorm/react-diagrams",
+  "reason": "Diagram editor library, not a data visualization library (decided 2026-10-05)."
  },
  {
   "repo": "pyglet/pyglet",

@@ -12,7 +12,7 @@ import { dirname, extname, join, relative } from 'node:path';
 import { brotliCompressSync, gzipSync, constants as zlib } from 'node:zlib';
 import { loadCatalog, SITE_DIR, REPO_DIR } from './data.mjs';
 import { comparisonPairs } from './compare.mjs';
-import { loadPublished, slugRedirects, redirectMap, keptPairs } from './published.mjs';
+import { loadPublished, slugRedirects, redirectMap, keptPairs, removedTools } from './published.mjs';
 import { Cache, DAY, limiter, request } from './enrich/http.mjs';
 import { layout } from './render/html.mjs';
 import { renderTool } from './render/pages/tool.mjs';
@@ -183,7 +183,7 @@ async function main() {
   const published = await loadPublished({ cacheDir: CACHE, offline, log });
   const moved = slugRedirects(model, published);
   const pairs = comparisonPairs(model, { keep: keptPairs(published, moved) });
-  const redirects = redirectMap(moved, published, pairs);
+  const redirects = redirectMap(moved, published, pairs, removedTools(model, published, moved));
   const meta = repoMeta();
   const buildId = `${meta.sha ?? 'local'}-${hash(model.builtAt)}`;
 

@@ -1,7 +1,8 @@
 // URLs are forever: pages the live site already published keep working.
 // Each build reads the live sitemap and tool API (falling back to a cached
 // copy), keeps generating every comparison page that was published while both
-// tools still exist, and 301-redirects tool slugs that changed.
+// tools still exist, 301-redirects tool slugs that changed, and sends pages of
+// tools removed from the list to the category they were in.
 
 import { Cache, DAY, request } from './enrich/http.mjs';
 
@@ -17,7 +18,7 @@ export async function loadPublished({ cacheDir, offline, log = console.log }) {
     ]);
     if (sitemap.ok && api.ok && Array.isArray(api.body?.tools)) {
       const comparisons = [...String(sitemap.body).matchAll(/\/compare\/([a-z0-9-]+-vs-[a-z0-9-]+)\//g)].map((m) => m[1]);
-      const tools = api.body.tools.map((t) => ({ slug: t.slug, repository: t.repository, homepage: t.homepage }));
+      const tools = api.body.tools.map((t) => ({ slug: t.slug, repository: t.repository, homepage: t.homepage, category: t.category?.slug ?? null }));
       // Merge with what was seen before, so a page dropped by one bad build still comes back.
       const previous = cache.stale('site') ?? { comparisons: [], tools: [] };
       const value = {
@@ -49,13 +50,30 @@ export function slugRedirects(model, published) {
   return moved;
 }
 
-// Path redirects for the server, from moved tool slugs and comparison pages.
-export function redirectMap(moved, published, pairs) {
+// Old tool slug -> the page that replaces it, for tools no longer listed:
+// the category they were in (if it still exists), else the tools index.
+export function removedTools(model, published, moved) {
+  const categories = new Set(model.categories.map((c) => c.slug));
+  const removed = {};
+  for (const old of published.tools) {
+    if (model.toolBySlug.has(old.slug) || moved[old.slug]) continue;
+    removed[old.slug] = old.category && categories.has(old.category) ? `/categories/${old.category}/` : '/tools/';
+  }
+  return removed;
+}
+
+// Path redirects for the server, from moved and removed tools and the
+// comparison pages that involved them.
+export function redirectMap(moved, published, pairs, removed = {}) {
   const map = {};
   for (const [from, to] of Object.entries(moved)) {
     map[`/tools/${from}/`] = `/tools/${to}/`;
     map[`/tools/${from}.md`] = `/tools/${to}.md`;
     map[`/api/tools/${from}.json`] = `/api/tools/${to}.json`;
+  }
+  for (const [from, to] of Object.entries(removed)) {
+    map[`/tools/${from}/`] = to;
+    map[`/tools/${from}.md`] = to === '/tools/' ? '/tools.md' : `${to.replace(/\/$/, '')}.md`;
   }
   const live = new Set(pairs.map((p) => p.slug));
   for (const slug of published.comparisons) {
@@ -65,6 +83,9 @@ export function redirectMap(moved, published, pairs) {
     const [a, b] = parts.map((s) => moved[s] ?? s).sort();
     const target = `${a}-vs-${b}`;
     if (live.has(target)) map[`/compare/${slug}/`] = `/compare/${target}/`;
+    else if (removed[a] && !removed[b]) map[`/compare/${slug}/`] = `/tools/${b}/`;
+    else if (removed[b] && !removed[a]) map[`/compare/${slug}/`] = `/tools/${a}/`;
+    else if (removed[a]) map[`/compare/${slug}/`] = removed[a];
   }
   return map;
 }

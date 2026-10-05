@@ -25,7 +25,7 @@ export const TOPICS = [
     // GitHub's "graph" topic usually means charts ("graphing"), so it's not used.
     githubTopics: ['network', 'network-visualization', 'graph-visualization', 'graph-drawing', 'force-directed', 'networks', 'graphviz', 'graph-layout'],
     keywords: [/(?<!neural )\bnetworks?\b/i, /graph (drawing|visuali[sz]ation|layout|object)/i, /large graphs/i, /knowledge graph/i, /\bDAG\b/],
-    exclude: ['phoenix', 'chart-js', 'mpandroidchart', 'plotly-r', 'vizzu', 'canvasglobe', 'diagrams', 'draw-io', 'kroki', 'netron', 'plotneuralnet'],
+    exclude: ['phoenix', 'chart-js', 'mpandroidchart', 'plotly-r', 'vizzu', 'canvasglobe', 'diagrams', 'kroki', 'netron', 'plotneuralnet'],
   },
   {
     slug: '3d-and-scientific',

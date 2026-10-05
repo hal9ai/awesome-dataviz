@@ -1,10 +1,11 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { slugRedirects, redirectMap, keptPairs } from '../src/published.mjs';
+import { slugRedirects, redirectMap, keptPairs, removedTools } from '../src/published.mjs';
 
 const tool = (slug, repoUrl, homepage = null) => ({ slug, repoUrl, homepage });
 const model = {
   tools: [tool('react-flow', 'https://github.com/xyflow/xyflow'), tool('chart-js', 'https://github.com/chartjs/Chart.js', 'https://www.chartjs.org/')],
+  categories: [{ slug: 'apps' }],
 };
 model.toolBySlug = new Map(model.tools.map((t) => [t.slug, t]));
 
@@ -26,4 +27,24 @@ test('renamed tools redirect by repository or homepage', () => {
   assert.equal(map['/api/tools/chartjs.json'], '/api/tools/chart-js.json');
   assert.equal(map['/compare/chartjs-vs-xyflow/'], '/compare/chart-js-vs-react-flow/');
   assert.equal(map['/tools/gone/'], undefined);
+});
+
+test('removed tools redirect to their former category', () => {
+  const published = {
+    tools: [
+      { slug: 'draw-io', repository: 'https://github.com/jgraph/drawio', category: 'apps' },
+      { slug: 'old-thing', repository: 'https://github.com/x/y', category: 'gone-category' },
+      { slug: 'chart-js', repository: 'https://github.com/chartjs/Chart.js', category: 'js' },
+    ],
+    comparisons: ['chart-js-vs-draw-io', 'draw-io-vs-old-thing'],
+  };
+  const moved = slugRedirects(model, published);
+  const removed = removedTools(model, published, moved);
+  assert.deepEqual(removed, { 'draw-io': '/categories/apps/', 'old-thing': '/tools/' });
+  const map = redirectMap(moved, published, [], removed);
+  assert.equal(map['/tools/draw-io/'], '/categories/apps/');
+  assert.equal(map['/tools/draw-io.md'], '/categories/apps.md');
+  assert.equal(map['/tools/old-thing.md'], '/tools.md');
+  assert.equal(map['/compare/chart-js-vs-draw-io/'], '/tools/chart-js/');
+  assert.equal(map['/compare/draw-io-vs-old-thing/'], '/categories/apps/');
 });

@@ -308,6 +308,7 @@ Browse it at **[awesomedataviz.com](https://awesomedataviz.com)**: search, ranki
 - [bqplot](https://github.com/bqplot/bqplot) - Plotting library for IPython/Jupyter notebooks.
 - [Cartopy](https://github.com/SciTools/cartopy) - Cartographic projections and geospatial data plotting with matplotlib.
 - [Chartify](https://github.com/spotify/chartify) - Bokeh wrapper that makes it easy for data scientists to create charts.
+- [D-Tale](https://github.com/man-group/dtale) - Web-based visual explorer for pandas DataFrames with charts, summaries and correlations.
 - [Dash](https://github.com/plotly/dash) - Framework for building data apps and dashboards in Python, built on Plotly.js and React.
 - [Datashader](https://github.com/holoviz/datashader) - Renders very large datasets into accurate images by rasterizing them.
 - [diagram](https://github.com/tehmaze/diagram) - Text mode diagrams using UTF-8 characters
@@ -426,14 +427,11 @@ Browse it at **[awesomedataviz.com](https://awesomedataviz.com)**: search, ranki
 
 ## Other tools
 Tools that are not tied to a particular platform or language.
-- [ChartDB](https://github.com/chartdb/chartdb) - An Open-source tool to visualize database schemas and generate ER diagrams from a single query.
 - [Charted](https://github.com/mikesall/charted) - A charting tool that produces automatic, shareable charts from any data file.
 - [csvtodashboard](https://csvtodashboard.com) - Turn a CSV or Excel file into an auto-built dashboard in the browser - client-side, no upload.
 - [Cytoscape](https://github.com/cytoscape/cytoscape) - Desktop platform for network analysis and visualization, widely used in bioinformatics.
 - [DAC](https://github.com/bruin-data/dac) - Dashboard-as-code tool that builds interactive dashboards from YAML and TSX definitions
 - [Data Formulator](https://github.com/microsoft/data-formulator) - AI-assisted tool for transforming data and creating visualizations, from Microsoft Research.
-- [draw.io](https://github.com/jgraph/drawio) - Client-side JavaScript editor for flowcharts, network, UML and other diagrams.
-- [ERD Lab](https://erdlab.io/) - Free cloud based entity relationship diagram (ERD) tool made for developers.
 - [FlameGraph](https://github.com/brendangregg/FlameGraph) - Stack trace visualizer that generates interactive SVG flame graphs from profiling data.
 - [GeoLibre](https://github.com/opengeos/GeoLibre) - Cloud-native GIS app for visualizing and analyzing geospatial data on the web, desktop and mobile.
 - [Gephi](https://github.com/gephi/gephi) - An open-source platform for visualizing and manipulating large graphs
@@ -442,6 +440,7 @@ Tools that are not tied to a particular platform or language.
 - [Gource](https://github.com/acaudwell/Gource) - Animated visualization of software version control history.
 - [Graphviz](https://graphviz.org/) - Open source graph visualization command line tool and library. From input text to SVG,PDF,interactive web graph browser.
 - [ink-uplot](https://github.com/planadecu/ink-uplot) - Render uPlot charts in the terminal (React Ink) with truecolor Unicode and kitty/sixel/iTerm2 graphics.
+- [JSON Crack](https://github.com/AykutSarac/jsoncrack.com) - Visualizes JSON, YAML, XML and CSV data as interactive graphs.
 - [Kepler.gl](https://kepler.gl/) - Geospatial analysis tool for large-scale data sets.
 - [LabPlot](https://github.com/KDE/labplot) - KDE application for interactive scientific plotting, data analysis and visualization.
 - [mcp-server-chart](https://github.com/antvis/mcp-server-chart) - MCP server from AntV that lets AI agents generate more than 25 chart types.
