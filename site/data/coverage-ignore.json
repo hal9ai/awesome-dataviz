@@ -1,0 +1,1086 @@
+[
+ {
+  "repo": "0hq/WebGPT",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "52inc/Pulley",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "AAChartModel/AAChartKit",
+  "reason": "Wraps Highcharts, which is not open source."
+ },
+ {
+  "repo": "AAChartModel/AAChartKit-Swift",
+  "reason": "Wraps Highcharts, which is not open source."
+ },
+ {
+  "repo": "ag-grid/ag-grid",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "algorithm-visualizer/algorithm-visualizer",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "alibaba/x-render",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "alyssaxuu/flowy",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "alyssaxuu/mapus",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "ananthakumaran/paisa",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "antonioru/beautiful-react-diagrams",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "antvis/G2Plot",
+  "reason": "Deprecated in favor of Ant Design Charts, which is listed."
+ },
+ {
+  "repo": "AnyChart/AnyChart-Android",
+  "reason": "Proprietary license."
+ },
+ {
+  "repo": "apache/calcite",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "apache/sedona",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "arl/statsviz",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "Asabeneh/30-Days-Of-JavaScript",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "asmuth/clip",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "automeris-io/WebPlotDigitizer",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "azavea/raster-vision",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "BabylonJS/Babylon.js",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "benpickles/peity",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "bilawalsidhu/gods-eye-view",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "Bogdan-Lyashenko/Under-the-hood-ReactJS",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "braedonsaunders/codeflow",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "briefercloud/briefer",
+  "reason": "App framework or notebook; not visualization-first."
+ },
+ {
+  "repo": "britecharts/britecharts",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "btd/rollup-plugin-visualizer",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "bytedance/flowgram.ai",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "Canner/WrenAI",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "cathrynlavery/diagram-design",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "CesiumGS/3d-tiles",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "chartbrew/chartbrew",
+  "reason": "Functional Source License (source-available); not OSI open source."
+ },
+ {
+  "repo": "ChatLab/ChatLab",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "christabor/flask_jsondash",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "cjcliffe/CubicSDR",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "cocos/cocos-engine",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "CodeBoarding/CodeBoarding",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "cogentcore/core",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "cordx56/rustowl",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "covid19india/covid19india.github.io",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "cube-js/cube",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "cxli233/FriendsDontLetFriends",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "dabeng/OrgChart",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "databendlabs/databend",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "dataease/dataease",
+  "reason": "Modified GPL-3.0 that forbids removing its branding; not OSI open source."
+ },
+ {
+  "repo": "datajuicer/data-juicer",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "dathere/qsv",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "DayuanJiang/next-ai-draw-io",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "dbt-labs/dbt",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "deepnote/deepnote",
+  "reason": "App framework or notebook; not visualization-first."
+ },
+ {
+  "repo": "DeusData/codebase-memory-mcp",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "DKirwan/calendar-heatmap",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "dominikbraun/graph",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "domlysz/BlenderGIS",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "dotnet/Silk.NET",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "ecomfe/echarts-for-weixin",
+  "reason": "Mini-program wrapper for Apache ECharts, which is listed."
+ },
+ {
+  "repo": "edp963/davinci",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "electricitymaps/electricitymaps-contrib",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "foru17/neko-master",
+  "reason": "Monitoring, observability or web analytics product."
+ },
+ {
+  "repo": "fr3ts0n/AndrOBD",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "Freika/dawarich",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "gaogaotiantian/viztracer",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "gboeing/osmnx",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "gee-community/geemap",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "geopandas/geopandas",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "geoserver/geoserver",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "gfx-rs/wgpu",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "git-cola/git-cola",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "git-learning-game/oh-my-git",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "GoogleMapReact/google-map-react",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "googlemaps/android-maps-utils",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "googlemaps/google-maps-services-js",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "gpuweb/gpuweb",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "gradio-app/gradio",
+  "reason": "App framework or notebook; not visualization-first."
+ },
+ {
+  "repo": "graphhopper/graphhopper",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "graphistry/pygraphistry",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "gridaco/grida",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "h2oai/wave",
+  "reason": "App framework or notebook; not visualization-first."
+ },
+ {
+  "repo": "haifengl/smile",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "headwaymaps/headway",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "heavyai/heavydb",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "hedgedoc/hedgedoc",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "Hedgehog-Computing/hedgehog-lab",
+  "reason": "App framework or notebook; not visualization-first."
+ },
+ {
+  "repo": "hediet/vscode-debug-visualizer",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "helblazer811/ManimML",
+  "reason": "Animation engine for explanatory videos, not data visualization."
+ },
+ {
+  "repo": "helix-toolkit/helix-toolkit",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "hepengwei/visualization-collection",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "hicccc77/WeFlow",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "hyperknot/openfreemap",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "im2nguyen/rover",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "imsnif/diskonaut",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "initialcommit-com/git-sim",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "isl-org/Open3D",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "isl-org/Open3D-ML",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "jalammar/ecco",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "Jannchie/Historical-ranking-data-visualization-based-on-d3.js",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "jasondavies/d3-cloud",
+  "reason": "D3 plugin; D3 plugins are covered by Awesome D3, linked from the d3 section."
+ },
+ {
+  "repo": "jeecgboot/jimureport",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "JesperLekland/react-native-svg-charts",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "jmcnamara/XlsxWriter",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "joewalnes/smoothie",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "JPCERTCC/LogonTracer",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "jtablesaw/tablesaw",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "JuliaPluto/Pluto.jl",
+  "reason": "App framework or notebook; not visualization-first."
+ },
+ {
+  "repo": "K-Dense-AI/scientific-agent-skills",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "karthik/wesanderson",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "keen/dashboards",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "koharu-rs/koharu",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "konvajs/react-konva",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "kylecorry31/Trail-Sense",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "labmlai/labml",
+  "reason": "Monitoring, observability or web analytics product."
+ },
+ {
+  "repo": "lanpa/tensorboardX",
+  "reason": "Logging client for TensorBoard, which is listed."
+ },
+ {
+  "repo": "larashero3-dotcom/lieflat-charts",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "layabox/LayaAir",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "liujuntao123/smart-excalidraw-next",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "livebook-dev/livebook",
+  "reason": "App framework or notebook; not visualization-first."
+ },
+ {
+  "repo": "llmsresearch/paperbanana",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "lmcinnes/umap",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "lxfater/inpaint-web",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "malloydata/malloy",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "mapbox/mapbox-gl-js",
+  "reason": "Not open source since v2 (proprietary license); MapLibre GL JS is listed instead."
+ },
+ {
+  "repo": "mapbox/supercluster",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "maplibre/maputnik",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "maplibre/martin",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "marimo-team/marimo",
+  "reason": "App framework or notebook; not visualization-first."
+ },
+ {
+  "repo": "mark-when/markwhen",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "marketcalls/openalgo",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "Mathieu2301/TradingView-API",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "melonjs/melonJS",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "mermaid-js/mermaid-cli",
+  "reason": "Part of Mermaid, which is listed."
+ },
+ {
+  "repo": "mermaid-js/mermaid-live-editor",
+  "reason": "Part of Mermaid, which is listed."
+ },
+ {
+  "repo": "meshery/meshery",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "mevdschee/php-crud-api",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "Michael-A-Kuykendall/shimmy",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "microg/GmsCore",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "microsoft/Data-Science-For-Beginners",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "microsoft/MMdnn",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "mil-tokyo/webdnn",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "mito-ds/mito",
+  "reason": "App framework or notebook; not visualization-first."
+ },
+ {
+  "repo": "ml-tooling/ml-workspace",
+  "reason": "App framework or notebook; not visualization-first."
+ },
+ {
+  "repo": "mlc-ai/web-llm",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "mlc-ai/web-stable-diffusion",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "mljar/mercury",
+  "reason": "App framework or notebook; not visualization-first."
+ },
+ {
+  "repo": "mlt131220/Astral3D",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "mne-tools/mne-python",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "moneymanagerex/moneymanagerex",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "motion-canvas/motion-canvas",
+  "reason": "Animation engine for explanatory videos, not data visualization."
+ },
+ {
+  "repo": "mrdoob/three.js",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "MRPT/mrpt",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "multiprocessio/datastation",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "nakabonne/ali",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "NannyML/nannyml",
+  "reason": "Monitoring, observability or web analytics product."
+ },
+ {
+  "repo": "NASA-AMMOS/3DTilesRendererJS",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "ndleah/python-mini-project",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "netdata/netdata",
+  "reason": "Monitoring, observability or web analytics product."
+ },
+ {
+  "repo": "Netflix/vizceral",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "networkx/networkx",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "nextjournal/clerk",
+  "reason": "App framework or notebook; not visualization-first."
+ },
+ {
+  "repo": "nikolaydubina/go-recipes",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "NoiseByNorthwest/php-spx",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "NorthwoodsSoftware/GoJS",
+  "reason": "Proprietary license."
+ },
+ {
+  "repo": "nvdv/vprof",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "Nyandwi/machine_learning_complete",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "oh-my-mermaid/oh-my-mermaid",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "ondrajz/go-callvis",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "onthegomap/planetiler",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "open-pencil/open-pencil",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "open-source-labs/Svelvet",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "openblocks-dev/openblocks",
+  "reason": "App framework or notebook; not visualization-first."
+ },
+ {
+  "repo": "opengeos/geoai",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "opengeos/segment-geospatial",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "openmaptiles/openmaptiles",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "openstreetmap/iD",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "opentk/opentk",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "org-roam/org-roam-ui",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "organicmaps/organicmaps",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "originalankur/maptoposter",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "Orillusion/orillusion",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "Ovilia/lipstick",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "palantir/plottable",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "patriciogonzalezvivo/lygia",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "phpipam/phpipam",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "pinterest/querybook",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "pissang/claygl",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "pixijs/pixijs",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "playcanvas/engine",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "playcanvas/supersplat",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "plouc/mozaik",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "polakowo/vectorbt",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "poloclub/cnn-explainer",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "poloclub/transformer-explainer",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "postgis/postgis",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "pretzelai/pretzelai",
+  "reason": "App framework or notebook; not visualization-first."
+ },
+ {
+  "repo": "proj4js/proj4js",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "pyglet/pyglet",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "qax-os/excelize",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "quarylabs/quary",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "r0f1/datascience",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "raghakot/keras-vis",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "ranaroussi/quantstats",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "React-Sight/React-Sight",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "reaviz/reaflow",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "RediSearch/RediSearch",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "reflex-dev/reflex",
+  "reason": "App framework or notebook; not visualization-first."
+ },
+ {
+  "repo": "reiinakano/scikit-plot",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "reorx/httpstat",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "rio-labs/rio",
+  "reason": "App framework or notebook; not visualization-first."
+ },
+ {
+  "repo": "robert-mcdermott/ai-knowledge-graph",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "roboflow/sports",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "rougier/scientific-visualization-book",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "ruc-datalab/DeepAnalyze",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "sbstjn/timesheet.js",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "scandum/quadsort",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "scanopy/scanopy",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "secdev/scapy",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "sentrux/sentrux",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "shutterstock/rickshaw",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "simplezhli/flutter_deer",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "sinaptik-ai/pandas-ai",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "six-ddc/plow",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "software-mansion/TypeGPU",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "sourcerer-io/sourcerer-app",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "srizzon/git-city",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "SSShooter/mind-elixir-core",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "stevenpetryk/mafs",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "StructuredLabs/preswald",
+  "reason": "App framework or notebook; not visualization-first."
+ },
+ {
+  "repo": "SwanHubX/SwanLab",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "syncfusion/flutter-examples",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "tabixio/tabix",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "TalkingData/inmap",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "Tanu-N-Prabhu/Python",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "tensorspace-team/tensorspace",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "thi-ng/umbrella",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "thingsboard/thingsboard",
+  "reason": "Monitoring, observability or web analytics product."
+ },
+ {
+  "repo": "tidwall/buntdb",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "tidwall/tile38",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "tirthajyoti/Data-science-best-resources",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "torchgeo/torchgeo",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "tracel-ai/burn",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "tracel-ai/cubecl",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "tt-a1i/archify",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "TuiQiao/CBoard",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "Turfjs/turf",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "tvjsx/trading-vue-js",
+  "reason": "No longer maintained (its README says so)."
+ },
+ {
+  "repo": "TylerYep/torchinfo",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "uber/h3",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "umami-software/umami",
+  "reason": "Monitoring, observability or web analytics product."
+ },
+ {
+  "repo": "uncertainty-toolbox/uncertainty-toolbox",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "unhappychoice/gitlogue",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "vaexio/vaex",
+  "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "virgili0/Virgilio",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "VisActor/VTable",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "visgl/luma.gl",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "Visualize-ML/Linear-Algebra-Made-Easy---Learn-with-Python-and-Visualization",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "walterlow/freecut",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "WebODM/WebODM",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "webpack/webpack-bundle-analyzer",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "weijie-chen/Linear-Algebra-With-Python",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "williamngan/pts",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "xiaolin3303/wx-charts",
+  "reason": "Data visualization library, but unmaintained for years; not added."
+ },
+ {
+  "repo": "Yalantis/Horizon",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "yanx27/Pointnet_Pointnet2_pytorch",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "ycccccccy/echotrace",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "yihong0618/running_page",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "yizhiyanhua-ai/fireworks-tech-graph",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ },
+ {
+  "repo": "yousifamanuel/terraink",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "yyhsong/iDataV",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "Zafer-Liu/Data-Analysis-Agent",
+  "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "zig-gamedev/zig-gamedev",
+  "reason": "Generic graphics, 3D or game engine, not a data visualization library."
+ },
+ {
+  "repo": "Zxilly/go-size-analyzer",
+  "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
+ }
+]

@@ -1,0 +1,40 @@
+name: Coverage
+
+# Weekly check for notable data visualization repositories on GitHub that the
+# README doesn't list yet. Results go to one issue labeled "coverage", which
+# is updated in place and closed when there's nothing left to review.
+
+on:
+  schedule:
+    - cron: '41 7 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Find unlisted repositories
+        working-directory: site
+        run: node scripts/coverage.mjs > ../coverage.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Update the coverage issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          title="Coverage check: notable data visualization repositories not listed yet"
+          gh label create coverage --color 2a78d6 --description "Repositories to review for the list" --force
+          number=$(gh issue list --label coverage --state open --json number --jq '.[0].number')
+          if grep -q '^| \[' coverage.md; then
+            if [ -n "$number" ]; then gh issue edit "$number" --body-file coverage.md; else gh issue create --title "$title" --label coverage --body-file coverage.md; fi
+          elif [ -n "$number" ]; then
+            gh issue close "$number" --comment "Every notable repository is now listed or ignored."
+          fi
