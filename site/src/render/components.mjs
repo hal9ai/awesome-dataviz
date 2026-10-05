@@ -115,9 +115,21 @@ export const OSI = new Set([
   'MIT', 'Apache-2.0', 'BSD-2-Clause', 'BSD-3-Clause', 'BSD', 'GPL-2.0', 'GPL-3.0', 'GPL-2.0-or-later', 'GPL-3.0-or-later',
   'LGPL-2.1', 'LGPL-3.0', 'AGPL-3.0', 'MPL-2.0', 'ISC', 'EPL-2.0', 'EPL-1.0', 'PSF-2.0', 'Zlib', 'Unlicense', '0BSD',
   'Artistic-2.0', 'BSL-1.0', 'CDDL-1.0', 'MS-PL', 'EUPL-1.2', 'BlueOak-1.0.0', 'Python-2.0', 'NCSA', 'UPL-1.0',
+  'LPPL-1.3c', 'OFL-1.1', 'CC0-1.0',
 ]);
 
-export const isOpenSource = (t) => OSI.has(t.license);
+// SPDX ids, "-only"/"-or-later" variants and simple expressions:
+// "A OR B" is open source if either side is, "A AND B" only if both are.
+export function isOsiLicense(license) {
+  if (!license) return false;
+  const id = (s) => OSI.has(s) || OSI.has(s.replace(/-only$|-or-later$|\+$/, ''));
+  const expr = license.replace(/[()]/g, '').trim();
+  if (/\sOR\s/i.test(expr)) return expr.split(/\s+OR\s+/i).some(isOsiLicense);
+  if (/\sAND\s/i.test(expr)) return expr.split(/\s+AND\s+/i).every(isOsiLicense);
+  return id(expr);
+}
+
+export const isOpenSource = (t) => isOsiLicense(t.license);
 
 export function spdxUrl(license) {
   return license && /^[A-Za-z0-9.+-]+$/.test(license) && license !== 'Other' && license !== 'BSD' ? `https://spdx.org/licenses/${license}.html` : null;
