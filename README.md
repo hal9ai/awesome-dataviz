@@ -71,6 +71,7 @@ Browse it at **[awesomedataviz.com](https://awesomedataviz.com)**: search, ranki
 - [roughViz](https://github.com/jwilber/roughViz) - Sketchy, hand-drawn style charts for the browser, based on Rough.js.
 - [TechanJS](https://techanjs.org/) - Stock and financial charts.
 - [TOAST UI Chart](https://github.com/nhn/tui.chart) - Complete library with support for legacy browsers.
+- [TradeCanvas](https://github.com/bonguynvan/tradecanvas) - Financial charts with indicators, drawing tools and live feeds, drawn with Canvas 2D or WebGL.
 - [Unovis](https://github.com/f5/unovis) - Modular data visualization framework for React, Angular, Svelte, Vue and vanilla TypeScript, by F5.
 - [uPlot](https://github.com/leeoniya/uPlot) - Small, fast canvas-based charts for time series, lines, areas, OHLC and bars.
 - [Vizzu](https://github.com/vizzuhq/vizzu-lib) - Library for animated data visualizations and data stories.
