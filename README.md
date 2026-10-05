@@ -382,6 +382,7 @@ Tools that are not tied to a particular platform or language.
 - [sankeydiagram.net](https://sankeydiagram.net/) - Web app for creating and sharing Sankey diagrams of flows and budgets without code.
 - [Spark](https://github.com/holman/spark) - Sparklines for the shell. It has several [implementations in different languages](https://github.com/holman/spark/wiki/Alternative-Implementations).
 - [Squey](https://squey.org) - Visualization software for exploring and understanding large amounts of tabular data (using parallel coordinates, timeseries and scatter plots).
+- [VantaViz](https://vantaviz.com/) - Privacy-first browser-based data visualization; all processing local, supports CSV/Excel/JSON/Parquet and 30+ chart types.
 - [VisiData](https://github.com/saulpw/visidata) - Terminal spreadsheet multitool for exploring and arranging tabular data, with basic plotting.
 
 # Resources
