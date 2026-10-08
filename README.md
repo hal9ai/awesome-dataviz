@@ -104,6 +104,7 @@ Browse it at **[awesomedataviz.com](https://awesomedataviz.com)**: search, ranki
 
 ### Financial charts
 - [chartjs-chart-financial](https://github.com/chartjs/chartjs-chart-financial) - Chart.js module that adds candlestick and OHLC chart types.
+- [Depth](https://github.com/rekurt/depth) - Framework-independent TypeScript canvas library for cumulative order-book depth charts.
 - [dxcharts-lite](https://github.com/devexperts/dxcharts-lite) - Flexible financial charting library based on HTML5 canvas.
 - [HQChart](https://github.com/jones2000/HQChart) - K-line and stock charts with a technical indicator scripting engine, for web pages and WeChat mini programs.
 - [KLineChart](https://github.com/klinecharts/KLineChart) - Lightweight, highly customizable candlestick (k-line) chart with zero dependencies and mobile support.
