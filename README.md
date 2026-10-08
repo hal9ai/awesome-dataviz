@@ -108,6 +108,7 @@ Browse it at **[awesomedataviz.com](https://awesomedataviz.com)**: search, ranki
 - [HQChart](https://github.com/jones2000/HQChart) - K-line and stock charts with a technical indicator scripting engine, for web pages and WeChat mini programs.
 - [KLineChart](https://github.com/klinecharts/KLineChart) - Lightweight, highly customizable candlestick (k-line) chart with zero dependencies and mobile support.
 - [Lightweight Charts](https://github.com/tradingview/lightweight-charts) - Performant HTML5 canvas financial charts, from TradingView.
+- [OpenKline](https://github.com/rekurt/openkline) - TypeScript canvas library for candlestick charts, technical indicators and drawing tools.
 - [React Financial Charts](https://github.com/react-financial/react-financial-charts) - React components for financial charts: candlesticks, technical indicators, overlays and drawing tools.
 - [TechanJS](https://techanjs.org/) - Stock and financial charts.
 - [TradeCanvas](https://github.com/bonguynvan/tradecanvas) - Financial charts with indicators, drawing tools and live feeds, drawn with Canvas 2D or WebGL.
