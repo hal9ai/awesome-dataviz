@@ -529,12 +529,7 @@ Tools that are not tied to a particular platform or language.
 
 # Contributing
 
-- Please check for duplicates first.
-- Use the format `- [Name](https://github.com/owner/repo) - Short description.` and link to the source repository when there is one.
-- Keep descriptions short, simple and unbiased.
-- Please make an individual commit for each suggestion
-- Add a new category if needed.
-- The website is rebuilt from this file automatically; see [site/](site/) for how it works.
+Suggestions are welcome! Please read [Suggesting a Library](CONTRIBUTING.md) first: it covers what we list, the star and age guidelines, and the entry format.
 
 Thanks for your suggestions!
 
