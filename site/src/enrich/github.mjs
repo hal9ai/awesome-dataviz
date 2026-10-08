@@ -106,7 +106,8 @@ async function graphql(token, query, variables) {
     body: JSON.stringify({ query, variables }),
     timeout: 60000,
   });
-  if (!res.ok && !res.body?.data) throw new Error(`GraphQL ${res.status}: ${JSON.stringify(res.body)?.slice(0, 300)}`);
+  // A 200 can still carry an empty or non-JSON body (e.g. a GitHub timeout page).
+  if (!res.body?.data) throw new Error(`GraphQL ${res.status}: ${res.error ?? JSON.stringify(res.body)?.slice(0, 300)}`);
   return res.body;
 }
 
@@ -142,7 +143,7 @@ async function fetchGithub(repos, token, log) {
     const res = await request(`https://api.github.com/repos/${r.owner}/${r.name}`, {
       headers: restHeaders(token),
     });
-    if (!res.ok) {
+    if (!res.ok || !res.body?.full_name) {
       log(`  GitHub: ${r.owner}/${r.name} not found (${res.status})`);
       continue;
     }
