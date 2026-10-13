@@ -535,9 +535,10 @@ Thanks for your suggestions!
 
 # Contributors
 
-- Fabio Souto originally createad this repo, connect with Fabio at [fabiosouto.me](https://fabiosouto.me/).
+- [Fabio Souto](https://fabiosouto.me/) originally created this repo.
 - [Javier Luraschi](https://github.com/javierluraschi) is the current maintainer.
 - [Hal9](https://hal9.com) is the corporate sponsor.
+- [Cloudish](https://cloudish.ai) hosts [awesomedataviz.com](https://awesomedataviz.com).
 
 # License
 
