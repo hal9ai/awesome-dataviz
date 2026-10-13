@@ -168,6 +168,10 @@
   "reason": "Generic graphics, 3D or game engine, not a data visualization library."
  },
  {
+  "repo": "CopilotKit/OpenIntelligentUI",
+  "reason": "Generative UI chat framework; visualization is not its main job (decided 2026-10-13)."
+ },
+ {
   "repo": "cordx56/rustowl",
   "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
  },
@@ -338,6 +342,10 @@
  {
   "repo": "haifengl/smile",
   "reason": "Analysis or data processing library; visualization is not its main job."
+ },
+ {
+  "repo": "haris-musa/excel-mcp-server",
+  "reason": "MCP server for editing Excel files; charts are one feature among many (decided 2026-10-13)."
  },
  {
   "repo": "headwaymaps/headway",
