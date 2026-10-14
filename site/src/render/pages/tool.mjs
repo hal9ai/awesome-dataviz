@@ -6,6 +6,7 @@ import { descriptionHtml, statTiles, faq, chips, toolCard, isOpenSource, spdxUrl
 import { monthlyColumns, emphasisBars, tableTwin, monthLabel } from '../charts.mjs';
 import { formatCompact, formatDate, formatNumber, joinList, perPeriod, plural, timeAgo } from '../../util.mjs';
 import { byPopularity } from '../../model.mjs';
+import { VIEWS } from '../../../data/demos.mjs';
 
 const an = (word) => (/^(?:[aeio]|R |ML |iOS|open|8|11|18|F2)/i.test(word) ? 'an' : 'a');
 
@@ -32,6 +33,22 @@ function statusSentence(t) {
     default:
       return '';
   }
+}
+
+// "Try it live": a link to the tool's demo on the shared Gapminder dataset
+// (data/demos.mjs, demos/ in the repository) and to the other libraries' demos.
+export const DEMO_SENTENCE = 'draws the same Gapminder dataset (life expectancy, GDP per capita and population for 142 countries, 1952–2007) in the same three views as the other libraries’ demos, so you can compare them side by side; it runs on Cloudish and may take a few seconds to wake up.';
+
+export function liveDemoSection(t) {
+  const d = t.demo;
+  if (!d) return '';
+  const others = d.others ?? [];
+  return html`<section class="live-demo" aria-labelledby="live-demo"><h2 id="live-demo">Try it live</h2>
+<p>This demo of ${t.name} ${raw(DEMO_SENTENCE.replace('Cloudish', '<a href="https://cloudish.ai" rel="noopener">Cloudish</a>'))}</p>
+<div class="actions"><a class="button primary" href="${d.url}" rel="noopener">Open the live demo ${icon('external')}</a><a class="button" href="${d.sourceUrl}" rel="noopener">${icon('github')} Demo source</a></div>
+<p class="section-note">Views: ${joinList(d.views.map((v) => VIEWS[v]))}.${d.note ? ` ${d.note}` : ''}</p>
+${others.length ? html`<p class="more">The same demo in other libraries: ${raw(others.map((o) => html`<a href="${o.demo.url}" rel="noopener">${o.name}</a>`.value).join(' · '))}</p>` : ''}
+</section>`;
 }
 
 // A factual summary paragraph, written to be quotable on its own.
@@ -192,6 +209,7 @@ ${t.stars != null || t.downloads ? tiles : ''}
       ${cleanDescription(facts?.description) && normalize(cleanDescription(facts.description)) !== normalize(t.description) ? html`<p>Its ${host} description: <q>${cleanDescription(facts.description)}</q></p>` : ''}
       ${t.githubTopics.length ? html`<p class="topic-line"><span class="muted">${host} topics:</span> ${t.githubTopics.slice(0, 12).map((x) => html`<span class="tag">${x}</span>`)}</p>` : ''}
     </section>
+    ${liveDemoSection(t)}
     ${install}
     ${activity}
     ${popularity}

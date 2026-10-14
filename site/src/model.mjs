@@ -61,7 +61,7 @@ function licenseLabel(tool, facts) {
   return null;
 }
 
-export function buildModel({ sections, overrides = {}, repoFacts = new Map(), packages = new Map(), additions = null, now = Date.now() }) {
+export function buildModel({ sections, overrides = {}, demos = {}, repoFacts = new Map(), packages = new Map(), additions = null, now = Date.now() }) {
   const byName = new Map();
   for (const [k, v] of Object.entries(overrides)) if (!/^https?:/.test(k)) byName.set(k.toLowerCase(), v);
   const overrideFor = (entry) => overrides[entry.url] ?? byName.get(entry.name.toLowerCase()) ?? {};
@@ -123,6 +123,7 @@ export function buildModel({ sections, overrides = {}, repoFacts = new Map(), pa
         tool.description = inlineToText(entry.description);
       }
       tool.entries.push(entry);
+      tool.demo ??= demos[entry.url] ?? null; // a live demo (data/demos.mjs), keyed like overrides
       if (!tool.categories.includes(category)) tool.categories.push(category);
       category.tools.push(tool);
     }
@@ -182,6 +183,10 @@ export function buildModel({ sections, overrides = {}, repoFacts = new Map(), pa
   }
   list.sort(byPopularity);
   list.forEach((t, i) => (t.rank = i + 1));
+
+  // Every demo links to the others: same dataset, same views, other libraries.
+  const withDemos = list.filter((t) => t.demo);
+  for (const t of withDemos) t.demo = { ...t.demo, others: withDemos.filter((o) => o !== t) };
 
   // Cross-cutting topics (maps, 3D, terminal, ...) across every ecosystem.
   const topics = TOPICS.map((topic) => ({

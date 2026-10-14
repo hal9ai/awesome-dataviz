@@ -30,6 +30,7 @@ both themes.
 | `src/model.mjs` | Merges entries by repository; categories, topics, status |
 | `src/content/` | Editorial copy: category guides and cross-cutting topics |
 | `data/overrides.mjs` | Curated facts: repositories for homepage links, package names, slugs |
+| `data/demos.mjs` | Live demos ([`../demos/`](../demos/)) shown as "Try it live" on tool pages |
 | `src/render/` | HTML templates, SVG charts and machine-readable feeds |
 | `server/` | Static server, search API and MCP endpoint (no dependencies) |
 | `scripts/deploy.mjs` | Uploads the build to Cloudish and checks it is live |

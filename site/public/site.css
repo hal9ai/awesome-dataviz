@@ -413,6 +413,7 @@ img.avatar[width="56"] { width: 56px; height: 56px; border-radius: 12px; }
 .install-row .quiet { font-size: 13px; font-variant-numeric: tabular-nums; }
 .topic-line { font-size: 14px; }
 .more { margin-top: 14px; font-size: 14px; color: var(--ink-2); }
+.live-demo .actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
 
 /* FAQ */
 .faq details { border-top: 1px solid var(--grid); padding: 2px 0; }
