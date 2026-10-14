@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gapminder in matplotlib</title>
+<style>
+  body { font: 16px/1.5 system-ui, sans-serif; color: #0b0b0b; background: #fcfcfb; margin: 0 auto; max-width: 980px; padding: 1rem 1.25rem 3rem; }
+  h1 { font-size: 1.5rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .5rem; }
+  .lead, footer { color: #52514e; }
+  form { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin: .5rem 0; }
+  img { width: 100%; height: auto; border: 1px solid #e8e8e6; border-radius: 6px; background: #fff; }
+  img.loading { opacity: .5; }
+  output { font-variant-numeric: tabular-nums; min-width: 3em; display: inline-block; }
+  button, select, input { font: inherit; }
+</style>
+</head>
+<body>
+<h1>Gapminder in matplotlib</h1>
+<p class="lead">Every chart below is an SVG that a Flask server draws with matplotlib each time you change an input. Without JavaScript the forms still work: they submit and reload the image.</p>
+
+<h2 id="scatter">1. GDP per capita vs life expectancy</h2>
+<form action="/scatter.svg" data-target="scatter-img">
+  <label>Year <input type="range" name="year" min="{{ years[0] }}" max="{{ years[-1] }}" step="5" value="{{ years[0] }}"> <output>{{ years[0] }}</output></label>
+  <button type="button" data-play>Play</button>
+  <noscript><button>Draw</button></noscript>
+</form>
+<img id="scatter-img" src="/scatter.svg?year={{ years[0] }}" alt="Bubble chart of GDP per capita against life expectancy by country" width="900" height="560">
+
+<h2 id="line">2. Life expectancy over time</h2>
+<form action="/line.svg" data-target="line-img">
+  <label>Country <select name="country">{% for c in countries %}<option{% if c == "Japan" %} selected{% endif %}>{{ c }}</option>{% endfor %}</select></label>
+  <noscript><button>Draw</button></noscript>
+</form>
+<img id="line-img" src="/line.svg?country=Japan" alt="Line chart of life expectancy over time" width="900" height="500">
+
+<h2 id="map">3. World map</h2>
+<form action="/map.svg" data-target="map-img">
+  <label>Metric <select name="metric">{% for key, label in metrics.items() %}<option value="{{ key }}">{{ label }}</option>{% endfor %}</select></label>
+  <label>Year <input type="range" name="year" min="{{ years[0] }}" max="{{ years[-1] }}" step="5" value="{{ years[-1] }}"> <output>{{ years[-1] }}</output></label>
+  <noscript><button>Draw</button></noscript>
+</form>
+<img id="map-img" src="/map.svg?metric=lifeExp&amp;year={{ years[-1] }}" alt="World map colored by the chosen metric" width="1000" height="560">
+
+<footer>
+  <p>Data: <a href="https://github.com/jennybc/gapminder">gapminder</a> (CC0), based on free material from <a href="https://www.gapminder.org/data/">GAPMINDER.ORG</a>, CC-BY license. Map: <a href="https://www.naturalearthdata.com/">Natural Earth</a>.
+  <a href="https://github.com/hal9ai/awesome-dataviz/tree/main/demos/matplotlib">Source</a>.</p>
+</footer>
+
+<script>
+  // Swap the image source when an input changes; the server does the drawing.
+  for (const form of document.querySelectorAll('form[data-target]')) {
+    const img = document.getElementById(form.dataset.target);
+    const draw = () => {
+      for (const range of form.querySelectorAll('input[type=range]')) range.nextElementSibling.value = range.value;
+      img.classList.add('loading');
+      img.src = `${form.action}?${new URLSearchParams(new FormData(form))}`;
+    };
+    img.addEventListener('load', () => img.classList.remove('loading'));
+    form.addEventListener('input', draw);
+    const play = form.querySelector('[data-play]');
+    if (!play) continue;
+    let timer = null;
+    play.addEventListener('click', () => {
+      if (timer) { clearInterval(timer); timer = null; play.textContent = 'Play'; return; }
+      play.textContent = 'Pause';
+      const range = form.querySelector('input[type=range]');
+      timer = setInterval(() => {
+        range.value = Number(range.value) >= Number(range.max) ? range.min : Number(range.value) + 5;
+        draw();
+      }, 900);
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+[server]
+headless = true
+enableXsrfProtection = true
+
+[client]
+toolbarMode = "viewer"  # no "Deploy" button for visitors
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"

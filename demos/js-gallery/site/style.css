@@ -1,0 +1,13 @@
+body { font: 16px/1.5 system-ui, sans-serif; color: #0b0b0b; background: #fcfcfb; margin: 0 auto; max-width: 1000px; padding: 1rem 1.25rem 3rem; }
+h1 { font-size: 1.5rem; margin-bottom: .25rem; }
+h2 { font-size: 1.15rem; margin: 2.5rem 0 .5rem; }
+nav { display: flex; gap: 1rem; flex-wrap: wrap; font-size: .95rem; }
+nav a[aria-current] { font-weight: 600; color: inherit; text-decoration: none; }
+.lead, .note, footer { color: #52514e; }
+form { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin: .5rem 0; }
+output { font-variant-numeric: tabular-nums; min-width: 3em; display: inline-block; }
+button, select, input { font: inherit; }
+.chart { width: 100%; height: 540px; background: #fff; border: 1px solid #e8e8e6; border-radius: 6px; position: relative; }
+.chart.short { height: 440px; }
+.cards { list-style: none; padding: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.cards li { border: 1px solid #e8e8e6; border-radius: 6px; padding: 1rem; background: #fff; }

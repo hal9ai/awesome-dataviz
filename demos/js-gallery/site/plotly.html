@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gapminder in Plotly.js</title>
+<link rel="stylesheet" href="style.css">
+<script src="vendor/plotly.min.js"></script>
+</head>
+<body>
+<nav><a href="./">All libraries</a><a href="echarts.html">ECharts</a><a href="chartjs.html">Chart.js</a><a href="plotly.html" aria-current="page">Plotly.js</a></nav>
+<h1>Gapminder in Plotly.js</h1>
+<p class="lead">Plotly.js 4. The bubble chart uses Plotly's animation frames with its own slider and play button; the map is a choropleth on the same GeoJSON as the other demos.</p>
+
+<h2>1. GDP per capita vs life expectancy</h2>
+<div id="scatter" class="chart"></div>
+
+<h2>2. Life expectancy over time</h2>
+<form data-view="line"><label>Country <select name="country"></select></label></form>
+<div id="line" class="chart short"></div>
+
+<h2>3. World map</h2>
+<form data-view="map">
+  <label>Metric <select name="metric"></select></label>
+  <label>Year <input type="range" name="year" data-start="last"> <output></output></label>
+</form>
+<div id="map" class="chart"></div>
+
+<footer><p>Data: <a href="https://github.com/jennybc/gapminder">gapminder</a> (CC0), based on free material from <a href="https://www.gapminder.org/data/">GAPMINDER.ORG</a>, CC-BY license. Map: <a href="https://www.naturalearthdata.com/">Natural Earth</a>. <a href="https://github.com/hal9ai/awesome-dataviz/blob/main/demos/js-gallery/site/plotly.html">Source of this page</a>.</p></footer>
+
+<script type="module">
+import { loadData, wireControls, CONTINENTS, CONTINENT_COLORS, METRICS, BLUES, NO_DATA, LOG_METRICS, formatDollars, formatMetric } from './common.js';
+
+const data = await loadData();
+const config = { responsive: true, displaylogo: false, topojsonURL: 'vendor/topojson/' };
+const font = { family: 'system-ui, sans-serif' };
+const maxPop = data.extent('pop')[1];
+
+// 1. One trace per continent; each animation frame replaces their data.
+const traces = (year) =>
+  CONTINENTS.map((name) => {
+    const rows = data.rows.filter((r) => r.year === year && r.continent === name).sort((a, b) => b.pop - a.pop);
+    return {
+      name, type: 'scatter', mode: 'markers',
+      x: rows.map((r) => r.gdpPercap), y: rows.map((r) => r.lifeExp), text: rows.map((r) => r.country), customdata: rows.map((r) => r.pop),
+      marker: { size: rows.map((r) => r.pop), sizemode: 'area', sizeref: maxPop / 70 ** 2, color: CONTINENT_COLORS[name], opacity: 0.9, line: { color: '#fff', width: 1 } },
+      hovertemplate: '<b>%{text}</b><br>Life expectancy %{y:.1f}<br>GDP per capita $%{x:,.0f}<br>Population %{customdata:,}<extra></extra>',
+    };
+  });
+const step = (year) => ({ method: 'animate', label: String(year), args: [[String(year)], { mode: 'immediate', frame: { duration: 600, redraw: false }, transition: { duration: 600 } }] });
+await Plotly.newPlot('scatter', traces(data.years[0]), {
+  font, title: { text: 'GDP per capita vs life expectancy<br><sub>Bubble area is population</sub>', x: 0.01 },
+  xaxis: { type: 'log', range: [Math.log10(200), Math.log10(150000)], title: { text: 'GDP per capita (log scale)' }, tickvals: [300, 1000, 3000, 10000, 30000, 100000], ticktext: ['$300', '$1,000', '$3,000', '$10,000', '$30,000', '$100,000'] },
+  yaxis: { range: [20, 85], title: { text: 'Life expectancy (years)' } },
+  legend: { orientation: 'h', y: 1.08, x: 1, xanchor: 'right' },
+  margin: { t: 90, b: 120 },
+  sliders: [{ steps: data.years.map(step), currentvalue: { prefix: 'Year ' }, x: 0.14, len: 0.86, y: 0, yanchor: 'top', pad: { t: 50 } }],
+  updatemenus: [{ type: 'buttons', direction: 'left', showactive: false, x: 0, y: 0, xanchor: 'left', yanchor: 'top', pad: { t: 60, r: 10 }, buttons: [
+    { label: 'Play', method: 'animate', args: [null, { fromcurrent: true, frame: { duration: 900, redraw: false }, transition: { duration: 600 } }] },
+    { label: 'Pause', method: 'animate', args: [[null], { mode: 'immediate', frame: { duration: 0 } }] },
+  ] }],
+}, config);
+await Plotly.addFrames('scatter', data.years.map((year) => ({ name: String(year), data: traces(year) })));
+
+const features = data.world.features;
+wireControls(data, {
+  line({ country }) {
+    const rows = data.rows.filter((r) => r.country === country);
+    Plotly.react('line', [{ x: rows.map((r) => r.year), y: rows.map((r) => r.lifeExp), mode: 'lines+markers', line: { color: CONTINENT_COLORS[rows[0].continent], width: 2 }, hovertemplate: '%{x}: %{y:.1f} years<extra></extra>' }], {
+      font, title: { text: `Life expectancy in ${country} (${rows[0].continent})`, x: 0.01 },
+      xaxis: { tickvals: data.years }, yaxis: { range: [20, 85], title: { text: 'Life expectancy (years)' } },
+    }, config);
+  },
+  map({ metric, year }) {
+    // The log metrics are colored by log10(value), with the ticks labeled in real units.
+    const log = LOG_METRICS.has(metric);
+    const scale = (v) => (log ? Math.log10(v) : v);
+    const [lo, hi] = data.extent(metric).map(scale);
+    const rows = data.rows.filter((r) => r.year === +year);
+    const ticks = log ? Array.from({ length: Math.floor(hi) - Math.ceil(lo) + 1 }, (_, i) => Math.ceil(lo) + i) : null;
+    const geo = { type: 'choropleth', geojson: data.world, featureidkey: 'properties.iso_alpha', marker: { line: { color: '#fff', width: 0.5 } } };
+    Plotly.react('map', [
+      // A gray layer of every country first, so the ones without data still show.
+      { ...geo, locations: features.map((f) => f.properties.iso_alpha), z: features.map(() => 0), colorscale: [[0, NO_DATA], [1, NO_DATA]], showscale: false, hoverinfo: 'skip' },
+      {
+        ...geo, locations: rows.map((r) => r.iso_alpha), z: rows.map((r) => scale(r[metric])), zmin: lo, zmax: hi, text: rows.map((r) => `<b>${r.country}</b><br>${formatMetric(metric, r[metric])}`), hovertemplate: '%{text}<extra></extra>',
+        colorscale: BLUES.map((c, i) => [i / (BLUES.length - 1), c]),
+        colorbar: { orientation: 'h', y: 0, yanchor: 'top', len: 0.6, thickness: 14, ...(ticks ? { tickvals: ticks, ticktext: ticks.map((t) => formatMetric(metric, 10 ** t)) } : {}) },
+      },
+    ], {
+      font, title: { text: `${METRICS[metric]} in ${year}<br><sub>Gray: no data</sub>`, x: 0.01 },
+      // visible: false draws no base map, so Plotly fetches nothing from its CDN.
+      geo: { visible: false, projection: { type: 'equal earth' }, lonaxis: { range: [-180, 180] }, lataxis: { range: [-56, 84] } },
+      margin: { l: 10, r: 10, t: 70, b: 60 },
+    }, config);
+  },
+});
+</script>
+</body>
+</html>

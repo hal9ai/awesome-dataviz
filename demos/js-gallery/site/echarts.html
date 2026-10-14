@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gapminder in Apache ECharts</title>
+<link rel="stylesheet" href="style.css">
+<script src="vendor/echarts.min.js"></script>
+</head>
+<body>
+<nav><a href="./">All libraries</a><a href="echarts.html" aria-current="page">ECharts</a><a href="chartjs.html">Chart.js</a><a href="plotly.html">Plotly.js</a></nav>
+<h1>Gapminder in Apache ECharts</h1>
+<p class="lead">ECharts 6. The year control on the bubble chart is ECharts' own <code>timeline</code> component, with a play button.</p>
+
+<h2>1. GDP per capita vs life expectancy</h2>
+<div id="scatter" class="chart"></div>
+
+<h2>2. Life expectancy over time</h2>
+<form data-view="line"><label>Country <select name="country"></select></label></form>
+<div id="line" class="chart short"></div>
+
+<h2>3. World map</h2>
+<form data-view="map">
+  <label>Metric <select name="metric"></select></label>
+  <label>Year <input type="range" name="year" data-start="last"> <output></output></label>
+</form>
+<div id="map" class="chart"></div>
+
+<footer><p>Data: <a href="https://github.com/jennybc/gapminder">gapminder</a> (CC0), based on free material from <a href="https://www.gapminder.org/data/">GAPMINDER.ORG</a>, CC-BY license. Map: <a href="https://www.naturalearthdata.com/">Natural Earth</a>. <a href="https://github.com/hal9ai/awesome-dataviz/blob/main/demos/js-gallery/site/echarts.html">Source of this page</a>.</p></footer>
+
+<script type="module">
+import { loadData, wireControls, CONTINENTS, CONTINENT_COLORS, METRICS, BLUES, NO_DATA, LOG_METRICS, formatDollars, formatMetric } from './common.js';
+
+const data = await loadData();
+const charts = Object.fromEntries(['scatter', 'line', 'map'].map((id) => [id, echarts.init(document.getElementById(id))]));
+addEventListener('resize', () => Object.values(charts).forEach((c) => c.resize()));
+const maxPop = data.extent('pop')[1];
+
+// 1. One series per continent (for the legend), one option per year (for the timeline).
+const tooltip = { formatter: ({ value: [gdp, life, pop, country] }) => `<b>${country}</b><br>Life expectancy ${life.toFixed(1)}<br>GDP per capita ${formatDollars(gdp)}<br>Population ${pop.toLocaleString('en-US')}` };
+charts.scatter.setOption({
+  baseOption: {
+    timeline: { axisType: 'category', data: data.years, autoPlay: false, playInterval: 900, bottom: 8, left: 40, right: 40 },
+    title: { text: 'GDP per capita vs life expectancy', subtext: 'Bubble area is population', left: 10 },
+    legend: { top: 10, right: 10 },
+    tooltip,
+    grid: { left: 60, right: 30, top: 80, bottom: 100 },
+    xAxis: { type: 'log', min: 200, max: 150000, name: 'GDP per capita (log scale)', nameLocation: 'middle', nameGap: 30, axisLabel: { formatter: formatDollars, showMaxLabel: false } },
+    yAxis: { type: 'value', min: 20, max: 85, name: 'Life expectancy (years)', nameLocation: 'middle', nameGap: 40 },
+    graphic: [],
+    series: CONTINENTS.map((name) => ({
+      name,
+      type: 'scatter',
+      itemStyle: { color: CONTINENT_COLORS[name], opacity: 0.9, borderColor: '#fff', borderWidth: 1 },
+      symbolSize: (value) => 80 * Math.sqrt(value[2] / maxPop), // area proportional to population
+    })),
+  },
+  options: data.years.map((year) => ({
+    graphic: [{ type: 'text', left: 'center', top: 'middle', z: -1, style: { text: String(year), fontSize: 120, fontWeight: 'bold', fill: '#efefed' } }],
+    series: CONTINENTS.map((name) =>
+      ({ data: data.rows.filter((r) => r.year === year && r.continent === name).sort((a, b) => b.pop - a.pop).map((r) => [r.gdpPercap, r.lifeExp, r.pop, r.country]) })
+    ),
+  })),
+});
+
+// 3. The map: ECharts matches regions by a GeoJSON property, here the ISO code.
+echarts.registerMap('world', data.world);
+const names = Object.fromEntries(data.world.features.map((f) => [f.properties.iso_alpha, f.properties.name]));
+
+wireControls(data, {
+  line({ country }) {
+    const rows = data.rows.filter((r) => r.country === country);
+    charts.line.setOption({
+      title: { text: `Life expectancy in ${country} (${rows[0].continent})`, left: 10 },
+      tooltip: { trigger: 'axis', valueFormatter: (v) => v.toFixed(1) },
+      grid: { left: 60, right: 30, top: 60, bottom: 40 },
+      xAxis: { type: 'category', data: rows.map((r) => r.year) },
+      yAxis: { type: 'value', min: 20, max: 85, name: 'Life expectancy (years)', nameLocation: 'middle', nameGap: 40 },
+      series: [{ type: 'line', name: 'Life expectancy', data: rows.map((r) => r.lifeExp), color: CONTINENT_COLORS[rows[0].continent], lineStyle: { width: 2 }, symbolSize: 7 }],
+    });
+  },
+  map({ metric, year }) {
+    // visualMap has no log scale, so the log metrics are mapped as log10 values.
+    const log = LOG_METRICS.has(metric);
+    const scale = (v) => (log ? Math.log10(v) : v);
+    const [lo, hi] = data.extent(metric).map(scale);
+    const rows = data.rows.filter((r) => r.year === +year);
+    charts.map.setOption({
+      title: { text: `${METRICS[metric]} in ${year}`, subtext: 'Gray: no data', left: 10 },
+      tooltip: { formatter: (p) => `<b>${names[p.name] ?? p.name}</b><br>${formatMetric(metric, p.data?.raw)}` },
+      visualMap: { min: lo, max: hi, calculable: true, orient: 'horizontal', left: 'center', bottom: 10, inRange: { color: BLUES }, formatter: (v) => formatMetric(metric, log ? 10 ** v : v) },
+      series: [{
+        type: 'map', map: 'world', nameProperty: 'iso_alpha', top: 60, bottom: 70, roam: false,
+        itemStyle: { areaColor: NO_DATA, borderColor: '#fff', borderWidth: 0.5 },
+        emphasis: { label: { show: false }, itemStyle: { areaColor: '#eb6834' } },
+        data: rows.map((r) => ({ name: r.iso_alpha, value: scale(r[metric]), raw: r[metric] })),
+      }],
+    });
+  },
+});
+</script>
+</body>
+</html>
