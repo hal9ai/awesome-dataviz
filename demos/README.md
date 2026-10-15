@@ -53,7 +53,7 @@ uses `DEMOS_PREFIX=awesomedataviz`, which gives the
 
 [`.github/workflows/demos.yaml`](../.github/workflows/demos.yaml) does this
 on every merge to `main` that changes a demo (all of them when `data/`
-changes), with the `CLOUDISH_DEMOS_API_KEY` repository secret, then rebuilds
+or the scripts here change), with the `CLOUDISH_DEMOS_API_KEY` repository secret, then rebuilds
 the site, which takes fresh screenshots (`site/scripts/screenshots.mjs`). It
 can also be run by hand from the Actions tab for any list of demos.
 
