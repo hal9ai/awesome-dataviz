@@ -12,9 +12,12 @@
 //   node demos/deploy.mjs --changed origin/main   print the demos changed since a ref
 //
 // Optional: CLOUDISH_API (default https://cloudish.ai), DEMOS_PREFIX (project
-// and subdomain prefix; default "<your key's alias>-demo", and
-// "awesomedataviz" only for the account that serves awesomedataviz.com, set by
-// .github/workflows/demos.yaml), DEMOS_IDLE_TIMEOUT (seconds; sets the key's
+// and subdomain prefix; default "<your key's alias>-demo"), DEMOS_LABEL_PREFIX
+// (subdomain prefix when it differs from the project's; the account that
+// serves awesomedataviz.com uses projects "awesomedataviz-<demo>" at
+// "awesomedataviz-demo-<demo>", set by .github/workflows/demos.yaml),
+// DEMOS_REQUIRE_LABEL=1 (fail instead of keeping a random URL when the
+// subdomain label is taken), DEMOS_IDLE_TIMEOUT (seconds; sets the key's
 // idle timeout, which applies to every app on the key),
 // DEMOS_ALLOW_ALWAYS_ON=1 (deploy even if the key keeps apps always on).
 
@@ -85,6 +88,7 @@ async function answers(url, path) {
 async function deploy(name, alias, prefix) {
   const { size, health } = DEMOS[name];
   const project = `${prefix}-${name}`;
+  const label = `${process.env.DEMOS_LABEL_PREFIX || prefix}-${name}`;
   const tarball = buildContext(name);
   console.log(`${name}: context ${(statSync(tarball).size / 1e6).toFixed(2)} MB -> ${alias}/${project}`);
 
@@ -111,12 +115,14 @@ async function deploy(name, alias, prefix) {
     throw new Error(`Build ${id} of ${name} failed.`);
   }
 
-  // A readable URL (<prefix>-<name>.<run domain>); keep the random one if the label is taken.
+  // A readable URL (<label>.<run domain>); keep the random one if the label
+  // is taken, unless the site links to it (DEMOS_REQUIRE_LABEL).
   let url;
   try {
-    url = (await api(`/api/v1/projects/${alias}/${project}/subdomain`, { method: 'PUT', json: { label: project } })).subdomain?.url;
+    url = (await api(`/api/v1/projects/${alias}/${project}/subdomain`, { method: 'PUT', json: { label } })).subdomain?.url;
   } catch (error) {
-    console.log(`  could not set the subdomain label "${project}": ${error.message}`);
+    if (process.env.DEMOS_REQUIRE_LABEL === '1') throw new Error(`could not set the subdomain label "${label}", which the site links to: ${error.message}`);
+    console.log(`  could not set the subdomain label "${label}": ${error.message}`);
   }
   if (!url) {
     const info = await api(`/api/v1/projects/${alias}/${project}`);
@@ -124,9 +130,11 @@ async function deploy(name, alias, prefix) {
   }
   if (!url) throw new Error(`${project} has no subdomain URL.`);
 
-  const deadlineLive = Date.now() + 5 * 60 * 1000;
+  // The first start pulls the image onto a node, which takes a while for the
+  // larger ones (Shiny is about 1 GB).
+  const deadlineLive = Date.now() + 10 * 60 * 1000;
   while (!(await answers(url, health))) {
-    if (Date.now() > deadlineLive) throw new Error(`${name} is not answering at ${url}${health}.`);
+    if (Date.now() > deadlineLive) throw new Error(`${name} is not answering at ${url.replace(/\/$/, '')}${health} after 10 minutes.`);
     await sleep(5000);
   }
   console.log(`  live at ${url}`);

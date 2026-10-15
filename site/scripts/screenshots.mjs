@@ -1,7 +1,7 @@
 // Screenshots every live demo (data/demos.mjs) from its deployed URL into
 // .cache/demo-screenshots/, where the build picks them up for the /demos/ page
 // and the tool pages. A screenshot is retaken when its demo folder (or the
-// shared data) changed since it was taken, or once it is a week old; a demo
+// shared data) or its URL changed since it was taken, or once it is a week old; a demo
 // that doesn't answer keeps its previous screenshot, so this never fails a
 // build. Needs Chrome or Chromium (CHROME_PATH), no npm packages.
 //
@@ -55,7 +55,7 @@ async function main() {
     const print = fingerprint(d.demo);
     const file = join(SCREENSHOTS_DIR, `${d.key}.webp`);
     const prev = index[d.key];
-    const fresh = prev && prev.fingerprint === print && existsSync(file) && Date.now() - Date.parse(prev.takenAt) < MAX_AGE;
+    const fresh = prev && prev.fingerprint === print && prev.url === d.url && existsSync(file) && Date.now() - Date.parse(prev.takenAt) < MAX_AGE;
     if (fresh && !force) continue;
     const started = Date.now();
     try {

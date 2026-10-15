@@ -29,6 +29,8 @@ permissions:
 
 jobs:
   build:
+    # After a failed demo deploy, don't publish links to it.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 45
     defaults:
