@@ -48,6 +48,7 @@ jobs:
           name: demo-screenshots
           path: demos/.screenshots/
           if-no-files-found: ignore
+          include-hidden-files: true # .screenshots/ is a dot folder
 
   deploy:
     if: github.event_name != 'pull_request'
