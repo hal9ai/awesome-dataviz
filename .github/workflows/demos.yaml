@@ -82,6 +82,8 @@ jobs:
         env:
           CLOUDISH_API_KEY: ${{ secrets.CLOUDISH_DEMOS_API_KEY }}
           DEMOS_PREFIX: awesomedataviz
+          DEMOS_LABEL_PREFIX: awesomedataviz-demo # the URLs in site/data/demos.mjs
+          DEMOS_REQUIRE_LABEL: '1'
           EVENT: ${{ github.event_name }}
           INPUT: ${{ github.event.inputs.demos }}
           BEFORE: ${{ github.event.before }}

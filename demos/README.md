@@ -46,10 +46,13 @@ label `<prefix>-<demo>` (keeping the random URL if the label is taken), waits
 until the app answers and prints the URLs.
 
 The prefix defaults to `<your key's alias>-demo`, so a test deploy never takes
-the labels the site links to. Only the account that serves awesomedataviz.com
-uses `DEMOS_PREFIX=awesomedataviz`, which gives the
-`https://awesomedataviz-<demo>.on.do.cloudish.ai/` URLs in
-`site/data/demos.mjs` (`DEMOS_URL_TEMPLATE` overrides them for a site build).
+the labels the site links to. Only the account that serves the demos for
+awesomedataviz.com (key alias `awesome-dataviz-demos`) uses
+`DEMOS_PREFIX=awesomedataviz` and `DEMOS_LABEL_PREFIX=awesomedataviz-demo`,
+which gives the `https://awesomedataviz-demo-<demo>.on.do.cloudish.ai/` URLs
+in `site/data/demos.mjs` (`DEMOS_URL_TEMPLATE` overrides them for a site
+build). With `DEMOS_REQUIRE_LABEL=1`, as in CI, a taken label fails the deploy
+instead of leaving the site linking to the wrong place.
 
 [`.github/workflows/demos.yaml`](../.github/workflows/demos.yaml) does this
 on every merge to `main` that changes a demo (all of them when `data/`
@@ -121,7 +124,7 @@ With a coding agent (Claude Code, Codex, Cursor...), this is enough:
 ### 1. The app
 
 Make `demos/<folder>/`, where `<folder>` is lowercase letters, digits and
-dashes (it becomes the demo's URL, `awesomedataviz-<folder>`), usually the
+dashes (it becomes the demo's URL, `awesomedataviz-demo-<folder>`), usually the
 library's name. Start from the closest demo: [`matplotlib/`](matplotlib/) for
 a server-side library, a page of [`js-gallery/`](js-gallery/) for a
 JavaScript one (a new JavaScript library gets its own folder, not a page in
@@ -204,5 +207,5 @@ JavaScript one (a new JavaScript library gets its own folder, not a page in
 Say which library it is and include the test URL. The checks build the demo,
 run it and attach its screenshots to the workflow run, and the site tests
 check `demo.json`. After the merge, the demo is deployed at
-`https://awesomedataviz-<folder>.on.do.cloudish.ai/` and appears on the site
+`https://awesomedataviz-demo-<folder>.on.do.cloudish.ai/` and appears on the site
 with the next build. You can delete your test project then.
