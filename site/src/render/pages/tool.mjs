@@ -44,10 +44,10 @@ export function liveDemoSection(t) {
   if (!d) return '';
   const others = d.others ?? [];
   return html`<section class="live-demo" aria-labelledby="live-demo"><h2 id="live-demo">Try it live</h2>
-<p>This demo of ${t.name} ${raw(DEMO_SENTENCE.replace('Cloudish', '<a href="https://cloudish.ai" rel="noopener">Cloudish</a>'))}</p>
+<p>This demo of ${d.label ?? t.name} ${raw(DEMO_SENTENCE.replace('Cloudish', '<a href="https://cloudish.ai" rel="noopener">Cloudish</a>'))}</p>
 <div class="actions"><a class="button primary" href="${d.url}" rel="noopener">Open the live demo ${icon('external')}</a><a class="button" href="${d.sourceUrl}" rel="noopener">${icon('github')} Demo source</a></div>
 <p class="section-note">Views: ${joinList(d.views.map((v) => VIEWS[v]))}.${d.note ? ` ${d.note}` : ''}</p>
-${others.length ? html`<p class="more">The same demo in other libraries: ${raw(others.map((o) => html`<a href="${o.demo.url}" rel="noopener">${o.name}</a>`.value).join(' · '))}</p>` : ''}
+${others.length ? html`<p class="more">The same demo in other libraries: ${raw(others.map((o) => html`<a href="${o.demo.url}" rel="noopener">${o.demo.label ?? o.name}</a>`.value).join(' · '))}</p>` : ''}
 </section>`;
 }
 

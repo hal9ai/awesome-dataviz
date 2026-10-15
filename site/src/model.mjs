@@ -185,7 +185,10 @@ export function buildModel({ sections, overrides = {}, demos = {}, repoFacts = n
   list.forEach((t, i) => (t.rank = i + 1));
 
   // Every demo links to the others: same dataset, same views, other libraries.
-  const withDemos = list.filter((t) => t.demo);
+  // Browser demos first, then server ones, each alphabetical.
+  const demoName = (t) => t.demo.label ?? t.name;
+  const withDemos = list.filter((t) => t.demo).sort((a, b) =>
+    (a.demo.runs === 'server') - (b.demo.runs === 'server') || demoName(a).localeCompare(demoName(b), 'en', { sensitivity: 'base' }));
   for (const t of withDemos) t.demo = { ...t.demo, others: withDemos.filter((o) => o !== t) };
 
   // Cross-cutting topics (maps, 3D, terminal, ...) across every ecosystem.

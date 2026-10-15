@@ -7,6 +7,8 @@
 //   source  file or folder to link as "the demo's source", relative to the repo
 //   views   which of VIEWS the demo has
 //   note    one short caveat, shown next to the views
+//   runs    'browser' or 'server'; the links to the other demos list browser ones first
+//   label   the name to show for the demo when the tool's name is too short
 //
 // The tool page, its Markdown twin and the JSON API read these through
 // demoFor(), which resolves the URL.
@@ -24,12 +26,12 @@ export const VIEWS = {
 const ALL = Object.keys(VIEWS);
 
 const DEMOS = {
-  'https://github.com/streamlit/streamlit': { demo: 'streamlit', source: 'demos/streamlit', views: ALL, note: 'Charts drawn with Altair, which Streamlit ships with.' },
-  'https://shiny.rstudio.com': { demo: 'shiny-r', source: 'demos/shiny-r', views: ALL, note: 'Charts drawn with ggplot2 and rendered in R on the server.' },
-  'https://matplotlib.org/': { demo: 'matplotlib', source: 'demos/matplotlib', views: ALL, note: 'A Flask server redraws each chart as SVG when an input changes.' },
-  'https://github.com/apache/echarts': { demo: 'js-gallery', page: 'echarts.html', source: 'demos/js-gallery/site/echarts.html', views: ALL },
-  'https://www.chartjs.org/': { demo: 'js-gallery', page: 'chartjs.html', source: 'demos/js-gallery/site/chartjs.html', views: ALL, note: 'Core Chart.js has no maps; the map uses the chartjs-chart-geo plugin.' },
-  'https://github.com/plotly/plotly.js/': { demo: 'js-gallery', page: 'plotly.html', source: 'demos/js-gallery/site/plotly.html', views: ALL },
+  'https://github.com/streamlit/streamlit': { demo: 'streamlit', runs: 'server', source: 'demos/streamlit', views: ALL, note: 'Charts drawn with Altair, which Streamlit ships with.' },
+  'https://shiny.rstudio.com': { demo: 'shiny-r', runs: 'server', label: 'Shiny for R', source: 'demos/shiny-r', views: ALL, note: 'Charts drawn with ggplot2 and rendered in R on the server.' },
+  'https://matplotlib.org/': { demo: 'matplotlib', runs: 'server', source: 'demos/matplotlib', views: ALL, note: 'A Flask server redraws each chart as SVG when an input changes.' },
+  'https://github.com/apache/echarts': { demo: 'js-gallery', runs: 'browser', page: 'echarts.html', source: 'demos/js-gallery/site/echarts.html', views: ALL },
+  'https://www.chartjs.org/': { demo: 'js-gallery', runs: 'browser', page: 'chartjs.html', source: 'demos/js-gallery/site/chartjs.html', views: ALL, note: 'Core Chart.js has no maps; the map uses the chartjs-chart-geo plugin.' },
+  'https://github.com/plotly/plotly.js/': { demo: 'js-gallery', runs: 'browser', page: 'plotly.html', source: 'demos/js-gallery/site/plotly.html', views: ALL },
 };
 
 export default DEMOS;

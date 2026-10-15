@@ -101,7 +101,7 @@ export function toolMarkdown(t, model) {
     lines.push('', '## Try it live', '', `${mdLink('Live demo', d.url)}: this demo of ${t.name} ${DEMO_SENTENCE}`, '');
     lines.push(`- Views: ${d.views.map((v) => VIEWS[v]).join('; ')}${d.note ? `. ${d.note}` : ''}`);
     lines.push(`- Demo source: ${d.sourceUrl}`);
-    if (d.others?.length) lines.push(`- Other libraries: ${d.others.map((o) => mdLink(o.name, o.demo.url)).join(', ')}`);
+    if (d.others?.length) lines.push(`- Other libraries: ${d.others.map((o) => mdLink(o.demo.label ?? o.name, o.demo.url)).join(', ')}`);
   }
   const alts = alternativesFor(t, model);
   if (alts.length) {
