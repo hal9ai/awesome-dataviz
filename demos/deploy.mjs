@@ -67,11 +67,18 @@ async function api(path, { method = 'GET', json, form } = {}) {
 
 // A sleeping app starts on the first request, so allow for a cold start.
 async function answers(url, path) {
+  // A ref'd timer, not AbortSignal.timeout(): that one doesn't keep Node
+  // alive, and a fetch that stalls on a container still starting up then
+  // lets the process exit, with status 0, halfway through.
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 60000);
   try {
-    const res = await fetch(`${url.replace(/\/$/, '')}${path}`, { signal: AbortSignal.timeout(60000) });
+    const res = await fetch(`${url.replace(/\/$/, '')}${path}`, { signal: controller.signal });
     return res.ok;
   } catch {
     return false;
+  } finally {
+    clearTimeout(timer);
   }
 }
 
@@ -168,10 +175,12 @@ async function check(name) {
   }
 }
 
-// Demos whose folder changed since `ref`; all of them when the shared data did.
+// Demos whose folder changed since `ref`; all of them when the shared data
+// or the tooling that builds, deploys and screenshots them did.
+const SHARED = ['demos/data/', 'demos/deploy.mjs', 'demos/manifest.mjs', 'demos/screenshot.mjs'];
 function changed(ref) {
   const files = execFileSync('git', ['diff', '--name-only', ref, 'HEAD', '--', '.'], { cwd: DEMOS_DIR }).toString().split('\n').filter(Boolean);
-  if (files.some((f) => f.startsWith('demos/data/'))) return Object.keys(DEMOS);
+  if (files.some((f) => SHARED.some((s) => f.startsWith(s)))) return Object.keys(DEMOS);
   return [...new Set(files.map((f) => f.split('/')[1]))].filter((n) => DEMOS[n]);
 }
 
@@ -235,7 +244,16 @@ async function main() {
   }
 }
 
-main().catch((error) => {
-  console.error(`Deploy failed: ${error.message}`);
+// Never let a stalled promise end the run as a success.
+let finished = false;
+process.on('beforeExit', () => {
+  if (finished) return;
+  console.error('Deploy failed: exited before finishing (a request or build stalled).');
   process.exit(1);
 });
+main()
+  .then(() => (finished = true))
+  .catch((error) => {
+    console.error(`Deploy failed: ${error.message}`);
+    process.exit(1);
+  });
