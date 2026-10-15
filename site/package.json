@@ -13,6 +13,7 @@
     "start": "node server/server.mjs",
     "dev": "node src/build.mjs --offline --allow-broken-links && node server/server.mjs",
     "test": "node --test",
+    "screenshots": "node scripts/screenshots.mjs",
     "deploy": "node scripts/deploy.mjs"
   },
   "license": "CC-BY-4.0"

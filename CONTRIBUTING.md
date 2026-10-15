@@ -39,3 +39,9 @@ Listed projects are reviewed with the same rules. Archived or long-inactive proj
 - One suggestion per commit.
 
 The website is rebuilt from the README automatically; see [site/](site/) for how it works.
+
+## Adding a live demo
+
+Listed libraries can also have a [live demo](https://awesomedataviz.com/demos/): the same Gapminder charts as the others, in one folder under [`demos/`](demos/). Once merged, it's deployed and shown, with a screenshot, on the demos page and the library's page. [`demos/README.md`](demos/README.md) explains how; with a coding agent, this prompt is enough:
+
+> Add a live demo of LIBRARY to Awesome Dataviz: follow https://github.com/hal9ai/awesome-dataviz/blob/main/demos/README.md to build the Gapminder demo in a new demos/ folder, deploy it to cloudish.ai to test it, and open a pull request to hal9ai/awesome-dataviz with the live URL.

@@ -21,6 +21,7 @@ import { renderCompare } from './render/pages/compare.mjs';
 import { renderHome } from './render/pages/home.mjs';
 import { renderToolsIndex, renderCategoriesIndex, renderTopicsIndex, renderCompareIndex } from './render/pages/indexes.mjs';
 import { renderResources, renderAbout, renderSubmit, renderAi, renderSearch, renderNotFound } from './render/pages/static.mjs';
+import { renderDemos } from './render/pages/demos.mjs';
 import * as feeds from './render/feeds.mjs';
 
 const DIST = join(SITE_DIR, 'dist');
@@ -79,6 +80,22 @@ async function downloadAvatars(model) {
     const login = t.facts?.owner?.login?.toLowerCase();
     t.avatar = login && owners.get(login)?.startsWith('/img/') ? owners.get(login) : null;
   }
+}
+
+// Screenshots of the live demos, taken by scripts/screenshots.mjs into the
+// cache (CI keeps it between runs). A demo without one is shown without.
+function copyDemoScreenshots(model) {
+  const dir = join(CACHE, 'demo-screenshots');
+  for (const t of model.demos) {
+    const file = join(dir, `${t.demo.key}.webp`);
+    if (!existsSync(file)) continue;
+    const data = readFileSync(file);
+    const name = `/img/demos/${t.demo.key}-${hash(data)}.webp`;
+    write(name, data);
+    t.demo.screenshot = name;
+  }
+  const missing = model.demos.filter((t) => !t.demo.screenshot);
+  if (missing.length) log(`  ${missing.length} demos without a screenshot (npm run screenshots): ${missing.map((t) => t.demo.key).join(', ')}.`);
 }
 
 function buildAssets(buildId) {
@@ -190,6 +207,7 @@ async function main() {
   rmSync(DIST, { recursive: true, force: true });
   mkdirSync(DIST, { recursive: true });
   await downloadAvatars(model);
+  copyDemoScreenshots(model);
   const assets = buildAssets(buildId);
   const ctx = { model, pairs, meta, now: Date.parse(model.builtAt), assets };
 
@@ -204,6 +222,7 @@ async function main() {
   emit(renderCategoriesIndex(ctx));
   emit(renderTopicsIndex(ctx));
   emit(renderCompareIndex(ctx));
+  emit(renderDemos(ctx));
   emit(renderResources(ctx));
   emit(renderAbout(ctx));
   emit(renderSubmit(ctx));
@@ -235,6 +254,7 @@ async function main() {
   write('categories.md', feeds.categoriesIndexMarkdown(model));
   write('topics.md', feeds.topicsIndexMarkdown(model));
   write('compare.md', feeds.compareIndexMarkdown(pairs));
+  write('demos.md', feeds.demosMarkdown(model));
   for (const p of pages) {
     if (p.markdown && !existsSync(join(DIST, p.markdown.slice(1)))) write(p.markdown.slice(1), feeds.htmlToMarkdown(p));
   }
@@ -261,6 +281,7 @@ async function main() {
       topics: model.topics.map((tp) => ({ slug: tp.slug, title: tp.title, summary: tp.summary, url: `https://awesomedataviz.com/topics/${tp.slug}/`, tools: tp.tools.map((t) => t.slug) })),
     })
   );
+  write('api/demos.json', JSON.stringify({ generatedAt: model.builtAt, demos: model.demos.map(feeds.apiDemo) }, null, 1));
   write('search-index.json', JSON.stringify({ buildId, records: model.tools.map(feeds.searchRecord) }));
   write('llms.txt', feeds.llmsTxt(model, pairs));
   write('llms-full.txt', feeds.llmsFullTxt(model));

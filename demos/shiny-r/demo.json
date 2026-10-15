@@ -1,0 +1,13 @@
+{
+  "runs": "server",
+  "health": "/",
+  "size": { "cpuCores": "0.5", "memoryGb": "1", "buildCpuCores": "2", "buildMemoryGb": "4" },
+  "libraries": [
+    {
+      "tool": "https://shiny.rstudio.com",
+      "label": "Shiny for R",
+      "note": "Charts drawn with ggplot2 and rendered in R on the server.",
+      "ready": "#scatter img"
+    }
+  ]
+}

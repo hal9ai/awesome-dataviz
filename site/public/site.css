@@ -415,6 +415,27 @@ img.avatar[width="56"] { width: 56px; height: 56px; border-radius: 12px; }
 .more { margin-top: 14px; font-size: 14px; color: var(--ink-2); }
 .live-demo .actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
 
+/* Live demos */
+.demo-shot { display: block; overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface-2); aspect-ratio: 16 / 10; }
+.demo-shot img, .demo-strip img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top left; }
+.live-demo .demo-shot { margin: 14px 0 0; max-width: 560px; }
+.demo-shot-empty { display: flex; align-items: center; justify-content: center; height: 100%; color: var(--muted); font-weight: 600; }
+.demo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px; list-style: none; margin: 0 0 32px; padding: 0; }
+.demo-card { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.demo-card .demo-shot { border: 0; border-bottom: 1px solid var(--border); border-radius: 0; }
+.demo-body { display: flex; flex-direction: column; gap: 6px; flex: 1; padding: 14px 16px 16px; }
+.demo-body h3 { margin: 0; }
+.demo-body p { margin: 0; color: var(--ink-2); font-size: 14px; line-height: 1.45; }
+.demo-body .demo-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 8px; }
+.demo-strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; list-style: none; margin: 0; padding: 0; }
+.demo-strip a { display: flex; flex-direction: column; gap: 6px; color: var(--ink); font-size: 14px; font-weight: 550; }
+.demo-strip a > img, .demo-strip .demo-shot-empty { aspect-ratio: 16 / 10; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); }
+.demo-strip a:hover { text-decoration: none; }
+.demo-strip a:hover > img { border-color: var(--series-1); }
+.add-demo { margin-top: 12px; padding-top: 8px; border-top: 1px solid var(--grid); }
+.prompt { display: flex; align-items: flex-start; gap: 10px; padding: 12px 12px 12px 14px; border: 1px solid var(--border); border-radius: 9px; background: var(--surface-2); }
+.prompt p { flex: 1; margin: 0; font-size: 14.5px; line-height: 1.55; }
+
 /* FAQ */
 .faq details { border-top: 1px solid var(--grid); padding: 2px 0; }
 .faq details:last-child { border-bottom: 1px solid var(--grid); }

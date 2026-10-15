@@ -107,6 +107,7 @@ const NAV = [
   { href: '/categories/', label: 'Categories' },
   { href: '/topics/', label: 'Topics' },
   { href: '/compare/', label: 'Compare' },
+  { href: '/demos/', label: 'Demos' },
   { href: '/resources/', label: 'Resources' },
   { href: '/ai/', label: 'For AI agents' },
 ];
@@ -198,6 +199,7 @@ function footer(model) {
         <li><a href="/categories/">Categories</a></li>
         <li><a href="/topics/">Topics</a></li>
         <li><a href="/compare/">Comparisons</a></li>
+        <li><a href="/demos/">Live demos</a></li>
         <li><a href="/resources/">Books, podcasts &amp; more</a></li>
       </ul>
     </nav>
@@ -206,6 +208,7 @@ function footer(model) {
       <ul>
         <li><a href="/about/">About &amp; methodology</a></li>
         <li><a href="/submit/">Add a tool</a></li>
+        <li><a href="/demos/#add">Add a demo</a></li>
         <li><a href="/ai/">MCP server &amp; API</a></li>
         <li><a href="/llms.txt">llms.txt</a></li>
         <li><a href="/feed.xml">Recently added (Atom)</a></li>

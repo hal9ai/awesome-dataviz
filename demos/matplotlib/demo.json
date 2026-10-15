@@ -1,0 +1,11 @@
+{
+  "runs": "server",
+  "health": "/healthz",
+  "size": { "cpuCores": "0.1", "memoryGb": "0.2", "buildCpuCores": "2", "buildMemoryGb": "2" },
+  "libraries": [
+    {
+      "tool": "https://matplotlib.org/",
+      "note": "A Flask server redraws each chart as SVG when an input changes."
+    }
+  ]
+}

@@ -45,10 +45,19 @@ export function liveDemoSection(t) {
   const others = d.others ?? [];
   return html`<section class="live-demo" aria-labelledby="live-demo"><h2 id="live-demo">Try it live</h2>
 <p>This demo of ${d.label ?? t.name} ${raw(DEMO_SENTENCE.replace('Cloudish', '<a href="https://cloudish.ai" rel="noopener">Cloudish</a>'))}</p>
+${demoScreenshot(t)}
 <div class="actions"><a class="button primary" href="${d.url}" rel="noopener">Open the live demo ${icon('external')}</a><a class="button" href="${d.sourceUrl}" rel="noopener">${icon('github')} Demo source</a></div>
 <p class="section-note">Views: ${joinList(d.views.map((v) => VIEWS[v]))}.${d.note ? ` ${d.note}` : ''}</p>
-${others.length ? html`<p class="more">The same demo in other libraries: ${raw(others.map((o) => html`<a href="${o.demo.url}" rel="noopener">${o.demo.label ?? o.name}</a>`.value).join(' · '))}</p>` : ''}
+${others.length ? html`<p class="more">The same demo in other libraries: ${raw(others.map((o) => html`<a href="${o.demo.url}" rel="noopener">${o.demo.label ?? o.name}</a>`.value).join(' · '))}. <a href="/demos/">See them all side by side</a>.</p>` : ''}
 </section>`;
+}
+
+// The demo's screenshot (taken by scripts/screenshots.mjs, copied in by the
+// build), linking to the live demo; nothing when there's no screenshot yet.
+export function demoScreenshot(t, { lazy = false } = {}) {
+  const d = t.demo;
+  if (!d?.screenshot) return '';
+  return html`<a class="demo-shot" href="${d.url}" rel="noopener"><img src="${d.screenshot}" alt="Screenshot of the ${d.label ?? t.name} demo" width="1280" height="800"${lazy ? raw(' loading="lazy"') : ''} decoding="async"></a>`;
 }
 
 // A factual summary paragraph, written to be quotable on its own.
