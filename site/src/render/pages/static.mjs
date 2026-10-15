@@ -116,6 +116,7 @@ ${breadcrumbs([{ name: 'Home', href: '/' }, { name: 'Add a tool' }])}
 <li>Short, neutral descriptions. No marketing superlatives.</li>
 <li>Pull requests that look like spam, or whose functionality we can't verify, are closed.</li>
 </ul>
+<p>Want readers to try it? <a href="/demos/#add">Add a live demo</a> with a second pull request; it shows on the tool's page once merged.</p>
 <p>To fix incorrect data on a tool page (wrong repository, package or license), open an issue or edit <code>site/data/overrides.mjs</code>.</p>
 </div>
 </div>`;
@@ -178,6 +179,7 @@ ${copyCommand(`claude mcp add --transport http awesome-dataviz ${endpoint}`)}
 <li><a href="/api/tools.json"><code>GET /api/tools.json</code></a>: every tool with its facts.</li>
 <li><code>GET /api/tools/{slug}.json</code>: one tool, for example <a href="/api/tools/chart-js.json"><code>/api/tools/chart-js.json</code></a>.</li>
 <li><a href="/api/categories.json"><code>GET /api/categories.json</code></a> and <a href="/api/topics.json"><code>GET /api/topics.json</code></a>.</li>
+<li><a href="/api/demos.json"><code>GET /api/demos.json</code></a>: the <a href="/demos/">live demos</a>, with their URLs, sources and screenshots.</li>
 <li><a href="/api/search?q=react%20charts"><code>GET /api/search?q=react%20charts</code></a>: ranked search, with optional <code>category</code>, <code>topic</code>, <code>language</code>, <code>status</code> and <code>limit</code> parameters.</li>
 </ul>
 <p>A search result looks like this (abridged):</p>

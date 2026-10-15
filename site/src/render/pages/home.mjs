@@ -90,6 +90,14 @@ ${statTiles([
   </section>
 </div>
 
+${model.demos.length ? html`<section aria-labelledby="demos">
+  <div class="section-head"><h2 id="demos">Try them live</h2><a href="/demos/">All demos, and how to add one</a></div>
+  <p class="section-note">The same Gapminder charts in ${model.demos.length} libraries, running live, so you can compare them side by side.</p>
+  <ul class="demo-strip">${model.demos.map(
+    (t) => html`<li><a href="${t.demo.url}" rel="noopener">${t.demo.screenshot ? html`<img src="${t.demo.screenshot}" alt="" width="1280" height="800" loading="lazy" decoding="async">` : html`<span class="demo-shot-empty"></span>`}<span>${t.demo.label ?? t.name}</span></a></li>`
+  )}</ul>
+</section>` : ''}
+
 <section aria-labelledby="recent">
   <div class="section-head"><h2 id="recent">Recently added</h2><a href="/feed.xml">Atom feed</a></div>
   <ul class="card-grid">${recent.map(

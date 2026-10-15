@@ -1,38 +1,23 @@
 // Live demos (../demos/ in this repository): the same Gapminder dataset in
-// the same three views, one small app per library, hosted on Cloudish. Keys
-// are the exact URL an entry links to in the README, as in overrides.mjs.
+// the same three views, one small app per library, hosted on Cloudish. Each
+// folder under demos/ with a demo.json is one demo (see demos/manifest.mjs
+// for its fields), so a merged demo shows up here with no change to the site.
+// Keys are the exact URL an entry links to in the README, as in overrides.mjs.
 //
-//   demo    folder under demos/ (one Cloudish project per folder)
-//   page    path within the demo, when one app serves several libraries
-//   source  file or folder to link as "the demo's source", relative to the repo
-//   views   which of VIEWS the demo has
-//   note    one short caveat, shown next to the views
-//   runs    'browser' or 'server'; the links to the other demos list browser ones first
-//   label   the name to show for the demo when the tool's name is too short
-//
-// The tool page, its Markdown twin and the JSON API read these through
-// demoFor(), which resolves the URL.
+// The tool page, its Markdown twin, the /demos/ page and the JSON API read
+// these through demoFor(), which resolves the URL.
 
-// PLACEHOLDER: nothing is deployed yet. demos/deploy.mjs prints the real
-// URLs; set DEMOS_URL_TEMPLATE for the build (or change this constant) once
-// they exist. {demo} is replaced by the folder name.
+import { loadDemos, screenshotKey, VIEWS } from '../../demos/manifest.mjs';
+
+// demos/deploy.mjs gives each demo the subdomain label awesomedataviz-<folder>
+// on the Cloudish account that serves them. {demo} is the folder name.
 export const DEMO_URL_TEMPLATE = process.env.DEMOS_URL_TEMPLATE || 'https://awesomedataviz-{demo}.on.do.cloudish.ai/';
 
-export const VIEWS = {
-  scatter: 'GDP per capita vs life expectancy by year',
-  line: 'life expectancy over time for one country',
-  map: 'a world map of one metric for one year',
-};
-const ALL = Object.keys(VIEWS);
+export { VIEWS };
 
-const DEMOS = {
-  'https://github.com/streamlit/streamlit': { demo: 'streamlit', runs: 'server', source: 'demos/streamlit', views: ALL, note: 'Charts drawn with Altair, which Streamlit ships with.' },
-  'https://shiny.rstudio.com': { demo: 'shiny-r', runs: 'server', label: 'Shiny for R', source: 'demos/shiny-r', views: ALL, note: 'Charts drawn with ggplot2 and rendered in R on the server.' },
-  'https://matplotlib.org/': { demo: 'matplotlib', runs: 'server', source: 'demos/matplotlib', views: ALL, note: 'A Flask server redraws each chart as SVG when an input changes.' },
-  'https://github.com/apache/echarts': { demo: 'js-gallery', runs: 'browser', page: 'echarts.html', source: 'demos/js-gallery/site/echarts.html', views: ALL },
-  'https://www.chartjs.org/': { demo: 'js-gallery', runs: 'browser', page: 'chartjs.html', source: 'demos/js-gallery/site/chartjs.html', views: ALL, note: 'Core Chart.js has no maps; the map uses the chartjs-chart-geo plugin.' },
-  'https://github.com/plotly/plotly.js/': { demo: 'js-gallery', runs: 'browser', page: 'plotly.html', source: 'demos/js-gallery/site/plotly.html', views: ALL },
-};
+const DEMOS = Object.fromEntries(
+  loadDemos().flatMap((d) => d.libraries.map(({ tool, ...lib }) => [tool, { demo: d.name, runs: d.runs, views: d.views, ...lib }]))
+);
 
 export default DEMOS;
 
@@ -46,6 +31,7 @@ export function demoFor(entryUrl, { demos = DEMOS, template = DEMO_URL_TEMPLATE,
   if (!d) return null;
   return {
     ...d,
+    key: screenshotKey(d.demo, d.page),
     url: demoUrl(d.demo, d.page, template),
     sourceUrl: `${repo}/${/\.[a-z]+$/.test(d.source) ? 'blob' : 'tree'}/main/${d.source}`,
     views: d.views.filter((v) => VIEWS[v]),

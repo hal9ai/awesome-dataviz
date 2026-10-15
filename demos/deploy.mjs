@@ -7,35 +7,34 @@
 //   CLOUDISH_API_KEY=... node demos/deploy.mjs streamlit matplotlib
 //   node demos/deploy.mjs --dry-run all      build the contexts, call nothing
 //   node demos/deploy.mjs --local shiny-r    docker build + run it on :8080
+//   node demos/deploy.mjs --check bokeh      docker build, run, health check and
+//                                            screenshot it into demos/.screenshots/
+//   node demos/deploy.mjs --changed origin/main   print the demos changed since a ref
 //
 // Optional: CLOUDISH_API (default https://cloudish.ai), DEMOS_PREFIX (project
-// and subdomain prefix, default "awesomedataviz"), DEMOS_IDLE_TIMEOUT (seconds;
-// sets the key's idle timeout, which applies to every app on the key),
+// and subdomain prefix; default "<your key's alias>-demo", and
+// "awesomedataviz" only for the account that serves awesomedataviz.com, set by
+// .github/workflows/demos.yaml), DEMOS_IDLE_TIMEOUT (seconds; sets the key's
+// idle timeout, which applies to every app on the key),
 // DEMOS_ALLOW_ALWAYS_ON=1 (deploy even if the key keeps apps always on).
 
 import { execFileSync, spawn } from 'node:child_process';
 import { appendFileSync, mkdtempSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { tmpdir } from 'node:os';
-import { dirname, join, resolve } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { join } from 'node:path';
+import { DATA_FILES, DEMOS_DIR, loadDemos, screenshotKey } from './manifest.mjs';
+import { screenshot } from './screenshot.mjs';
 
-const DEMOS_DIR = resolve(dirname(fileURLToPath(import.meta.url)));
 const API = process.env.CLOUDISH_API || 'https://cloudish.ai';
 const KEY = process.env.CLOUDISH_API_KEY;
-const PREFIX = process.env.DEMOS_PREFIX || 'awesomedataviz';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-// Container sizes follow cloudish.ai/instances.md: `shared` (0.1 CPU, 0.2 GB,
-// bursting to 1 CPU / 1 GB) suits small servers; Streamlit and Shiny keep a
-// session per visitor and use more than 0.2 GB, so they get `small`.
-const DEMOS = {
-  'js-gallery': { cpuCores: '0.1', memoryGb: '0.2', buildCpuCores: '1', buildMemoryGb: '2', health: '/healthz' },
-  matplotlib: { cpuCores: '0.1', memoryGb: '0.2', buildCpuCores: '2', buildMemoryGb: '2', health: '/healthz' },
-  streamlit: { cpuCores: '0.5', memoryGb: '1', buildCpuCores: '2', buildMemoryGb: '2', health: '/_stcore/health' },
-  'shiny-r': { cpuCores: '0.5', memoryGb: '1', buildCpuCores: '2', buildMemoryGb: '4', health: '/' },
-};
-const SKIP = new Set(['data', 'node_modules', '.venv', '__pycache__', 'README.md']);
-const DATA_FILES = ['data/gapminder.csv', 'data/world.geojson'];
+// One entry per folder with a demo.json (manifest.mjs). Container sizes
+// follow cloudish.ai/instances.md: `shared` (0.1 CPU, 0.2 GB, bursting to
+// 1 CPU / 1 GB) suits small servers; Streamlit and Shiny keep a session per
+// visitor and use more than 0.2 GB, so they ask for `small` in their demo.json.
+const DEMOS = Object.fromEntries(loadDemos().map((d) => [d.name, d]));
+const SKIP = new Set(['data', 'node_modules', '.venv', '__pycache__', 'README.md', 'demo.json']);
 
 // The build context: the demo's own files at the root (so its Dockerfile is
 // at the root, as Cloudish requires) plus the shared data under data/.
@@ -76,15 +75,14 @@ async function answers(url, path) {
   }
 }
 
-async function deploy(name, alias) {
-  const spec = DEMOS[name];
-  const project = `${PREFIX}-${name}`;
+async function deploy(name, alias, prefix) {
+  const { size, health } = DEMOS[name];
+  const project = `${prefix}-${name}`;
   const tarball = buildContext(name);
   console.log(`${name}: context ${(statSync(tarball).size / 1e6).toFixed(2)} MB -> ${alias}/${project}`);
 
   const form = new FormData();
-  const { health, ...sizes } = spec;
-  for (const [k, v] of Object.entries({ name: project, port: '8080', ...sizes })) form.append(k, v);
+  for (const [k, v] of Object.entries({ name: project, port: '8080', ...size })) form.append(k, v);
   form.append('context', new Blob([readFileSync(tarball)], { type: 'application/gzip' }), 'context.tar.gz');
   const created = await api('/api/v1/projects', { method: 'POST', form });
   const id = created.build?.id;
@@ -128,40 +126,92 @@ async function deploy(name, alias) {
   return url;
 }
 
-function local(name, port = process.env.PORT || '8080') {
-  const tag = `${PREFIX}-${name}`;
+function dockerBuild(name) {
+  const tag = `awesomedataviz-${name}`;
   const tarball = buildContext(name);
-  execFileSync('docker', ['build', '-t', tag, '-'], { input: readFileSync(tarball), stdio: ['pipe', 'inherit', 'inherit'] });
+  execFileSync('docker', ['build', '-t', tag, '-'], { input: readFileSync(tarball), stdio: ['pipe', 'inherit', 'inherit'], maxBuffer: 1 << 30 });
+  return tag;
+}
+
+function local(name, port = process.env.PORT || '8080') {
+  const tag = dockerBuild(name);
   console.log(`Running ${tag} on http://localhost:${port}/ (Ctrl-C to stop)`);
   spawn('docker', ['run', '--rm', '-p', `${port}:8080`, tag], { stdio: 'inherit' }).on('exit', (code) => process.exit(code ?? 0));
+}
+
+// What a pull request's checks run: build the image, start it the way
+// Cloudish does (PORT=8080), wait for the health path, then screenshot every
+// library page into demos/.screenshots/ the way the site will.
+async function check(name) {
+  const { health, libraries } = DEMOS[name];
+  const tag = dockerBuild(name);
+  const port = String(18000 + Math.floor(Math.random() * 1000));
+  const container = execFileSync('docker', ['run', '-d', '--rm', '-p', `${port}:8080`, '-e', 'PORT=8080', tag]).toString().trim();
+  try {
+    const base = `http://localhost:${port}`;
+    const deadline = Date.now() + 3 * 60 * 1000;
+    while (!(await answers(base, health))) {
+      if (Date.now() > deadline) throw new Error(`${name} did not answer 200 at ${health} within 3 minutes.`);
+      await sleep(2000);
+    }
+    console.log(`${name}: answers at ${health}`);
+    for (const lib of libraries) {
+      const file = join(DEMOS_DIR, '.screenshots', `${screenshotKey(name, lib.page)}.png`);
+      await screenshot(`${base}/${lib.page}`, file, { ready: lib.ready });
+      console.log(`  ${lib.tool}: screenshot ${file}`);
+    }
+  } catch (error) {
+    console.error(execFileSync('docker', ['logs', '--tail', '60', container]).toString());
+    throw error;
+  } finally {
+    execFileSync('docker', ['rm', '-f', container], { stdio: 'ignore' });
+  }
+}
+
+// Demos whose folder changed since `ref`; all of them when the shared data did.
+function changed(ref) {
+  const files = execFileSync('git', ['diff', '--name-only', ref, 'HEAD', '--', '.'], { cwd: DEMOS_DIR }).toString().split('\n').filter(Boolean);
+  if (files.some((f) => f.startsWith('demos/data/'))) return Object.keys(DEMOS);
+  return [...new Set(files.map((f) => f.split('/')[1]))].filter((n) => DEMOS[n]);
 }
 
 async function main() {
   const args = process.argv.slice(2);
   const flags = new Set(args.filter((a) => a.startsWith('--')));
   let names = args.filter((a) => !a.startsWith('--'));
+  if (flags.has('--changed')) {
+    if (names.length !== 1) throw new Error('Usage: node demos/deploy.mjs --changed <git ref>');
+    return console.log(changed(names[0]).join(' '));
+  }
   if (names.includes('all')) names = Object.keys(DEMOS);
   const unknown = names.filter((n) => !DEMOS[n]);
   if (!names.length || unknown.length) {
-    throw new Error(`Usage: node demos/deploy.mjs [--dry-run|--local] all|${Object.keys(DEMOS).join('|')}${unknown.length ? ` (unknown: ${unknown.join(', ')})` : ''}`);
+    throw new Error(`Usage: node demos/deploy.mjs [--dry-run|--local|--check] all|${Object.keys(DEMOS).join('|')}${unknown.length ? ` (unknown: ${unknown.join(', ')})` : ''}`);
   }
 
   if (flags.has('--local')) {
     if (names.length !== 1) throw new Error('--local runs one demo at a time.');
     return local(names[0]);
   }
+  if (flags.has('--check')) {
+    for (const name of names) await check(name);
+    return;
+  }
   if (flags.has('--dry-run')) {
     for (const name of names) {
       const tarball = buildContext(name);
       const listing = execFileSync('tar', ['-tzf', tarball]).toString().trim().split('\n');
-      console.log(`${name}: ${(statSync(tarball).size / 1e6).toFixed(2)} MB, ${listing.length} entries, project ${PREFIX}-${name}, size ${DEMOS[name].cpuCores} CPU / ${DEMOS[name].memoryGb} GB`);
+      console.log(`${name}: ${(statSync(tarball).size / 1e6).toFixed(2)} MB, ${listing.length} entries, size ${DEMOS[name].size.cpuCores} CPU / ${DEMOS[name].size.memoryGb} GB`);
     }
     return;
   }
 
   if (!KEY) throw new Error('Set CLOUDISH_API_KEY.');
   const me = await api('/api/v1/me');
-  console.log(`Deploying ${names.join(', ')} as ${me.alias} (balance ${me.balance ?? '?'} credits).`);
+  // Not "awesomedataviz" by default: subdomain labels are global, and a
+  // contributor's test deploy must not take the label the site links to.
+  const prefix = process.env.DEMOS_PREFIX || `${me.alias}-demo`;
+  console.log(`Deploying ${names.join(', ')} as ${me.alias} with prefix ${prefix} (balance ${me.balance ?? '?'} credits).`);
 
   // The idle timeout is a per-key setting. The site's own deploy sets its key
   // to always-on (0), so demos on that key would be billed around the clock.
@@ -177,8 +227,8 @@ async function main() {
   }
 
   const urls = {};
-  for (const name of names) urls[name] = await deploy(name, me.alias);
-  console.log('\nFor site/data/demos.mjs:');
+  for (const name of names) urls[name] = await deploy(name, me.alias, prefix);
+  console.log('\nLive:');
   for (const [name, url] of Object.entries(urls)) console.log(`  ${name}: ${url}`);
   if (process.env.GITHUB_STEP_SUMMARY) {
     appendFileSync(process.env.GITHUB_STEP_SUMMARY, `### Demos deployed\n\n${Object.entries(urls).map(([n, u]) => `- ${n}: ${u}`).join('\n')}\n`);

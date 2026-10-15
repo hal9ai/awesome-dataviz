@@ -211,6 +211,7 @@ export function buildModel({ sections, overrides = {}, demos = {}, repoFacts = n
     categories: categories.filter((c) => c.tools.length || c.notes.length),
     categoryByAnchor,
     topics,
+    demos: withDemos,
     resources,
     warnings,
     builtAt: new Date(now).toISOString(),

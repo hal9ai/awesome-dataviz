@@ -1,16 +1,21 @@
 name: Site
 
 # Builds awesomedataviz.com from README.md and deploys it to Cloudish.
-# Pull requests get the build and tests (a check that README entries parse);
-# main deploys on every change and once a day to refresh GitHub, npm, PyPI
-# and CRAN data.
+# Pull requests get the build and tests (a check that README entries and
+# demos/*/demo.json parse); main deploys on every change, once a day to
+# refresh GitHub, npm, PyPI and CRAN data, and after the Demos workflow
+# deploys a demo, so a merged demo shows up with its screenshot.
 
 on:
   push:
     branches: [main]
     paths: ['README.md', 'site/**', '.github/workflows/site.yaml']
   pull_request:
-    paths: ['README.md', 'site/**', '.github/workflows/site.yaml']
+    paths: ['README.md', 'site/**', 'demos/*/demo.json', 'demos/manifest.mjs', '.github/workflows/site.yaml']
+  workflow_run:
+    workflows: [Demos]
+    types: [completed]
+    branches: [main]
   schedule:
     - cron: '23 6 * * *'
   workflow_dispatch:
@@ -44,6 +49,9 @@ jobs:
           restore-keys: site-cache-
       - name: Test
         run: npm test
+      - name: Screenshot the live demos
+        if: github.event_name != 'pull_request'
+        run: npm run screenshots # new or changed demos, and any older than a week; never fails the build
       - name: Build
         run: npm run build
         env:

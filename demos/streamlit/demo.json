@@ -1,0 +1,12 @@
+{
+  "runs": "server",
+  "health": "/_stcore/health",
+  "size": { "cpuCores": "0.5", "memoryGb": "1", "buildCpuCores": "2", "buildMemoryGb": "2" },
+  "libraries": [
+    {
+      "tool": "https://github.com/streamlit/streamlit",
+      "note": "Charts drawn with Altair, which Streamlit ships with.",
+      "ready": "[data-testid=stVegaLiteChart] canvas, .vega-embed canvas, .vega-embed svg"
+    }
+  ]
+}

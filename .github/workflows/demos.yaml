@@ -1,0 +1,86 @@
+name: Demos
+
+# The live demos in demos/. Pull requests that change one get it built, run,
+# health-checked and screenshotted (the screenshots are attached to the run).
+# Merges to main deploy the changed demos to Cloudish; the Site workflow then
+# rebuilds awesomedataviz.com with fresh screenshots (see its workflow_run).
+
+on:
+  push:
+    branches: [main]
+    paths: ['demos/**', '.github/workflows/demos.yaml']
+  pull_request:
+    paths: ['demos/**', '.github/workflows/demos.yaml']
+  workflow_dispatch:
+    inputs:
+      demos:
+        description: 'Demo folders to deploy, space-separated, or "all"'
+        default: all
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Find the changed demos
+        id: changed
+        run: echo "names=$(node demos/deploy.mjs --changed "origin/$BASE")" >> "$GITHUB_OUTPUT"
+        env:
+          BASE: ${{ github.base_ref }}
+      - name: Build, run and screenshot
+        if: steps.changed.outputs.names != ''
+        run: node demos/deploy.mjs --check $NAMES
+        env:
+          NAMES: ${{ steps.changed.outputs.names }}
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.changed.outputs.names != ''
+        with:
+          name: demo-screenshots
+          path: demos/.screenshots/
+          if-no-files-found: ignore
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    concurrency:
+      group: demos-deploy
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Deploy to Cloudish
+        run: |
+          if [ -z "$CLOUDISH_API_KEY" ]; then
+            echo "::warning::CLOUDISH_DEMOS_API_KEY is not set; demos not deployed."
+            exit 0
+          fi
+          if [ "$EVENT" = workflow_dispatch ]; then
+            names="$INPUT"
+          elif git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            names=$(node demos/deploy.mjs --changed "$BEFORE")
+          else
+            names=$(node demos/deploy.mjs --changed HEAD~1)
+          fi
+          if [ -z "$names" ]; then echo "No demo changed."; exit 0; fi
+          node demos/deploy.mjs $names
+        env:
+          CLOUDISH_API_KEY: ${{ secrets.CLOUDISH_DEMOS_API_KEY }}
+          DEMOS_PREFIX: awesomedataviz
+          EVENT: ${{ github.event_name }}
+          INPUT: ${{ github.event.inputs.demos }}
+          BEFORE: ${{ github.event.before }}

@@ -30,7 +30,8 @@ both themes.
 | `src/model.mjs` | Merges entries by repository; categories, topics, status |
 | `src/content/` | Editorial copy: category guides and cross-cutting topics |
 | `data/overrides.mjs` | Curated facts: repositories for homepage links, package names, slugs |
-| `data/demos.mjs` | Live demos ([`../demos/`](../demos/)) shown as "Try it live" on tool pages |
+| `data/demos.mjs` | Live demos, read from `../demos/*/demo.json`, for `/demos/` and "Try it live" on tool pages |
+| `scripts/screenshots.mjs` | Screenshots the deployed demos into `.cache/demo-screenshots/` (needs Chrome) |
 | `src/render/` | HTML templates, SVG charts and machine-readable feeds |
 | `server/` | Static server, search API and MCP endpoint (no dependencies) |
 | `scripts/deploy.mjs` | Uploads the build to Cloudish and checks it is live |
@@ -47,6 +48,8 @@ npm test
 ```
 
 `npm run build:offline` rebuilds from cached data only, which is fast.
+`npm run screenshots` refreshes the demo screenshots the build copies in; a
+demo without one is shown without a picture.
 
 ## Deploy
 

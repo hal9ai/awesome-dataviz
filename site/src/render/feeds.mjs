@@ -5,6 +5,7 @@ import { abs, url, SITE } from './html.mjs';
 import { plainText } from './components.mjs';
 import { toolSummary, alternativesFor, DEMO_SENTENCE } from './pages/tool.mjs';
 import { VIEWS } from '../../data/demos.mjs';
+import { DEMO_PROMPT } from './pages/demos.mjs';
 import { keyDifferences } from '../compare.mjs';
 import { inlineToText } from '../markdown.mjs';
 import { formatCompact, formatDate, formatNumber, perPeriod, plural } from '../util.mjs';
@@ -52,6 +53,39 @@ export function apiTool(t, model) {
       ? { url: t.demo.url, source: t.demo.sourceUrl, views: t.demo.views, note: t.demo.note ?? null, others: (t.demo.others ?? []).map((o) => o.slug) }
       : null,
   };
+}
+
+export function apiDemo(t) {
+  const d = t.demo;
+  return {
+    tool: t.slug,
+    name: d.label ?? t.name,
+    toolUrl: abs(url.tool(t)),
+    url: d.url,
+    source: d.sourceUrl,
+    runs: d.runs,
+    views: d.views,
+    note: d.note ?? null,
+    screenshot: d.screenshot ? abs(d.screenshot) : null,
+  };
+}
+
+export function demosMarkdown(model) {
+  const lines = [
+    '# Live demos',
+    '',
+    `> The same Gapminder data (life expectancy, GDP per capita and population for 142 countries, 1952–2007) in the same three views, built with ${plural(model.demos.length, 'library', 'libraries')}: ${Object.values(VIEWS).join('; ')}.`,
+    '',
+  ];
+  for (const [runs, title] of [['browser', 'Drawn in the browser'], ['server', 'Rendered on a server']]) {
+    const demos = model.demos.filter((t) => t.demo.runs === runs);
+    if (!demos.length) continue;
+    lines.push(`## ${title}`, '');
+    for (const t of demos) lines.push(`- ${mdLink(t.demo.label ?? t.name, t.demo.url)} (${mdLink('tool page', abs(url.tool(t)))}, ${mdLink('source', t.demo.sourceUrl)})${t.demo.note ? `: ${t.demo.note}` : ''}`);
+    lines.push('');
+  }
+  lines.push('## Add a demo for your library', '', 'Give a coding agent this prompt, with the library name in place of LIBRARY:', '', `> ${DEMO_PROMPT}`, '', `Source: ${abs('/demos/')} · ${LICENSE_NOTE}`, '');
+  return lines.join('\n');
 }
 
 export function searchRecord(t) {
@@ -221,6 +255,7 @@ export function llmsTxt(model, pairs) {
     '## Optional',
     '',
     `- ${mdLink('Full directory as Markdown', abs('/llms-full.txt'))}`,
+    `- ${mdLink('Live demos', abs('/demos.md'))}: the same Gapminder charts in ${plural(model.demos.length, 'library', 'libraries')}, and how to add a demo for another one.`,
     `- ${mdLink('Comparisons', abs('/compare/'))}: ${pairs.length} head-to-head comparisons.`,
     `- ${mdLink('Learning resources', abs('/resources.md'))}: books, catalogs, podcasts and websites.`,
     `- ${mdLink('About and methodology', abs('/about.md'))}`,

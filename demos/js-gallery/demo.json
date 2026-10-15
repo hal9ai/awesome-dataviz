@@ -1,0 +1,10 @@
+{
+  "runs": "browser",
+  "health": "/healthz",
+  "size": { "cpuCores": "0.1", "memoryGb": "0.2", "buildCpuCores": "1", "buildMemoryGb": "2" },
+  "libraries": [
+    { "tool": "https://github.com/apache/echarts", "page": "echarts.html", "source": "site/echarts.html" },
+    { "tool": "https://www.chartjs.org/", "page": "chartjs.html", "source": "site/chartjs.html", "note": "Core Chart.js has no maps; the map uses the chartjs-chart-geo plugin." },
+    { "tool": "https://github.com/plotly/plotly.js/", "page": "plotly.html", "source": "site/plotly.html" }
+  ]
+}

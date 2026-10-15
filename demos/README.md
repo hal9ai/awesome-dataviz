@@ -1,7 +1,7 @@
 # Live demos
 
 Small apps that draw the same dataset in the same three views with different
-libraries, so readers of [awesomedataviz.com](https://awesomedataviz.com) can
+libraries, so readers of [awesomedataviz.com](https://awesomedataviz.com/demos/) can
 compare them side by side, and try the server-side libraries (Python, R) live
 instead of through a static image gallery. Each one is meant to be read as a
 reference: short, idiomatic for its library, versions pinned.
@@ -40,14 +40,22 @@ CLOUDISH_API_KEY=... node demos/deploy.mjs all
 CLOUDISH_API_KEY=... node demos/deploy.mjs matplotlib
 ```
 
-One Cloudish project per demo, named `awesomedataviz-<demo>`
-(`DEMOS_PREFIX` changes the prefix). The script uploads the context, waits for
-the server-side image build, asks for the subdomain label
-`awesomedataviz-<demo>` (keeping the random URL if the label is taken), waits
-until the app answers and prints the URLs to put in `site/data/demos.mjs`
-(or set `DEMOS_URL_TEMPLATE` for the site build, see below).
+One Cloudish project per demo, named `<prefix>-<demo>`. The script uploads
+the context, waits for the server-side image build, asks for the subdomain
+label `<prefix>-<demo>` (keeping the random URL if the label is taken), waits
+until the app answers and prints the URLs.
 
-Nothing deploys these automatically yet; there is no workflow for them.
+The prefix defaults to `<your key's alias>-demo`, so a test deploy never takes
+the labels the site links to. Only the account that serves awesomedataviz.com
+uses `DEMOS_PREFIX=awesomedataviz`, which gives the
+`https://awesomedataviz-<demo>.on.do.cloudish.ai/` URLs in
+`site/data/demos.mjs` (`DEMOS_URL_TEMPLATE` overrides them for a site build).
+
+[`.github/workflows/demos.yaml`](../.github/workflows/demos.yaml) does this
+on every merge to `main` that changes a demo (all of them when `data/`
+changes), with the `CLOUDISH_DEMOS_API_KEY` repository secret, then rebuilds
+the site, which takes fresh screenshots (`site/scripts/screenshots.mjs`). It
+can also be run by hand from the Actions tab for any list of demos.
 
 ### Which key
 
@@ -98,7 +106,103 @@ two session-based servers use `small`.
 
 ## Add a demo
 
-1. A folder with a `Dockerfile` that listens on `$PORT`, the three views, the
-   data attribution footer and a short README.
-2. An entry in `DEMOS` in `deploy.mjs` (sizes and a health path).
-3. An entry in `site/data/demos.mjs`, keyed by the tool's URL in the README.
+Any library listed in the [README](../README.md) can have a demo. It is one
+folder here; when its pull request is merged, CI deploys it, screenshots it
+and shows it on [awesomedataviz.com/demos](https://awesomedataviz.com/demos/)
+and on the library's page. Nothing outside the folder needs to change.
+
+With a coding agent (Claude Code, Codex, Cursor...), this is enough:
+
+> Add a live demo of LIBRARY to Awesome Dataviz: follow
+> https://github.com/hal9ai/awesome-dataviz/blob/main/demos/README.md to build
+> the Gapminder demo in a new demos/ folder, deploy it to cloudish.ai to test
+> it, and open a pull request to hal9ai/awesome-dataviz with the live URL.
+
+### 1. The app
+
+Make `demos/<folder>/`, where `<folder>` is lowercase letters, digits and
+dashes (it becomes the demo's URL, `awesomedataviz-<folder>`), usually the
+library's name. Start from the closest demo: [`matplotlib/`](matplotlib/) for
+a server-side library, a page of [`js-gallery/`](js-gallery/) for a
+JavaScript one (a new JavaScript library gets its own folder, not a page in
+`js-gallery/`).
+
+- **Data**: read `data/gapminder.csv` and `data/world.geojson`; the build
+  context puts them at `data/` next to your files (see
+  [`data/README.md`](data/README.md) for the columns). Don't fetch data.
+- **The three views**, in this order:
+  1. GDP per capita (log x) vs life expectancy, bubble area = population,
+     colored by continent, with a year control (a play button if the library
+     has one).
+  2. Life expectancy over time for one country, chosen from a list (Japan
+     first).
+  3. A world map of one metric (life expectancy, GDP per capita or
+     population) for one year, joined on `iso_alpha`.
+- **Colors and scales** like the others, so the differences are the
+  library's: continents Africa `#eda100`, Americas `#e34948`, Asia `#2a78d6`,
+  Europe `#1baf7a`, Oceania `#008300`; the map ramps through `#cde2fb`,
+  `#6da7ec`, `#256abf`, `#0d366b`, with `#e4e3df` for no data, log scales for
+  GDP and population and one domain for all years.
+- **Idiomatic and short**: the code is a reference for the library, so use
+  its own components (its slider, its tooltips) over custom code, and say in
+  the README where it needed a plugin or a workaround.
+- **Pinned and self-contained**: exact versions, nothing loaded from a CDN or
+  any other site at runtime.
+- **The attribution footer** from [`data/README.md`](data/README.md).
+- **A `Dockerfile`** that serves the app on `0.0.0.0:$PORT` (8080 by default)
+  and an endpoint that answers 200 once it's up.
+- **A short `README.md`**: what draws each view, the pinned versions, how to
+  run it.
+
+### 2. `demo.json`
+
+```json
+{
+  "runs": "server",
+  "health": "/healthz",
+  "libraries": [
+    { "tool": "https://github.com/owner/library", "note": "One short caveat, if any." }
+  ]
+}
+```
+
+| Field | |
+|---|---|
+| `runs` | `"browser"` when the library draws in the browser, `"server"` when the server renders |
+| `health` | path that answers 200 once the app is up (default `/`) |
+| `size` | Cloudish sizes, default `{ "cpuCores": "0.1", "memoryGb": "0.2", "buildCpuCores": "1", "buildMemoryGb": "2" }`; apps with a session per visitor (Streamlit, Shiny) need `"cpuCores": "0.5", "memoryGb": "1"` |
+| `views` | the views it has, default all of `scatter`, `line`, `map` |
+| `libraries[].tool` | **the exact URL the library's README entry links to**; the library must be listed first |
+| `libraries[].label` | a longer name to show, like "Shiny for R" |
+| `libraries[].page` | path within the app, when one app serves several libraries |
+| `libraries[].source` | file or folder to link as the source, relative to the folder (default the folder) |
+| `libraries[].note` | one short caveat, shown on the site |
+| `libraries[].ready` | CSS selector that appears once the charts are drawn, so the screenshot waits for it |
+
+`cd site && npm test` checks every `demo.json`.
+
+### 3. Try it
+
+- With Docker: `node demos/deploy.mjs --check <folder>` builds the image,
+  runs it, waits for `health` and saves a screenshot of each page to
+  `demos/.screenshots/`, the way the site will. `--local` runs it on
+  http://localhost:8080 to click around.
+- Without Docker, or to share a link: deploy it to your own Cloudish key.
+  Cloudish builds the image on its servers and needs no sign-up; a new key
+  comes with a little credit, enough for a test:
+
+  ```sh
+  curl -s -X POST https://cloudish.ai/api/v1/keys -H 'content-type: application/json' -d '{"agent":"claude-code"}'
+  # -> { "key": "cld_...", ... }: keep it out of git
+  CLOUDISH_API_KEY=cld_... DEMOS_IDLE_TIMEOUT=300 node demos/deploy.mjs <folder>
+  ```
+
+  It prints the URL, `https://<alias>-demo-<folder>.<domain>/`.
+
+### 4. The pull request
+
+Say which library it is and include the test URL. The checks build the demo,
+run it and attach its screenshots to the workflow run, and the site tests
+check `demo.json`. After the merge, the demo is deployed at
+`https://awesomedataviz-<folder>.on.do.cloudish.ai/` and appears on the site
+with the next build. You can delete your test project then.
