@@ -1,0 +1,5 @@
+# Local runs symlink ../data into a demo folder; the image gets a copy.
+/*/data
+node_modules/
+__pycache__/
+.venv/

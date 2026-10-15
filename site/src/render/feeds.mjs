@@ -3,7 +3,8 @@
 
 import { abs, url, SITE } from './html.mjs';
 import { plainText } from './components.mjs';
-import { toolSummary, alternativesFor } from './pages/tool.mjs';
+import { toolSummary, alternativesFor, DEMO_SENTENCE } from './pages/tool.mjs';
+import { VIEWS } from '../../data/demos.mjs';
 import { keyDifferences } from '../compare.mjs';
 import { inlineToText } from '../markdown.mjs';
 import { formatCompact, formatDate, formatNumber, perPeriod, plural } from '../util.mjs';
@@ -47,6 +48,9 @@ export function apiTool(t, model) {
     addedAt: t.addedAt,
     alternatives: alternativesFor(t, model).map((x) => x.slug),
     comparisons: (t.comparisons ?? []).map((p) => abs(url.compare(p))),
+    demo: t.demo
+      ? { url: t.demo.url, source: t.demo.sourceUrl, views: t.demo.views, note: t.demo.note ?? null, others: (t.demo.others ?? []).map((o) => o.slug) }
+      : null,
   };
 }
 
@@ -92,6 +96,13 @@ export function toolMarkdown(t, model) {
   for (const p of t.packages) bullet(`Install (${p.label})`, `\`${p.install}\`${p.downloads != null ? `, ${formatCompact(p.downloads)} downloads ${perPeriod(p.period)}` : ''}`);
   bullet('Topics', t.topics.map((x) => x.title).join(', '));
   lines.push('', '## Overview', '', toolSummary(t));
+  if (t.demo) {
+    const d = t.demo;
+    lines.push('', '## Try it live', '', `${mdLink('Live demo', d.url)}: this demo of ${t.name} ${DEMO_SENTENCE}`, '');
+    lines.push(`- Views: ${d.views.map((v) => VIEWS[v]).join('; ')}${d.note ? `. ${d.note}` : ''}`);
+    lines.push(`- Demo source: ${d.sourceUrl}`);
+    if (d.others?.length) lines.push(`- Other libraries: ${d.others.map((o) => mdLink(o.demo.label ?? o.name, o.demo.url)).join(', ')}`);
+  }
   const alts = alternativesFor(t, model);
   if (alts.length) {
     lines.push('', '## Alternatives', '');

@@ -1,0 +1,11 @@
+{
+  "name": "awesomedataviz-demo-js-gallery",
+  "private": true,
+  "description": "Pinned browser bundles for the JavaScript demos; the Dockerfile copies their dist files next to the pages.",
+  "dependencies": {
+    "chart.js": "4.5.1",
+    "chartjs-chart-geo": "4.3.6",
+    "echarts": "6.1.0",
+    "plotly.js-dist-min": "4.1.2"
+  }
+}

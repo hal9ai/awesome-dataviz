@@ -9,6 +9,7 @@ import { enrichPackages } from './enrich/packages.mjs';
 import { readmeHistory } from './enrich/history.mjs';
 import { buildModel, slugify } from './model.mjs';
 import overrides from '../data/overrides.mjs';
+import DEMOS, { demoFor } from '../data/demos.mjs';
 
 export const SITE_DIR = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 export const REPO_DIR = resolve(SITE_DIR, '..');
@@ -41,7 +42,8 @@ export async function loadCatalog({ offline = false, cacheDir = join(SITE_DIR, '
   log(`Packages: ${[...packages.values()].flat().length} verified.`);
 
   const additions = readmeHistory('README.md', REPO_DIR);
-  const model = buildModel({ sections, overrides, repoFacts, packages, additions, now });
+  const demos = Object.fromEntries(Object.keys(DEMOS).map((url) => [url, demoFor(url)]));
+  const model = buildModel({ sections, overrides, demos, repoFacts, packages, additions, now });
   for (const w of model.warnings) log(`  warning: ${w}`);
   for (const c of model.categories.filter((c) => c.missingMeta)) log(`  warning: no editorial metadata for README section "${c.readmeTitle}" (src/content/categories.mjs).`);
   return model;

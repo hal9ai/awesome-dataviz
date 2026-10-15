@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gapminder in Chart.js</title>
+<link rel="stylesheet" href="style.css">
+<script src="vendor/chart.umd.min.js"></script>
+<script src="vendor/chartjs-chart-geo.umd.min.js"></script>
+</head>
+<body>
+<nav><a href="./">All libraries</a><a href="echarts.html">ECharts</a><a href="chartjs.html" aria-current="page">Chart.js</a><a href="plotly.html">Plotly.js</a></nav>
+<h1>Gapminder in Chart.js</h1>
+<p class="lead">Chart.js 4. Core Chart.js has no maps: view 3 uses the <a href="https://github.com/sgratzl/chartjs-chart-geo">chartjs-chart-geo</a> plugin. Chart.js has no built-in animation timeline either, so the play button just steps the slider.</p>
+
+<h2>1. GDP per capita vs life expectancy</h2>
+<form data-view="scatter">
+  <label>Year <input type="range" name="year"> <output></output></label>
+  <button type="button" data-play>Play</button>
+</form>
+<div class="chart"><canvas id="scatter" role="img" aria-label="Bubble chart of GDP per capita against life expectancy by country"></canvas></div>
+
+<h2>2. Life expectancy over time</h2>
+<form data-view="line"><label>Country <select name="country"></select></label></form>
+<div class="chart short"><canvas id="line" role="img" aria-label="Line chart of life expectancy over time"></canvas></div>
+
+<h2>3. World map (chartjs-chart-geo plugin)</h2>
+<form data-view="map">
+  <label>Metric <select name="metric"></select></label>
+  <label>Year <input type="range" name="year" data-start="last"> <output></output></label>
+</form>
+<div class="chart"><canvas id="map" role="img" aria-label="World map colored by the chosen metric"></canvas></div>
+
+<footer><p>Data: <a href="https://github.com/jennybc/gapminder">gapminder</a> (CC0), based on free material from <a href="https://www.gapminder.org/data/">GAPMINDER.ORG</a>, CC-BY license. Map: <a href="https://www.naturalearthdata.com/">Natural Earth</a>. <a href="https://github.com/hal9ai/awesome-dataviz/blob/main/demos/js-gallery/site/chartjs.html">Source of this page</a>.</p></footer>
+
+<script type="module">
+import { loadData, wireControls, CONTINENTS, CONTINENT_COLORS, METRICS, NO_DATA, LOG_METRICS, blueAt, formatDollars, formatMetric } from './common.js';
+
+Chart.register(ChartGeo.ChoroplethController, ChartGeo.GeoFeature, ChartGeo.ProjectionScale, ChartGeo.ColorScale, ChartGeo.ColorLogarithmicScale);
+Chart.defaults.maintainAspectRatio = false;
+Chart.defaults.font.family = 'system-ui, sans-serif';
+
+const data = await loadData();
+const maxPop = data.extent('pop')[1];
+const title = (text, subtitle) => ({ title: { display: true, text, align: 'start', font: { size: 16 } }, subtitle: { display: !!subtitle, text: subtitle, align: 'start' } });
+
+// 1. A bubble chart: one dataset per continent; r is a radius, so take the square root.
+const bubbles = (year) =>
+  CONTINENTS.map((name) => ({
+    label: name,
+    backgroundColor: CONTINENT_COLORS[name] + 'e6',
+    borderColor: '#fff',
+    data: data.rows.filter((r) => r.year === year && r.continent === name).sort((a, b) => b.pop - a.pop).map((r) => ({ x: r.gdpPercap, y: r.lifeExp, r: 40 * Math.sqrt(r.pop / maxPop), row: r })),
+  }));
+const scatter = new Chart(document.getElementById('scatter'), {
+  type: 'bubble',
+  data: { datasets: bubbles(data.years[0]) },
+  options: {
+    animation: { duration: 600 },
+    scales: {
+      x: { type: 'logarithmic', min: 200, max: 150000, title: { display: true, text: 'GDP per capita (log scale)' }, afterBuildTicks: (axis) => (axis.ticks = [300, 1000, 3000, 10000, 30000, 100000].map((value) => ({ value }))), ticks: { callback: formatDollars, maxRotation: 0 } },
+      y: { min: 20, max: 85, title: { display: true, text: 'Life expectancy (years)' } },
+    },
+    plugins: {
+      ...title('GDP per capita vs life expectancy', 'Bubble area is population'),
+      tooltip: { callbacks: { label: ({ raw: { row: r } }) => [r.country, `Life expectancy ${r.lifeExp.toFixed(1)}`, `GDP per capita ${formatDollars(r.gdpPercap)}`, `Population ${r.pop.toLocaleString('en-US')}`] } },
+    },
+  },
+});
+
+const line = new Chart(document.getElementById('line'), {
+  type: 'line',
+  data: { labels: data.years, datasets: [{ label: 'Life expectancy', data: [] }] },
+  options: { scales: { y: { min: 20, max: 85, title: { display: true, text: 'Life expectancy (years)' } } }, plugins: { legend: { display: false } } },
+});
+
+// 3. The plugin draws GeoJSON features; values are attached per feature.
+const features = data.world.features;
+const map = new Chart(document.getElementById('map'), {
+  type: 'choropleth',
+  data: { labels: features.map((f) => f.properties.name), datasets: [{ label: 'Countries', outline: features, data: [], borderColor: '#fff', borderWidth: 0.5 }] },
+  options: {
+    plugins: { legend: { display: false } },
+    scales: { projection: { axis: 'x', projection: 'equalEarth' } },
+  },
+});
+
+wireControls(data, {
+  scatter({ year }) {
+    scatter.data.datasets.forEach((ds, i) => (ds.data = bubbles(+year)[i].data));
+    scatter.update();
+  },
+  line({ country }) {
+    const rows = data.rows.filter((r) => r.country === country);
+    const color = CONTINENT_COLORS[rows[0].continent];
+    Object.assign(line.data.datasets[0], { data: rows.map((r) => r.lifeExp), borderColor: color, backgroundColor: color, borderWidth: 2, pointRadius: 4 });
+    Object.assign(line.options.plugins, title(`Life expectancy in ${country} (${rows[0].continent})`));
+    line.update();
+  },
+  map({ metric, year }) {
+    const values = new Map(data.rows.filter((r) => r.year === +year).map((r) => [r.iso_alpha, r[metric]]));
+    const [min, max] = data.extent(metric);
+    map.data.datasets[0].data = features.map((f) => ({ feature: f, value: values.get(f.properties.iso_alpha) ?? null }));
+    map.options.scales.color = {
+      axis: 'x', type: LOG_METRICS.has(metric) ? 'colorLogarithmic' : 'color', min, max, missing: NO_DATA,
+      interpolate: blueAt,
+      legend: { position: 'bottom-left', align: 'right' },
+      ticks: { callback: (v) => formatMetric(metric, v), maxTicksLimit: 6 },
+    };
+    Object.assign(map.options.plugins, title(`${METRICS[metric]} in ${year}`, 'Gray: no data'));
+    map.options.plugins.tooltip = { callbacks: { label: ({ raw }) => `${raw.feature.properties.name}: ${formatMetric(metric, raw.value)}` } };
+    map.update();
+  },
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+# The nginx image runs envsubst on this file at startup, so ${PORT} comes
+# from the environment (the Dockerfile defaults it to 8080).
+server {
+  listen ${PORT};
+  listen [::]:${PORT};
+  root /usr/share/nginx/html;
+
+  gzip on;
+  gzip_types text/css application/javascript text/csv application/geo+json;
+
+  location = /favicon.ico { return 204; }
+  location = /healthz { default_type text/plain; return 200 "ok\n"; }
+  location /data/ {
+    types { text/csv csv; application/geo+json geojson; }
+    expires 1h;
+  }
+  location /vendor/ { expires 7d; }
+}
