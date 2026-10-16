@@ -387,6 +387,7 @@ Browse it at **[awesomedataviz.com](https://awesomedataviz.com)**: search, ranki
 - [Leaflet for R](https://github.com/rstudio/leaflet) - R interface to the Leaflet JavaScript library for interactive maps.
 - [patchwork](https://github.com/thomasp85/patchwork) - Composes multiple ggplot2 plots into a single figure.
 - [plotly](https://github.com/plotly/plotly.R) - Interactive charts (including adding interactivity to ggplot2 output), cartograms and simple network diagrams
+- [r2d3](https://github.com/rstudio/r2d3) - Renders custom D3.js visualizations from R, in RStudio, R Markdown and Shiny.
 - [rayshader](https://github.com/tylermorganwall/rayshader) - 2D and 3D mapping and data visualization in R, including 3D renders of ggplot2 plots.
 - [rbokeh](https://hafen.github.io/rbokeh/) - R Interface to Bokeh.
 - [rgl](https://cran.r-project.org/web/packages/rgl/index.html) - 3D Visualization Using OpenGL
