@@ -303,70 +303,95 @@ Browse it at **[awesomedataviz.com](https://awesomedataviz.com)**: search, ranki
 - [XCharts](https://github.com/XCharts-Team/XCharts) - Charting and data visualization library for Unity, built on UGUI.
 
 ## Python tools
+### Core plotting libraries
+- [matplotlib](https://matplotlib.org/) - 2D plotting library.
+- [pygal](https://github.com/Kozea/pygal) - SVG charting library for Python with many chart types and interactive output.
+- [seaborn](https://seaborn.pydata.org/) - A library for making attractive and informative statistical graphics.
+- [toyplot](https://toyplot.readthedocs.io/en/stable/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
+- [veusz](https://veusz.github.io/) - Python multiplatform GUI plotting tool and graphing library
+
+### Matplotlib extensions
+- [mpld3](https://github.com/mpld3/mpld3) - Renders matplotlib figures as interactive D3.js graphics in the browser.
+- [Quibbler](https://github.com/Technion-Kishony-lab/quibbler) - Your data and anything you plot is effortlessly live and interactive.
+- [SciencePlots](https://github.com/garrettj403/SciencePlots) - Matplotlib styles for scientific figures and journal publications.
+- [syd](https://github.com/landoskape/syd) - A package for making GUIs around matplotlib figures easy, fast, and streamlined.
+
+### Grammar of graphics and declarative
 - [altair](https://altair-viz.github.io/) - Declarative statistical visualizations, based on Vega-Lite.
-- [bokeh](https://bokeh.org/) - Interactive Web Plotting for Python.
-- [bqplot](https://github.com/bqplot/bqplot) - Plotting library for IPython/Jupyter notebooks.
-- [Cartopy](https://github.com/SciTools/cartopy) - Cartographic projections and geospatial data plotting with matplotlib.
-- [Chartify](https://github.com/spotify/chartify) - Bokeh wrapper that makes it easy for data scientists to create charts.
-- [D-Tale](https://github.com/man-group/dtale) - Web-based visual explorer for pandas DataFrames with charts, summaries and correlations.
-- [Dash](https://github.com/plotly/dash) - Framework for building data apps and dashboards in Python, built on Plotly.js and React.
-- [Datashader](https://github.com/holoviz/datashader) - Renders very large datasets into accurate images by rasterizing them.
-- [diagram](https://github.com/tehmaze/diagram) - Text mode diagrams using UTF-8 characters
-- [fastplotlib](https://github.com/fastplotlib/fastplotlib) - GPU-accelerated plotting library built on WGPU and pygfx for fast interactive visualization.
-- [folium](https://github.com/python-visualization/folium) - Builds interactive Leaflet.js maps from Python data.
 - [ggplot](https://github.com/yhat/ggpy) - plotting system based on [R's](#r-tools) ggplot2.
-- [glumpy](https://github.com/glumpy/glumpy) - OpenGL scientific visualizations library.
 - [holoviews](https://holoviews.org/) - Complex and declarative visualizations from annotated data.
 - [hvPlot](https://github.com/holoviz/hvplot) - High-level plotting API for pandas, xarray, Dask, NetworkX and other data structures, built on HoloViews.
-- [ipychart](https://github.com/nicohlr/ipychart) - The power of Chart.js in Jupyter Notebook.
-- [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet) - Interactive Leaflet maps in Jupyter notebooks, built on ipywidgets.
-- [leafmap](https://github.com/opengeos/leafmap) - Interactive mapping and geospatial analysis in Jupyter with multiple mapping backends.
 - [Lets-Plot](https://github.com/JetBrains/lets-plot) - Grammar of graphics plotting library for Python and Kotlin, by JetBrains.
-- [LIDA](https://github.com/microsoft/lida) - Generates visualizations and infographics from data with large language models, from Microsoft.
-- [lightweight-charts-python](https://github.com/louisnw01/lightweight-charts-python) - Python interface to TradingView's Lightweight Charts for financial charts.
-- [Lonboard](https://github.com/developmentseed/lonboard) - Fast, interactive geospatial data visualization in Jupyter, built on deck.gl and GeoArrow.
-- [matplotlib](https://matplotlib.org/) - 2D plotting library.
-- [mayavi](https://docs.enthought.com/mayavi/mayavi/) - interactive scientific data visualization and 3D plotting in Python.
-- [missingno](https://github.com/ResidentMario/missingno) - provides flexible toolset of data-visualization utilities that allows quick visual summary of the completeness of your dataset, based on matplotlib.
-- [mpld3](https://github.com/mpld3/mpld3) - Renders matplotlib figures as interactive D3.js graphics in the browser.
-- [mplfinance](https://github.com/matplotlib/mplfinance) - Financial market data visualization (candlestick, OHLC, volume) using matplotlib.
-- [napari](https://github.com/napari/napari) - Fast, interactive viewer for multi-dimensional images in Python.
-- [Panel](https://github.com/holoviz/panel) - Data exploration and web app framework for Python that works with many plotting libraries.
-- [Plotext](https://github.com/piccolomo/plotext) - Plots data directly in the terminal with a matplotlib-like syntax.
-- [plotly](https://plotly.com/python/) - Interactive web based visualization built on top of [plotly.js](https://github.com/plotly/plotly.js)
 - [plotnine](https://github.com/has2k1/plotnine) - Grammar of graphics for Python, based on R's ggplot2.
-- [pptk](https://github.com/heremaps/pptk) - Visualize and work with 2D/3D pointclouds
-- [prettymaps](https://github.com/marceloprates/prettymaps) - Draws stylized maps from OpenStreetMap data, using osmnx and matplotlib.
+
+### Interactive web charts
+- [bokeh](https://bokeh.org/) - Interactive Web Plotting for Python.
+- [bqplot](https://github.com/bqplot/bqplot) - Plotting library for IPython/Jupyter notebooks.
+- [Chartify](https://github.com/spotify/chartify) - Bokeh wrapper that makes it easy for data scientists to create charts.
+- [ipychart](https://github.com/nicohlr/ipychart) - The power of Chart.js in Jupyter Notebook.
+- [plotly](https://plotly.com/python/) - Interactive web based visualization built on top of [plotly.js](https://github.com/plotly/plotly.js)
 - [pyecharts](https://github.com/pyecharts/pyecharts) - Python binding for Echarts library.
-- [pygal](https://github.com/Kozea/pygal) - SVG charting library for Python with many chart types and interactive output.
-- [PyGMT](https://github.com/GenericMappingTools/pygmt) - Python interface to the Generic Mapping Tools (GMT) for maps and figures in the geosciences.
-- [PyGWalker](https://github.com/Kanaries/pygwalker) - Turns dataframes into a drag-and-drop visual analysis UI in Jupyter, based on Graphic Walker.
-- [PyQtGraph](https://www.pyqtgraph.org/) - Interactive and realtime 2D/3D/Image plotting and science/engineering widgets.
-- [PyVista](https://github.com/pyvista/pyvista) – 3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK)
-- [Quibbler](https://github.com/Technion-Kishony-lab/quibbler) - Your data and anything you plot is effortlessly live and interactive.
-- [Rerun](https://github.com/rerun-io/rerun) - An SDK for logging computer vision and robotics data paired with a visualizer for exploring that data over time.
-- [scattertext](https://github.com/JasonKessler/scattertext) - Interactive scatterplot visualizations of how language differs between groups of documents.
-- [SciencePlots](https://github.com/garrettj403/SciencePlots) - Matplotlib styles for scientific figures and journal publications.
-- [seaborn](https://seaborn.pydata.org/) - A library for making attractive and informative statistical graphics.
+
+### Dashboards and data apps
+- [Dash](https://github.com/plotly/dash) - Framework for building data apps and dashboards in Python, built on Plotly.js and React.
+- [Panel](https://github.com/holoviz/panel) - Data exploration and web app framework for Python that works with many plotting libraries.
 - [Shiny for Python](https://github.com/posit-dev/py-shiny) - Python version of the Shiny reactive framework for interactive data apps.
 - [Streamlit](https://github.com/streamlit/streamlit) - Framework for turning Python scripts into interactive data apps.
-- [Sweetviz](https://github.com/fbdesignpro/sweetviz) - Generates self-contained HTML reports that visualize and compare datasets for exploratory analysis.
-- [syd](https://github.com/landoskape/syd) - A package for making GUIs around matplotlib figures easy, fast, and streamlined.
 - [Taipy](https://github.com/Avaiga/taipy) - Python framework for building data and AI web applications with interactive charts and dashboards.
-- [termgraph](https://github.com/mkaz/termgraph) - Draws bar charts, histograms and other basic graphs in the terminal, as a CLI or Python library.
-- [three.py](https://github.com/stemkoski/three.py/) - Easy to use 3D library based on PyOpenGL. Inspired by Three.js.
-- [toyplot](https://toyplot.readthedocs.io/en/stable/) - The kid-sized plotting toolkit for Python with grownup-sized goals.
-- [uniplot](https://github.com/olavolav/uniplot) - Lightweight plotting to the terminal. 4x resolution via Unicode.
-- [vedo](https://github.com/marcomusy/vedo) - Library for scientific analysis and visualization of 3D objects based on VTK.
-- [veusz](https://veusz.github.io/) - Python multiplatform GUI plotting tool and graphing library
-- [viser](https://github.com/viser-project/viser) - Web-based 3D visualization library for computer vision and robotics, with GUI building blocks.
-- [VisPy](https://vispy.org/) - High-performance scientific visualization based on OpenGL.
 - [Vizro](https://github.com/mckinsey/vizro) - Low-code toolkit from McKinsey for building data visualization apps and dashboards, built on Dash.
 - [Voilà](https://github.com/voila-dashboards/voila) - Turns Jupyter notebooks into standalone interactive web applications.
-- [vtk](https://www.vtk.org/) - 3D computer graphics, image processing, and visualization that includes a Python interface.
-- [WordCloud](https://github.com/amueller/word_cloud) - Word cloud generator for Python.
+
+### Exploratory data analysis and profiling
+- [D-Tale](https://github.com/man-group/dtale) - Web-based visual explorer for pandas DataFrames with charts, summaries and correlations.
+- [LIDA](https://github.com/microsoft/lida) - Generates visualizations and infographics from data with large language models, from Microsoft.
+- [missingno](https://github.com/ResidentMario/missingno) - provides flexible toolset of data-visualization utilities that allows quick visual summary of the completeness of your dataset, based on matplotlib.
+- [PyGWalker](https://github.com/Kanaries/pygwalker) - Turns dataframes into a drag-and-drop visual analysis UI in Jupyter, based on Graphic Walker.
+- [Sweetviz](https://github.com/fbdesignpro/sweetviz) - Generates self-contained HTML reports that visualize and compare datasets for exploratory analysis.
 - [ydata-profiling](https://github.com/Data-Centric-AI-Community/fg-data-profiling) - Generates statistical analytic reports with visualization for quick data analysis (formerly pandas-profiling).
+
+### Maps and geospatial
+- [Cartopy](https://github.com/SciTools/cartopy) - Cartographic projections and geospatial data plotting with matplotlib.
+- [folium](https://github.com/python-visualization/folium) - Builds interactive Leaflet.js maps from Python data.
+- [ipyleaflet](https://github.com/jupyter-widgets/ipyleaflet) - Interactive Leaflet maps in Jupyter notebooks, built on ipywidgets.
+- [leafmap](https://github.com/opengeos/leafmap) - Interactive mapping and geospatial analysis in Jupyter with multiple mapping backends.
+- [Lonboard](https://github.com/developmentseed/lonboard) - Fast, interactive geospatial data visualization in Jupyter, built on deck.gl and GeoArrow.
+- [prettymaps](https://github.com/marceloprates/prettymaps) - Draws stylized maps from OpenStreetMap data, using osmnx and matplotlib.
+- [PyGMT](https://github.com/GenericMappingTools/pygmt) - Python interface to the Generic Mapping Tools (GMT) for maps and figures in the geosciences.
+
+### 3D and scientific visualization
+- [mayavi](https://docs.enthought.com/mayavi/mayavi/) - interactive scientific data visualization and 3D plotting in Python.
+- [napari](https://github.com/napari/napari) - Fast, interactive viewer for multi-dimensional images in Python.
+- [pptk](https://github.com/heremaps/pptk) - Visualize and work with 2D/3D pointclouds
+- [PyVista](https://github.com/pyvista/pyvista) – 3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK)
+- [three.py](https://github.com/stemkoski/three.py/) - Easy to use 3D library based on PyOpenGL. Inspired by Three.js.
+- [vedo](https://github.com/marcomusy/vedo) - Library for scientific analysis and visualization of 3D objects based on VTK.
+- [vtk](https://www.vtk.org/) - 3D computer graphics, image processing, and visualization that includes a Python interface.
 - [yt](https://github.com/yt-project/yt) - Toolkit for analysis and visualization of volumetric data.
+
+### High-performance and GPU
+- [Datashader](https://github.com/holoviz/datashader) - Renders very large datasets into accurate images by rasterizing them.
+- [fastplotlib](https://github.com/fastplotlib/fastplotlib) - GPU-accelerated plotting library built on WGPU and pygfx for fast interactive visualization.
+- [glumpy](https://github.com/glumpy/glumpy) - OpenGL scientific visualizations library.
+- [PyQtGraph](https://www.pyqtgraph.org/) - Interactive and realtime 2D/3D/Image plotting and science/engineering widgets.
+- [VisPy](https://vispy.org/) - High-performance scientific visualization based on OpenGL.
+
+### Robotics and computer vision
+- [Rerun](https://github.com/rerun-io/rerun) - An SDK for logging computer vision and robotics data paired with a visualizer for exploring that data over time.
+- [viser](https://github.com/viser-project/viser) - Web-based 3D visualization library for computer vision and robotics, with GUI building blocks.
+
+### Financial charts
+- [lightweight-charts-python](https://github.com/louisnw01/lightweight-charts-python) - Python interface to TradingView's Lightweight Charts for financial charts.
+- [mplfinance](https://github.com/matplotlib/mplfinance) - Financial market data visualization (candlestick, OHLC, volume) using matplotlib.
+
+### Terminal plotting
+- [diagram](https://github.com/tehmaze/diagram) - Text mode diagrams using UTF-8 characters
+- [Plotext](https://github.com/piccolomo/plotext) - Plots data directly in the terminal with a matplotlib-like syntax.
+- [termgraph](https://github.com/mkaz/termgraph) - Draws bar charts, histograms and other basic graphs in the terminal, as a CLI or Python library.
+- [uniplot](https://github.com/olavolav/uniplot) - Lightweight plotting to the terminal. 4x resolution via Unicode.
+
+### Text visualization
+- [scattertext](https://github.com/JasonKessler/scattertext) - Interactive scatterplot visualizations of how language differs between groups of documents.
+- [WordCloud](https://github.com/amueller/word_cloud) - Word cloud generator for Python.
 
 ## R tools
 - [circlize](https://github.com/jokergoo/circlize) - Circular visualization in R, such as chord diagrams and Circos-style genomic plots.
