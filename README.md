@@ -433,6 +433,7 @@ Tools that are not tied to a particular platform or language.
 - [Cytoscape](https://github.com/cytoscape/cytoscape) - Desktop platform for network analysis and visualization, widely used in bioinformatics.
 - [DAC](https://github.com/bruin-data/dac) - Dashboard-as-code tool that builds interactive dashboards from YAML and TSX definitions
 - [Data Formulator](https://github.com/microsoft/data-formulator) - AI-assisted tool for transforming data and creating visualizations, from Microsoft Research.
+- [Datavzrd](https://github.com/datavzrd/datavzrd) - Turns CSV, TSV, JSON or Parquet tables into interactive, self-contained HTML reports, configured with a short YAML file.
 - [FlameGraph](https://github.com/brendangregg/FlameGraph) - Stack trace visualizer that generates interactive SVG flame graphs from profiling data.
 - [GeoLibre](https://github.com/opengeos/GeoLibre) - Cloud-native GIS app for visualizing and analyzing geospatial data on the web, desktop and mobile.
 - [Gephi](https://github.com/gephi/gephi) - An open-source platform for visualizing and manipulating large graphs
