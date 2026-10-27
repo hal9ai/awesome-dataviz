@@ -279,6 +279,7 @@ Browse it at **[awesomedataviz.com](https://awesomedataviz.com)**: search, ranki
 - [dtreeviz](https://github.com/parrt/dtreeviz) - Decision tree visualization and model interpretation library for Python.
 - [Embedding Atlas](https://github.com/apple/embedding-atlas) - Interactive visualization of large embeddings with search, filtering and density views, by Apple.
 - [FiftyOne](https://github.com/voxel51/fiftyone) - Tool for visualizing, curating and evaluating computer vision datasets and models.
+- [LightlyStudio](https://github.com/lightly-ai/lightly-studio) - Interactive embedding plot and sample grid to explore image and video datasets, with annotation overlays.
 - [LIT](https://github.com/PAIR-code/lit) - Learning Interpretability Tool: interactive visual analysis of ML model behavior, by Google PAIR.
 - [Model Explorer](https://github.com/google-ai-edge/model-explorer) - Hierarchical graph visualizer and debugger for ML models, from Google.
 - [Netron](https://github.com/lutzroeder/netron) - Viewer for neural network, deep learning and machine learning models.
