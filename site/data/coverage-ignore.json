@@ -20,6 +20,14 @@
   "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
  },
  {
+  "repo": "AhmadHassan-BTed/CoDiver",
+  "reason": "Reviewed 2026-10-27: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "AhmadHassan-BTed/Jantt",
+  "reason": "Reviewed 2026-10-27: star count could not be verified as organic (4,800+ stars, 15 forks, 2 months old)."
+ },
+ {
   "repo": "algorithm-visualizer/algorithm-visualizer",
   "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
  },
@@ -178,6 +186,10 @@
  {
   "repo": "covid19india/covid19india.github.io",
   "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "crynta/terax-ai",
+  "reason": "Reviewed 2026-10-27: not a data visualization library (out of scope)."
  },
  {
   "repo": "cube-js/cube",
@@ -716,6 +728,10 @@
   "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
  },
  {
+  "repo": "open-wanderer/wanderer",
+  "reason": "Reviewed 2026-10-27: not a data visualization library (out of scope)."
+ },
+ {
   "repo": "openblocks-dev/openblocks",
   "reason": "App framework or notebook; not visualization-first."
  },
@@ -770,6 +786,10 @@
  {
   "repo": "phpipam/phpipam",
   "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "PimpinPumpkin/Vela",
+  "reason": "Reviewed 2026-10-27: not a data visualization library (out of scope)."
  },
  {
   "repo": "pinterest/querybook",
@@ -846,6 +866,10 @@
  {
   "repo": "ranaroussi/quantstats",
   "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "ranuts/document",
+  "reason": "Reviewed 2026-10-27: not a data visualization library (out of scope)."
  },
  {
   "repo": "React-Sight/React-Sight",

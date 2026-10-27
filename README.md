@@ -38,7 +38,7 @@ Browse it at **[awesomedataviz.com](https://awesomedataviz.com)**: search, ranki
 		- [3D and scientific visualization](#3d-and-scientific-visualization)
 		- [High-performance and GPU](#high-performance-and-gpu)
 		- [Robotics and computer vision](#robotics-and-computer-vision)
-		- [Financial charts](#financial-charts-1)
+		- [Finance and trading](#finance-and-trading)
 		- [Terminal plotting](#terminal-plotting)
 		- [Text visualization](#text-visualization)
 	- [R tools](#r-tools)
@@ -393,7 +393,7 @@ Browse it at **[awesomedataviz.com](https://awesomedataviz.com)**: search, ranki
 - [Rerun](https://github.com/rerun-io/rerun) - An SDK for logging computer vision and robotics data paired with a visualizer for exploring that data over time.
 - [viser](https://github.com/viser-project/viser) - Web-based 3D visualization library for computer vision and robotics, with GUI building blocks.
 
-### Financial charts
+### Finance and trading
 - [lightweight-charts-python](https://github.com/louisnw01/lightweight-charts-python) - Python interface to TradingView's Lightweight Charts for financial charts.
 - [mplfinance](https://github.com/matplotlib/mplfinance) - Financial market data visualization (candlestick, OHLC, volume) using matplotlib.
 
@@ -458,6 +458,7 @@ Browse it at **[awesomedataviz.com](https://awesomedataviz.com)**: search, ranki
 - [Markmap](https://github.com/markmap/markmap) - Builds interactive mind maps from Markdown.
 - [Mermaid](https://github.com/mermaid-js/mermaid) - Generate diagrams and flowcharts from markdown-like text definitions, with a [live editor](https://mermaid.live).
 - [nomnoml](https://github.com/skanaar/nomnoml) - Draws UML diagrams from a simple text syntax.
+- [Pele](https://github.com/obsidianmd/pele) - Small, dependency-free renderer that turns Mermaid diagrams into SVG, from Obsidian.
 - [Penrose](https://github.com/penrose/penrose) - Creates diagrams from mathematical notation in plain text, from Carnegie Mellon University.
 - [PGF/TikZ](https://github.com/pgf-tikz/pgf) - TeX packages for programmatically drawing vector graphics and diagrams in LaTeX.
 - [PGFPlots](https://github.com/pgf-tikz/pgfplots) - TeX package for drawing 2D and 3D plots directly in LaTeX documents.
