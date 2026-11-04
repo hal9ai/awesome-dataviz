@@ -120,10 +120,6 @@
   "reason": "App framework or notebook; not visualization-first."
  },
  {
-  "repo": "britecharts/britecharts",
-  "reason": "Data visualization library, but unmaintained for years; not added."
- },
- {
   "repo": "btd/rollup-plugin-visualizer",
   "reason": "Developer tool (profiler, bundle or code visualizer), not a data visualization library."
  },
