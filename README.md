@@ -2,9 +2,11 @@
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) ![Test](https://github.com/hal9ai/awesome-dataviz/actions/workflows/main.yaml/badge.svg)
 
 
-A curated list of awesome **open-source** data visualizations frameworks, libraries and software. Inspired by [awesome-python](https://github.com/vinta/awesome-python) and originally created by [fasouto](https://github.com/fasouto).
+A curated list of awesome **open-source** data visualizations frameworks, libraries and software. 
 
 Browse it at **[awesomedataviz.com](https://awesomedataviz.com)**: search, rankings, live GitHub stats, comparisons and an MCP server for AI assistants, all generated from this README.
+
+Inspired by [awesome-python](https://github.com/vinta/awesome-python), originally created by [fasouto](https://github.com/fasouto), maintained by [Javier Luraschi](https://github.com/javierluraschi), and hosted in [Cloudish](https://cloudish.ai).
 
 ## Contents
 - [Awesome dataviz](#awesome-dataviz)
