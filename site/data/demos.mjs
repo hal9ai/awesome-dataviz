@@ -11,7 +11,7 @@ import { loadDemos, screenshotKey, VIEWS } from '../../demos/manifest.mjs';
 
 // .github/workflows/demos.yaml deploys each demo with the subdomain label
 // awesomedataviz-demo-<folder> (DEMOS_LABEL_PREFIX). {demo} is the folder name.
-export const DEMO_URL_TEMPLATE = process.env.DEMOS_URL_TEMPLATE || 'https://awesomedataviz-demo-{demo}.on.do.cloudish.ai/';
+export const DEMO_URL_TEMPLATE = process.env.DEMOS_URL_TEMPLATE || 'https://awesomedataviz-demo-{demo}.cloudish.app/';
 
 export { VIEWS };
 

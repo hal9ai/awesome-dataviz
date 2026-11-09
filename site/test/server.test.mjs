@@ -71,7 +71,7 @@ test('serves pages, redirects to trailing slashes and 404s', async () => {
 });
 
 test('reads the visitor host through proxies', async () => {
-  assert.equal(requestHost({ headers: { host: 'internal.on.do.cloudish.ai', 'x-forwarded-host': 'awesomedataviz.com' } }), 'awesomedataviz.com');
+  assert.equal(requestHost({ headers: { host: 'internal.cloudish.app', 'x-forwarded-host': 'awesomedataviz.com' } }), 'awesomedataviz.com');
   assert.equal(requestHost({ headers: { host: 'x', forwarded: 'for=1.2.3.4;host=awesomedataviz.com;proto=https' } }), 'awesomedataviz.com');
   assert.equal(requestHost({ headers: { host: 'Awesomedataviz.com:443' } }), 'awesomedataviz.com');
   const health = await (await fetch(`${base}/healthz`, { headers: { 'x-forwarded-host': 'awesomedataviz.com' } })).json();
