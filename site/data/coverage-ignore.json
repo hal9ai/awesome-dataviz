@@ -28,6 +28,10 @@
   "reason": "Reviewed 2026-10-27: star count could not be verified as organic (4,800+ stars, 15 forks, 2 months old)."
  },
  {
+  "repo": "aipoch/medical-research-skills",
+  "reason": "Reviewed 2026-11-11: agent skills for medical research; not a data visualization library (out of scope)."
+ },
+ {
   "repo": "algorithm-visualizer/algorithm-visualizer",
   "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
  },
@@ -776,6 +780,10 @@
   "reason": "Data visualization library, but unmaintained for years; not added."
  },
  {
+  "repo": "pascalorg/editor",
+  "reason": "Reviewed 2026-11-11: 3D architecture software; not a data visualization library (out of scope)."
+ },
+ {
   "repo": "patriciogonzalezvivo/lygia",
   "reason": "Generic graphics, 3D or game engine, not a data visualization library."
  },
@@ -1004,6 +1012,10 @@
   "reason": "Monitoring, observability or web analytics product."
  },
  {
+  "repo": "tianma-if/edgeever",
+  "reason": "Reviewed 2026-11-11: knowledge base and note-taking app; not a data visualization library (out of scope)."
+ },
+ {
   "repo": "tidwall/buntdb",
   "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
  },
@@ -1082,6 +1094,10 @@
  {
   "repo": "Visualize-ML/Linear-Algebra-Made-Easy---Learn-with-Python-and-Visualization",
   "reason": "Reviewed 2026-10-05: not a data visualization library (out of scope)."
+ },
+ {
+  "repo": "visuallyjs/visuallyjs",
+  "reason": "Reviewed 2026-11-11: release and issue tracking only; source is not public (not open source)."
  },
  {
   "repo": "walterlow/freecut",
