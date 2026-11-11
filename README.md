@@ -6,7 +6,7 @@ A curated list of awesome **open-source** data visualizations frameworks, librar
 
 Browse it at **[awesomedataviz.com](https://awesomedataviz.com)**: search, rankings, live GitHub stats, comparisons and an MCP server for AI assistants, all generated from this README.
 
-Inspired by [awesome-python](https://github.com/vinta/awesome-python), originally created by [fasouto](https://github.com/fasouto), maintained by [Javier Luraschi](https://github.com/javierluraschi), and hosted in [Cloudish](https://cloudish.ai).
+Inspired by [awesome-python](https://github.com/vinta/awesome-python), originally created by [fasouto](https://github.com/fasouto), maintained by Javier Luraschi, and hosted in Cloudish.
 
 ## Contents
 - [Awesome dataviz](#awesome-dataviz)
