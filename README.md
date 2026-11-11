@@ -188,6 +188,7 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python), originall
 
 ### Misc
 - [asciichart](https://github.com/kroitor/asciichart) - ASCII line charts for the console in Node.js and browsers, with ports to other languages.
+- [AVA](https://github.com/antvis/AVA) - TypeScript visual analytics framework for AI agents, with file and database queries, reusable business definitions and interactive charts.
 - [blessed-contrib](https://github.com/yaronn/blessed-contrib) - Terminal dashboards with charts, maps, gauges and tables, built with Node.js and ASCII/ANSI art.
 - [Flint](https://github.com/microsoft/flint-chart) - Chart specification language from Microsoft that compiles to Vega-Lite, ECharts, Chart.js or Plotly.
 - [gp-treemap](https://github.com/imbue-ai/gp-treemap) - Open source HTML canvas treemap component supporting millions of nodes, and some functional resource usage tools, like disk and S3 usage visualization ([GrandPerspective](https://grandperspectiv.sourceforge.net/)-style)
