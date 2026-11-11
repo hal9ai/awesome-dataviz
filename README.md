@@ -64,6 +64,7 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python), originall
 - [Apache ECharts](https://github.com/apache/echarts) - Highly customizable and interactive charts ready for big datasets.
 - [ApexCharts](https://apexcharts.com/) - Modern & Interactive SVG Charts.
 - [billboard.js](https://github.com/naver/billboard.js) - Reusable D3.js-based chart library with SVG and Canvas rendering, maintained by NAVER.
+- [Britecharts](https://github.com/britecharts/britecharts) - Accessible D3-based charts for JavaScript and React, with keyboard navigation, dark mode and TypeScript support.
 - [C3.js](https://github.com/c3js/c3) - D3-based reusable chart library.
 - [Cal-Heatmap](https://github.com/wa0x6e/cal-heatmap) - Time-series calendar heatmaps, similar to GitHub's contribution graph, built on D3.
 - [Carbon Charts](https://github.com/carbon-design-system/carbon-charts) - Chart library from IBM's Carbon Design System, built on D3, with React, Angular, Vue and Svelte wrappers.
