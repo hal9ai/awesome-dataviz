@@ -156,6 +156,7 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python), originall
 
 ### d3
 - [D3.js](https://github.com/d3/d3) - JavaScript library for producing dynamic, data-driven visualizations with SVG, Canvas and HTML.
+- [d3-3d](https://github.com/Niekes/d3-3d) - 3D charts and shapes for D3.js, projected to plain SVG or canvas with no WebGL needed.
 - See [Awesome D3](https://github.com/wbkd/awesome-d3) for D3 plugins, examples and tutorials.
 
 ### React
