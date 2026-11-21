@@ -87,6 +87,7 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python), originall
 - [GraphicsJS](http://www.graphicsjs.org) - Lightweight JS graphics library with intuitive API, based on SVG/VML.
 - [heatmap.js](https://github.com/pa7/heatmap.js) - Canvas-based library for rendering heatmaps, with plugins for Leaflet and Google Maps.
 - [lit-line](https://github.com/apinet/lit-line) - SVG Line Chart Web Component - light, fast, interactive & fully responsive.
+- [LovelyChart](https://github.com/Ajaxy/lovely-chart) - Telegram-style canvas charts with a minimap range selector, drill-down zoom and day and night themes.
 - [MetricsGraphics.js](https://metricsgraphicsjs.org/) - Optimized for time-series data.
 - [NVD3](https://github.com/novus/nvd3) - A reusable charting library written in d3.js.
 - [Observable Plot](https://github.com/observablehq/plot) - A JavaScript library for exploratory data visualization.
