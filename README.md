@@ -447,6 +447,7 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python), originall
 
 ## Rust tools
 - [Charming](https://github.com/yuankunzhang/charming) - Chart rendering library for Rust powered by Apache ECharts.
+- [dataviz](https://github.com/dataviz-rs/dataviz) - Plotting library for Rust, also usable from Python, JavaScript and C/C++, with 120+ chart types, interactive windows, 3D and maps.
 - [malevich](https://github.com/shergin/malevich) - Terminal plotting: line, scatter, bar, histogram, heatmap, box plot, violin and more, with automatic axes.
 - [Plotly.rs](https://github.com/plotly/plotly.rs) - Plotly.js-based interactive plotting library for Rust.
 - [Plotters](https://github.com/plotters-rs/plotters) - Drawing library for data plotting in Rust, with bitmap, SVG, WebAssembly and GUI backends.
