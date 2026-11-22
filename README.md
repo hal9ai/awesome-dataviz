@@ -253,6 +253,7 @@ Inspired by [awesome-python](https://github.com/vinta/awesome-python), originall
 - [Perses](https://github.com/perses/perses) - CNCF dashboard tool and open dashboard specification for observability data such as Prometheus metrics.
 - [Redash](https://github.com/getredash/redash) - Query data sources with SQL, then visualize the results and build dashboards.
 - [Rill](https://github.com/rilldata/rill) - BI tool for fast, metrics-first dashboards powered by OLAP engines such as DuckDB and ClickHouse.
+- [Velocity](https://github.com/AndrewCTF/velocity) - Self-hosted live map of aircraft and ships on a 3D globe that records its own history for replay.
 
 ## Flutter tools
 - [fl_chart](https://github.com/imaNNeo/fl_chart) - Customizable Flutter chart library with line, bar, pie, scatter and radar charts.
