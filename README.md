@@ -477,6 +477,7 @@ Tools that are not tied to a particular platform or language.
 - [csvtodashboard](https://csvtodashboard.com) - Turn a CSV or Excel file into an auto-built dashboard in the browser - client-side, no upload.
 - [Cytoscape](https://github.com/cytoscape/cytoscape) - Desktop platform for network analysis and visualization, widely used in bioinformatics.
 - [DAC](https://github.com/bruin-data/dac) - Dashboard-as-code tool that builds interactive dashboards from YAML and TSX definitions
+- [Data Animation Skills](https://github.com/iart-ai/data-animation-skills) - Agent skills that turn a CSV into an animated chart video, such as bar chart races, count-up tickers and animated infographics.
 - [Data Formulator](https://github.com/microsoft/data-formulator) - AI-assisted tool for transforming data and creating visualizations, from Microsoft Research.
 - [Datavzrd](https://github.com/datavzrd/datavzrd) - Turns CSV, TSV, JSON or Parquet tables into interactive, self-contained HTML reports, configured with a short YAML file.
 - [evident-charts](https://github.com/rhiever/evident-charts) - Agent skill that makes explanatory charts and checks them for misleading axes, overlapping labels, and color problems.
